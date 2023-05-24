@@ -1,0 +1,11 @@
+{
+  "IntegrateWithOtherApplication": {
+    "Password": "h%7pa9leb@!J"
+  },
+  "ListviewLoadingIndicatorSettings": {},
+  "GlobalProperties": [],
+  "WebSitePort": 19936,
+  "UserServicePort": 43415,
+  "StartPage": "대시보드",
+  "StartDateFiscalYear": 4
+}

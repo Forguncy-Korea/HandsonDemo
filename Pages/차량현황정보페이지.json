@@ -1,0 +1,444 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      }
+    },
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "2,2": "차량 현황 페이지",
+    "4,2": "차량을 선택하면 차량 현황을 확인 할 수 있습니다.",
+    "6,2": "차량 종류",
+    "8,2": "차량 번호",
+    "10,2": "차량 사진",
+    "20,2": "구매날짜",
+    "22,2": "주행거리",
+    "22,8": "\t\t\t\t\t\t\t\t\t\t",
+    "24,2": "차량 이용 현황",
+    "26,49": "주행거리(Km)"
+  },
+  "Formulas": {
+    "20,8": "ODATA(\"차량정보?$select=구매날짜&$filter=ID eq \"&IF(ISBLANK(I7),\"null\",I7))",
+    "10,8": "ODATA(\"차량정보?$select=차량사진&$filter=ID eq \"&IF(ISBLANK(I7),\"null\",I7))",
+    "8,8": "ODATA(\"차량정보?$select=차량번호&$filter=ID eq \"&IF(ISBLANK(I7),\"null\",I7))",
+    "22,8": "ODATA(\"차량정보?$select=주행거리&$filter=ID eq \"&IF(ISBLANK(I7),\"null\",I7))"
+  },
+  "AttachInfos": {
+    "6,8": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsBounding": true,
+        "DataSource": "차량정보",
+        "ValueColumnBindingInfo": {
+          "TableName": "차량정보",
+          "ColumnName": "ID",
+          "GUID": "8da797d3-e07c-4863-8203-4eb772d50310"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "차량정보",
+          "ColumnName": "차종",
+          "GUID": "32616e72-10ec-402b-b0cf-aa91df810ac1"
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "5f35e2f8af9f426482e29f5ac4669c32",
+            "BindingInfo": {
+              "TableName": "차량정보",
+              "ColumnName": "차량번호",
+              "GUID": "227d8c4c-eba3-4bce-aa54-612c146f410f"
+            },
+            "ColumnName": "차량번호",
+            "BindingColumnDataType": 5
+          },
+          {
+            "GUID": "89d4de4393084c1989d75bd9b327226e",
+            "BindingInfo": {
+              "TableName": "차량정보",
+              "ColumnName": "차종",
+              "GUID": "0d8ae444-6311-49b7-98c6-911a48e542e4"
+            },
+            "ColumnName": "차종",
+            "BindingColumnDataType": 5
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=차량현황정보페이지!I7"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=차량현황정보페이지!5:5"
+                        },
+                        "Value": false
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=차량현황정보페이지!9:40"
+                        },
+                        "Value": true
+                      }
+                    ]
+                  }
+                ],
+                "ID": "cf31cb6d-1f25-4cb5-8f44-d493f5a72732"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "10,8": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon"
+      }
+    },
+    "20,8": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "DropDownButtonvisibility": 1,
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "ReadOnly": true
+      }
+    },
+    "26,2": {
+      "ListViewInfo": {
+        "Name": "리스트뷰1",
+        "TableName": "차량예약",
+        "RowIndex": 26,
+        "ColumnIndex": 2,
+        "RowCount": 13,
+        "ColumnCount": 55,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "차량예약",
+            "ColumnName": "차량_ID",
+            "GUID": "e0b14f7a-8d3c-449c-8ecf-833a7dc94516"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=차량현황정보페이지!I7"
+          }
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_NewFashionListStyle2",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "27,3": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "사용자",
+        "GUID": "1fe55a38-a5c6-45d4-a956-149616453cd8"
+      }
+    },
+    "27,9": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "예약날짜",
+        "GUID": "c5e1eab4-f02c-4f78-a542-5fb46270208c"
+      }
+    },
+    "27,16": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "반납날짜",
+        "GUID": "863d0faa-748a-49ae-8e4b-341f49d64c92"
+      }
+    },
+    "27,21": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "예약시작시간",
+        "GUID": "6ca9f064-f605-41e4-b45d-8be82a86f348"
+      }
+    },
+    "27,27": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "예약종료시간",
+        "GUID": "03d4b5a4-00df-412f-9611-15f001676d17"
+      }
+    },
+    "27,33": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "운행시작시간",
+        "GUID": "2dbdf767-e09a-40f2-b01f-ac6f3bd75312"
+      }
+    },
+    "27,39": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "운행종료시간",
+        "GUID": "79910731-a0b9-4fd3-bf14-3d06412b63d6"
+      }
+    },
+    "27,45": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "거래처",
+        "GUID": "d2e6c461-8bb2-4834-9aae-cff118e2368b"
+      }
+    },
+    "27,49": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "주행거리",
+        "GUID": "23f18955-12a6-4242-8a9f-097641577782"
+      }
+    },
+    "27,53": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "반납여부",
+        "GUID": "1af8d406-2994-46a0-9f10-f11cf2d11577"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "FontWeight": 3
+      },
+      {
+        "Background": 4
+      },
+      {
+        "FontFamily": 2,
+        "WordWrap": true
+      },
+      {
+        "Formatter": 5
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 6
+      },
+      {
+        "Formatter": 6
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "나눔스퀘어 네오 OTF ExtraBold",
+        "[AUTO]General",
+        "Body",
+        "Bold",
+        "Background 1 0",
+        "yyyy/m/d",
+        "h:mm:ss;@"
+      ]
+    },
+    "CellStyles": {
+      "2,2": 0,
+      "2,4": 1,
+      "6,2": 2,
+      "6,8": 1,
+      "8,2": 2,
+      "8,8": 3,
+      "10,2": 2,
+      "20,2": 2,
+      "21,2": 2,
+      "22,2": 2,
+      "22,8": 3,
+      "24,2": 2,
+      "26,21": 1,
+      "26,27": 1,
+      "26,33": 1,
+      "26,45": 1,
+      "26,46": 1,
+      "26,47": 1,
+      "26,48": 1,
+      "26,49": 4,
+      "26,50": 1,
+      "26,51": 1,
+      "26,52": 1,
+      "26,53": 1,
+      "26,54": 1,
+      "26,55": 1,
+      "26,56": 1,
+      "27,9": 5,
+      "27,16": 5,
+      "27,21": 1,
+      "27,27": 1,
+      "27,33": 6,
+      "27,39": 7,
+      "27,45": 1,
+      "27,46": 1,
+      "27,47": 1,
+      "27,48": 1,
+      "27,49": 1,
+      "27,50": 1,
+      "27,51": 1,
+      "27,52": 1,
+      "27,53": 1,
+      "27,54": 1,
+      "27,55": 1,
+      "27,56": 1,
+      "40,39": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "6,8,1,11",
+    "8,8,1,11",
+    "10,8,9,11",
+    "20,8,1,12",
+    "22,8,1,12",
+    "27,3,1,6",
+    "27,9,1,7",
+    "27,16,1,5",
+    "27,21,1,6",
+    "27,27,1,6",
+    "27,45,1,4",
+    "27,49,1,4",
+    "27,53,1,4",
+    "28,2,11,55",
+    "26,3,1,6",
+    "26,9,1,7",
+    "26,16,1,5",
+    "26,21,1,6",
+    "26,27,1,6",
+    "26,45,1,4",
+    "26,49,1,4",
+    "26,53,1,4",
+    "27,33,1,6",
+    "26,33,1,6",
+    "27,39,1,6",
+    "26,39,1,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "마스터 페이지1",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+        "PropertyItemsList": [
+          {
+            "Location": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=차량현황정보페이지!9:40"
+            },
+            "Value": false
+          }
+        ]
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "차량정보"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "Name": "25d87cac-fb41-4961-98c0-a47120074eb1.png",
+      "DisplayName": "배경 이미지1",
+      "StyleInfo": {
+        "Fill": "Background 1 -5"
+      },
+      "IsAutomaticFill": false,
+      "Location": "20,102",
+      "Size": "1141,756"
+    }
+  ]
+}//SjYO+8Bg6qILgJfROwLtqX5jrZCaUk9HcRZ0eoZ+tLeSk4VwsDGTmYur22Stj/ADIlYLwOIKpWMWenfEHTPqbrGtTkIVZjH97dLe7F8Q0h8r8kgBKv1nU32gvlMhSAGqhgZmRw+IIN/S6u7dWKpkYOetpeyhrgikdBj5Xk6dfFU1ieo9eoCq2Cb03u3j4BmEPjjJWg5l78TJWCQmOD6uFRDQRqGlTGSbeBwe38osCOriFzHARc/biVhF5EFD6/cPD2xOajYdNKIiN3rvBzUotQfGhvkvOoTSdK9pYB2hJwcrbmXeeJ/qktcosVfaifBHe3QKnl2G+PYuKgito7gVSvEQt2ur3kpTSj42KFW0yIfIj6dsG7eqsl6TBvyT3avNiBCewKxB42FEipoZSdV37ilSkn7j5oB26h1kMdZXeK4UZOI056DthDQtCxNFXk0QbBKsszSTmzvk5GOhfmFsIrAU03WlQ0HxuFlQ23SMpMbBzp9GcHs8I/XN6nhlgDwjLCLfJYtrYPFxLUNqHO91fJCd7s/InfvTuUxWz53L2TXYHnxGUCNb8nrOCZnieuVFY1c1UTYwQZYoW7hhFdHqvP7MORA6l5HTcvgXRKx60lliLGs3kvy4IwLO+0gopUfk5PXA/wHAOUId1uB0FVjd/6GTwZAbgEC//MnS3oOkjkvAaOIHQbvRKdrnu21mzAzCbNWBSyUH50pgUpO7tJXJLCkxtDeNMNUpFksX4vPbIwwMzOzQGyvyNTizZF46uhUsXTO+XMwFQHO9g9NoVYE9SplzIURXwGcCkaZL+S2ly3AudPw8+Z0RrLcG5i7BgK2mQyjNsIUxRDO2AZbOqNdFaoYd1ougTuGJynKS6ahKRYAEJ8TBBR7enxU9rLEFVlMe8/FOx5ylweKmq7zxlgo45w==|920

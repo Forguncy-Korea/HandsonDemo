@@ -1,0 +1,220 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "Count": 22
+  },
+  "Cols": {
+    "Count": 40
+  },
+  "Values": {
+    "2,2": "차량 예약 상세 페이지",
+    "4,2": "차종 ",
+    "4,5": "ALL",
+    "6,2": "예약 날짜"
+  },
+  "AttachInfos": {
+    "4,5": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsBounding": true,
+        "DataSource": "차량정보",
+        "ValueColumnBindingInfo": {
+          "TableName": "차량정보",
+          "ColumnName": "ID",
+          "GUID": "6736cabb-f14a-4857-afaf-2867bb439929"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "차량정보",
+          "ColumnName": "차종",
+          "GUID": "9d8504d4-fd64-4dce-bf9c-65876d555fd1"
+        },
+        "CellDefaultValue": "ALL"
+      }
+    },
+    "6,6": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "10,2": {
+      "ListViewInfo": {
+        "Name": "리스트뷰1",
+        "TableName": "차량예약",
+        "RowIndex": 10,
+        "ColumnIndex": 2,
+        "RowCount": 10,
+        "ColumnCount": 30,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "차량예약",
+                "ColumnName": "차량_ID",
+                "GUID": "3f9513f1-8a7f-4a18-927f-2b7151a6341f"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=차량예약상세현황페이지!F5"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "차량예약",
+                "ColumnName": "예약날짜",
+                "GUID": "4ce6f671-59dd-46bd-848f-26d7d155685b"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=차량예약상세현황페이지!G7"
+              }
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_NewFashionListStyle2",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "11,3": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "차량_ID",
+        "GUID": "3c7ea0f0-121c-4a15-98a9-704f385791bb",
+        "RelationBinding": {
+          "RelatedTable": "차량정보",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "차종"
+        }
+      }
+    },
+    "11,7": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "예약시작시간",
+        "GUID": "e4bfdd38-21dd-4b20-9669-f7e4487f3801"
+      }
+    },
+    "11,12": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "예약종료시간",
+        "GUID": "1885b3c5-1d3e-4afd-b5f1-5aba74d3fcbe"
+      }
+    },
+    "11,17": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "사용자",
+        "GUID": "3f941480-acc3-42ba-8032-8ff32665709c"
+      }
+    },
+    "11,24": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "거래처",
+        "GUID": "428ce490-fcdd-418b-9db4-3e96a04b08d9"
+      }
+    },
+    "11,27": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "반납여부",
+        "GUID": "a0b20f44-d07d-44ae-a8d2-56c5ad99bf4c"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "Formatter": 1
+      },
+      {
+        "FontWeight": 2
+      },
+      {
+        "FontFamily": 3
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "나눔스퀘어 네오 OTF ExtraBold",
+        "[AUTO]General",
+        "Bold",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "2,2": 0,
+      "4,2": 1,
+      "6,2": 1,
+      "10,7": 2,
+      "10,12": 2,
+      "10,17": 2,
+      "10,24": 2,
+      "11,7": 2,
+      "11,12": 2,
+      "11,17": 2,
+      "11,24": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "4,5,1,7",
+    "6,6,1,10",
+    "11,3,1,4",
+    "11,24,1,3",
+    "11,7,1,5",
+    "11,12,1,5",
+    "11,17,1,7",
+    "12,2,8,30",
+    "11,27,1,5",
+    "10,3,1,4",
+    "10,7,1,5",
+    "10,12,1,5",
+    "10,17,1,7",
+    "10,24,1,3",
+    "10,27,1,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//6D7bxwnphm7ex++b9bjrL89yMXbpcEwDGoibTdCYep+7N4jwt7LvjATkU7Lu7B8lBHbmVzOsqDSoeekVPckPMTk4fyTOndKkEUv+ykA4hRjGMcw2gMQKJxZMUyYQOFr71QKDlBO+CRSua3/V/dSy+VTW4Cme1P18daEf9Ks7WpEKVew3+JuSFOSrJT7cKM7PMvvCjQzkiTLwErmIt6OHTR08hwhvUbDQRj6WE8ZXzLjazABXy8YgZJX2oFHGEvs6aLAfT4baMMMQMnuAGGQ305k17AgVh6iMdNXDGBkANSQDUnK34ZzUo/z6Qre2R4qVEehnenYEJkFA8ouwOWY+XGTYzFQJ0kUe4AJ8Sbj81NpRBAUkHiFvgpB6X4aIAPNINHuvJfLbZ+mh3HF46bm/xfkJWXBMaAPBpMTo9wvTgelZAygGgmIGJtHAbO2M14LrssqpKxryqzY4xNBhcaGEonG38XEoVBY6iJ8BiYj5WVl03wu4T8WaXnh16TpdoMsWUspmVYmHwyQx9Hba234noT9drQpWcohWhCt2aW2d52DJo5SZK2ZZ2WVRpe9u3vIPG0x1fWBEpn1qtDdtTd5rdv1myZYDkxEalZ5rr8h0NRO91U1dEWqr03DD6xR3zSPfyTtLcA3uNuxpuTl29AuzVSAQDRARGOYZ0ecvpYQARGaymdzRVdSz0YTXP6zGqy60CsUHHdrQJJ8bjycVFv36xVLog39hCPS5Psoccf/9C+0zthnzavOOgLLEOGzqmcIMZ0M6eh0Dl1Qga/xtJLeAyDPJBpemsWwcm1nNmlzYjPRA/IB6HLM4m8pR0VJOv1CKImkGg0yEQUsZbMsOXf9M14dt1jzOqnZg7a+xk+9L2g9vfosjWKMcfh3vilQ8MtqfC60sgYda+n8VfAtINQxhHA==|920

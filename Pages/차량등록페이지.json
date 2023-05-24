@@ -1,0 +1,254 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 12.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 12.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 12.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 12.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "2,2": "차량 등록 페이지",
+    "5,2": "차량 번호",
+    "7,2": "차량 종류",
+    "9,2": "차량 사진",
+    "18,2": "구매 날짜",
+    "22,1": "저장"
+  },
+  "AttachInfos": {
+    "5,7": {
+      "BindingInfo": {
+        "TableName": "차량정보",
+        "ColumnName": "차량번호",
+        "GUID": "72ea1f48-f0b6-411b-8b75-0ed5eb5515e3"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "7,7": {
+      "BindingInfo": {
+        "TableName": "차량정보",
+        "ColumnName": "차종",
+        "GUID": "32934421-366b-43a1-94fd-70f44c84abe6"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "9,7": {
+      "BindingInfo": {
+        "TableName": "차량정보",
+        "ColumnName": "차량사진",
+        "GUID": "f3213831-e564-4bfb-93ab-d485384cd171",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.UploadImageCellType, ServerDesignerCommon",
+        "UploadImageLimit": {
+          "AllowExtensions": ".png, .jpeg, .jpg, .bmp, .gif, .ico"
+        }
+      }
+    },
+    "18,7": {
+      "BindingInfo": {
+        "TableName": "차량정보",
+        "ColumnName": "구매날짜",
+        "GUID": "a1a92970-37de-4338-bf72-8dafcb116462"
+      },
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "22,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "차량정보",
+            "UpdateType": "add",
+            "ShowConfirm": false
+          },
+          {
+            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+            "MessageFormula": "차량 등록이 완료되었습니다."
+          }
+        ],
+        "Text": "저장",
+        "TemplateKey": "_RS_Main1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664
+      },
+      {
+        "FontWeight": 1
+      },
+      {
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 3,
+        "FontWeight": 1
+      },
+      {
+        "FontFamily": 3
+      },
+      {
+        "Background": 4,
+        "FontWeight": 1,
+        "Foreground": 5
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "나눔스퀘어 네오 OTF ExtraBold",
+        "Bold",
+        "@",
+        "Body",
+        "Background 1 -15",
+        "black"
+      ]
+    },
+    "CellStyles": {
+      "2,2": 0,
+      "3,2": 0,
+      "5,2": 1,
+      "5,7": 2,
+      "7,2": 1,
+      "7,7": 2,
+      "8,15": 3,
+      "9,2": 4,
+      "9,7": 5,
+      "18,2": 1,
+      "22,1": 6
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "5,7,1,14",
+    "7,7,1,14",
+    "18,7,1,14",
+    "22,1,1,4",
+    "9,7,8,8"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "마스터 페이지1",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "Name": "7fa4715f-11c7-4635-b4af-ccb2e95a97e6.png",
+      "DisplayName": "배경 이미지1",
+      "StyleInfo": {
+        "Fill": "Background 1 -5"
+      },
+      "IsAutomaticFill": false,
+      "Location": "20,80",
+      "Size": "454,323"
+    }
+  ]
+}//G3YGiYWC+H5pYHxeF0q0u8+fQZp8LZcDLlJUmBg9Deb1wcVjzt3EkZoDMaIOrfTS0655idG3S+8XpRBfu5aQ4B+McOuaDEAG4w09pAjsJdm5YdXc82yM38EION8oEFRXuCjp1tAcg7VU5BGYCUON/WVUNPwcb3H75vaXbIKFZbMf+mKXkRsH9oyeZjGVk64+itcxjNDMvisutnmUmW2NQtXVt+P6lhLj5SbGsJSOI0DQYJ6rUJED6pBAAvfWthYwVBdOXHaH7jRAH+JOKHOy7AVeamjSCYOeWTbmOk6DS0V9+do39Sf8TTOK9UnMsnlq1E2VV7PILoaKjN2wHELrGKA4wgXu4fmC1LBkAehFh7RQReoZ6hGDtyQYc6kblzvAUOV7OkBwW1sj4fsC8subT2WO9Qoenynti7WMb1n+e07s7G4rkS0Qf3FLVbC26MD1W4V5eKTijyAvR2u2umsuAoGBhe6xq0jRt+6y41W1j2gr1lHqLpQ+x3IFt7bwoql4trQ6B5MkuTcFWU1zQGJV0e5o3p8OqG0L9OVjutCuSpxJOXs1ldNA2PAvUXn5b714gNh5xYqUQG/0GaVeTN21pOP8x0pWmUEwkvzjungJ/RG3JGUiUOseUJOw7tLTsJATRsb7GPw0acgfyKp0kwv7ohAte0RpTARzkR5j4m1Dstoh/3Cvm1HjwLTpwtHnqc4BftqBcKPLGkmGPfWfIn7tWd0YSFKY4/y+w6YEASPnCwW4yTcVx+BDfdyMamFr7xcZIY6pfOLpo9Hs4qkaKbRxtPr6VUk9Rg56K3y1lwKmXi8e6Cs9awHfrImfsU0/Ti7R3g6o+R689rQMlWDdQiP/yUxQL4OcVIn20biwjNzN4dPMf45bCZz77dYeKfgbyrBtX51KdcFo9SN9ONUJG0JliA==|920

@@ -1,0 +1,902 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      26,
+      27,
+      28
+    ],
+    "Count": 43
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "2,2": "차량 예약 페이지",
+    "3,28": "예약현황",
+    "5,3": "차량 선택",
+    "7,3": "대여자",
+    "9,3": "예약날짜",
+    "11,3": "예약시작시간",
+    "13,3": "예약종료시간",
+    "15,3": "거래처",
+    "19,2": "예약",
+    "26,2": "예약여부확인",
+    "27,2": "현재시간",
+    "28,2": "오늘날짜"
+  },
+  "Formulas": {
+    "26,7": "ODATA(\"차량예약/$count?$filter=차량_ID eq \"&IF(ISBLANK(J6),\"null\",J6)&\" and 예약날짜 eq \"&IF(ISBLANK(J10),\"null\",TEXT(J10,\"yyyy-MM-ddThh:mm:ssZ\"))&\" and ((예약시작시간 ge \"&IF(ISBLANK(J12),\"null\",TEXT(J12,\"hh:mm:ss\"))&\" or 예약종료시간 le \"&IF(ISBLANK(J14),\"null\",TEXT(J14,\"hh:mm:ss\"))&\") and (예약시작시간 le \"&IF(ISBLANK(J12),\"null\",TEXT(J12,\"hh:mm:ss\"))&\" and 예약종료시간 ge \"&IF(ISBLANK(J14),\"null\",TEXT(J14,\"hh:mm:ss\"))&\"))\")",
+    "27,7": "TIME(HOUR(NOW()),MINUTE(NOW()),SECOND(NOW()))",
+    "28,7": "TODAY()"
+  },
+  "AttachInfos": {
+    "5,9": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "차량_ID",
+        "GUID": "9c61fc25-fa70-4e65-aff8-acb74bdaefb2"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner",
+        "IsBounding": true,
+        "DataSource": "차량정보",
+        "ValueColumnBindingInfo": {
+          "TableName": "차량정보",
+          "ColumnName": "ID",
+          "GUID": "067f1e9d-304e-4ab0-b352-b2cc81cbd486"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "차량정보",
+          "ColumnName": "차량번호",
+          "GUID": "e794dc6c-138f-484b-b258-1c19b2c88d3a"
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "56efb021942c4a7994b438a3a66bff68",
+            "BindingInfo": {
+              "TableName": "차량정보",
+              "ColumnName": "차종",
+              "GUID": "9117749e-5ec9-4c0d-b0d7-a308a7039a6f"
+            },
+            "ColumnName": "차종",
+            "BindingColumnDataType": 5
+          }
+        ]
+      }
+    },
+    "5,28": {
+      "CellType": {
+        "$type": "ElementUI.CalendarCellType, ElementUI",
+        "ScheduleClickCommand": {
+          "$type": "GrapeCity.Forguncy.Commands.CustomCommandObject, Forguncy.Commands",
+          "Commands": [
+            {
+              "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+              "PageName": "차량예약상세현황페이지",
+              "PassValues": [
+                {
+                  "Source": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=차량예약페이지!날짜"
+                  },
+                  "TargetCell": {
+                    "SerializeProperty": "=차량예약상세현황페이지!G7"
+                  }
+                }
+              ],
+              "DeleteCachedQuery": true
+            }
+          ],
+          "ParamProperties": {
+            "value": "값",
+            "date": "날짜",
+            "text": "텍스트"
+          }
+        },
+        "bindingOptions": {
+          "$type": "ServerDesignerCommon.Model.BindingDataSourceModel, ServerDesignerCommon",
+          "TableName": "차량예약",
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "차량예약",
+                "ColumnName": "사용자",
+                "GUID": "5382eb85-2761-4f78-bf79-1634800230d2"
+              },
+              "ColumnName": "value"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "차량예약",
+                "ColumnName": "예약날짜",
+                "GUID": "6a7b546c-aa44-4869-a48c-ceb1b283022c"
+              },
+              "ColumnName": "date"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "차량예약",
+                "ColumnName": "차량_ID",
+                "GUID": "2729a660-c35e-4497-bdb7-0912a977cccb",
+                "RelationBinding": {
+                  "RelatedTable": "차량정보",
+                  "RelatedColumn": "ID",
+                  "DisplayColumn": "차종"
+                }
+              },
+              "ColumnName": "text"
+            }
+          ]
+        },
+        "firstDayOfWeek": 1
+      }
+    },
+    "7,9": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "사용자",
+        "GUID": "f78990c4-87a8-460c-9bbc-105ca4ee425c"
+      },
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowCircleUserPicture": true,
+        "ShowNotification": false,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "9,9": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "예약날짜",
+        "GUID": "62c1f9f2-40d0-4b65-9c61-d726ad8098c2"
+      },
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      },
+      "DataValidationInfo": {
+        "NumberType": 4,
+        "CompareParamType": 6,
+        "FirstParamValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TODAY()"
+        }
+      }
+    },
+    "11,9": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "예약시작시간",
+        "GUID": "9973355d-8f94-4d56-a9f0-798642a9baa1"
+      },
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "13,9": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "예약종료시간",
+        "GUID": "bfe152e9-5ba0-407e-95b8-d225bb08c3b6"
+      },
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "15,9": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "거래처",
+        "GUID": "8bc27a46-78f0-4cda-925b-2effa898c7d9"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "19,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=차량예약페이지!H27"
+                      }
+                    ]
+                  },
+                  "value": "0",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "차량이 이미 예약되어 있습니다."
+                  }
+                ],
+                "ID": "58a3c4a7-92ff-4c15-a192-71702517b014"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                          "SubConditions": [
+                            {
+                              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                              "param": {
+                                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                "cellLocations": [
+                                  {
+                                    "SerializeProperty": "=차량예약페이지!J10"
+                                  }
+                                ]
+                              },
+                              "value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=차량예약페이지!H29"
+                              }
+                            },
+                            {
+                              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                              "param": {
+                                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                "cellLocations": [
+                                  {
+                                    "SerializeProperty": "=차량예약페이지!J12"
+                                  }
+                                ]
+                              },
+                              "value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=차량예약페이지!H28"
+                              },
+                              "compareType": 3
+                            }
+                          ]
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "차량예약",
+                            "UpdateType": "add",
+                            "ShowConfirm": false,
+                            "UpdateBindingValues": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "차량예약",
+                                  "ColumnName": "반납여부",
+                                  "GUID": "66a1ebc5-c506-47ce-8cf9-8d8166243e97"
+                                },
+                                "Value": "예약중"
+                              }
+                            ]
+                          },
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "차량을 성공적으로 예약하였습니다."
+                          }
+                        ],
+                        "ID": "c65e3c6a-b058-4991-ae47-404748748b4c"
+                      },
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=차량예약페이지!J10"
+                              }
+                            ]
+                          },
+                          "value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=차량예약페이지!H29"
+                          },
+                          "compareType": 2
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "차량예약",
+                            "UpdateType": "add",
+                            "ShowConfirm": false,
+                            "UpdateBindingValues": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "차량예약",
+                                  "ColumnName": "반납여부",
+                                  "GUID": "eafa559d-b7c1-43f3-8f1d-743f677be043"
+                                },
+                                "Value": "예약중"
+                              }
+                            ]
+                          },
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "차량을 성공적으로 예약하였습니다."
+                          }
+                        ],
+                        "ID": "282e8b24-f849-43ef-b337-19482d18bd28"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "예약날짜, 예약시간에 문제가 있습니다."
+                          }
+                        ],
+                        "ID": "1586903b-93e6-410e-ac6c-c470af468216"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "8ac71cab-d30d-4994-af9d-659cdfff90b5"
+              }
+            ]
+          }
+        ],
+        "Text": "예약",
+        "TemplateKey": "_RS_Warning1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 16.0,
+        "FontWeight": 2,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 1,
+        "FontWeight": 2
+      },
+      {
+        "Background": 4,
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 5
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 6
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 7
+      },
+      {
+        "Background": 8,
+        "FontFamily": 1,
+        "FontWeight": 2
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 9
+      },
+      {
+        "Background": 8,
+        "FontFamily": 1,
+        "Formatter": 6
+      },
+      {
+        "Background": 8
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "나눔스퀘어 네오 OTF ExtraBold",
+        "Body",
+        "Bold",
+        "Center",
+        "Background 1 0",
+        "yyyy/m/d",
+        "h:mm:ss;@",
+        "@",
+        "Accent 3 0",
+        "[AUTO]General"
+      ]
+    },
+    "CellStyles": {
+      "2,2": 0,
+      "3,28": 1,
+      "3,29": 2,
+      "3,30": 2,
+      "3,31": 2,
+      "3,32": 2,
+      "3,33": 2,
+      "3,34": 2,
+      "3,35": 2,
+      "3,36": 2,
+      "3,37": 2,
+      "3,38": 2,
+      "3,39": 2,
+      "3,40": 2,
+      "3,41": 2,
+      "3,42": 2,
+      "3,43": 2,
+      "3,44": 2,
+      "3,45": 2,
+      "3,46": 2,
+      "3,47": 2,
+      "3,48": 2,
+      "3,49": 2,
+      "3,50": 2,
+      "3,51": 2,
+      "3,52": 2,
+      "3,53": 2,
+      "4,28": 2,
+      "4,29": 2,
+      "4,30": 2,
+      "4,31": 2,
+      "4,32": 2,
+      "4,33": 2,
+      "4,34": 2,
+      "4,35": 2,
+      "4,36": 2,
+      "4,37": 2,
+      "4,38": 2,
+      "4,39": 2,
+      "4,40": 2,
+      "4,41": 2,
+      "4,42": 2,
+      "4,43": 2,
+      "4,44": 2,
+      "4,45": 2,
+      "4,46": 2,
+      "4,47": 2,
+      "4,48": 2,
+      "4,49": 2,
+      "4,50": 2,
+      "4,51": 2,
+      "4,52": 2,
+      "4,53": 2,
+      "5,3": 3,
+      "5,4": 2,
+      "5,5": 2,
+      "5,6": 2,
+      "5,7": 2,
+      "5,8": 2,
+      "5,9": 2,
+      "5,10": 2,
+      "5,11": 2,
+      "5,12": 2,
+      "5,13": 2,
+      "5,14": 2,
+      "5,15": 2,
+      "5,16": 2,
+      "5,17": 2,
+      "5,18": 2,
+      "5,19": 2,
+      "5,20": 2,
+      "5,21": 2,
+      "5,22": 2,
+      "5,23": 2,
+      "5,24": 2,
+      "5,28": 2,
+      "6,3": 2,
+      "6,4": 2,
+      "6,5": 2,
+      "6,6": 2,
+      "6,7": 2,
+      "6,8": 2,
+      "6,9": 2,
+      "6,10": 2,
+      "6,11": 2,
+      "6,12": 2,
+      "6,13": 2,
+      "6,14": 2,
+      "6,15": 2,
+      "6,16": 2,
+      "6,17": 2,
+      "6,18": 2,
+      "6,19": 2,
+      "6,20": 2,
+      "6,21": 2,
+      "6,22": 2,
+      "6,23": 2,
+      "6,24": 2,
+      "7,3": 3,
+      "7,4": 2,
+      "7,5": 2,
+      "7,6": 2,
+      "7,7": 2,
+      "7,8": 2,
+      "7,9": 4,
+      "7,10": 2,
+      "7,11": 2,
+      "7,12": 2,
+      "7,13": 2,
+      "7,14": 2,
+      "7,15": 2,
+      "7,16": 2,
+      "7,17": 2,
+      "7,18": 2,
+      "7,19": 2,
+      "7,20": 2,
+      "7,21": 2,
+      "7,22": 2,
+      "7,23": 2,
+      "7,24": 2,
+      "8,3": 2,
+      "8,4": 2,
+      "8,5": 2,
+      "8,6": 2,
+      "8,7": 2,
+      "8,8": 2,
+      "8,9": 2,
+      "8,10": 2,
+      "8,11": 2,
+      "8,12": 2,
+      "8,13": 2,
+      "8,14": 2,
+      "8,15": 2,
+      "8,16": 2,
+      "8,17": 2,
+      "8,18": 2,
+      "8,19": 2,
+      "8,20": 2,
+      "8,21": 2,
+      "8,22": 2,
+      "8,23": 2,
+      "8,24": 2,
+      "9,3": 3,
+      "9,4": 2,
+      "9,5": 2,
+      "9,6": 2,
+      "9,7": 2,
+      "9,8": 2,
+      "9,9": 5,
+      "9,10": 2,
+      "9,11": 2,
+      "9,12": 2,
+      "9,13": 2,
+      "9,14": 2,
+      "9,15": 2,
+      "9,16": 2,
+      "9,17": 2,
+      "9,18": 2,
+      "9,19": 2,
+      "9,20": 2,
+      "9,21": 2,
+      "9,22": 2,
+      "9,23": 2,
+      "9,24": 2,
+      "10,3": 2,
+      "10,4": 2,
+      "10,5": 2,
+      "10,6": 2,
+      "10,7": 2,
+      "10,8": 2,
+      "10,9": 2,
+      "10,10": 2,
+      "10,11": 2,
+      "10,12": 2,
+      "10,13": 2,
+      "10,14": 2,
+      "10,15": 2,
+      "10,16": 2,
+      "10,17": 2,
+      "10,18": 2,
+      "10,19": 2,
+      "10,20": 2,
+      "10,21": 2,
+      "10,22": 2,
+      "10,23": 2,
+      "10,24": 2,
+      "11,3": 3,
+      "11,4": 2,
+      "11,5": 2,
+      "11,6": 2,
+      "11,7": 2,
+      "11,8": 2,
+      "11,9": 6,
+      "12,3": 2,
+      "12,4": 2,
+      "12,5": 2,
+      "12,6": 2,
+      "12,7": 2,
+      "12,8": 2,
+      "12,9": 2,
+      "12,10": 2,
+      "12,11": 2,
+      "12,12": 2,
+      "12,13": 2,
+      "12,14": 2,
+      "12,15": 2,
+      "12,16": 2,
+      "12,17": 2,
+      "12,18": 2,
+      "12,19": 2,
+      "12,20": 2,
+      "12,21": 2,
+      "12,22": 2,
+      "12,23": 2,
+      "12,24": 2,
+      "13,3": 3,
+      "13,4": 2,
+      "13,5": 2,
+      "13,6": 2,
+      "13,7": 2,
+      "13,8": 2,
+      "13,9": 6,
+      "14,3": 2,
+      "14,4": 2,
+      "14,5": 2,
+      "14,6": 2,
+      "14,7": 2,
+      "14,8": 2,
+      "14,9": 2,
+      "14,10": 2,
+      "14,11": 2,
+      "14,12": 2,
+      "14,13": 2,
+      "14,14": 2,
+      "14,15": 2,
+      "14,16": 2,
+      "14,17": 2,
+      "14,18": 2,
+      "14,19": 2,
+      "14,20": 2,
+      "14,21": 2,
+      "14,22": 2,
+      "14,23": 2,
+      "14,24": 2,
+      "15,3": 3,
+      "15,4": 2,
+      "15,5": 2,
+      "15,6": 2,
+      "15,7": 2,
+      "15,8": 2,
+      "15,9": 7,
+      "15,10": 2,
+      "15,11": 2,
+      "15,12": 2,
+      "15,13": 2,
+      "15,14": 2,
+      "15,15": 2,
+      "15,16": 2,
+      "15,17": 2,
+      "15,18": 2,
+      "15,19": 2,
+      "15,20": 2,
+      "15,21": 2,
+      "15,22": 2,
+      "15,23": 2,
+      "15,24": 2,
+      "19,2": 8,
+      "19,3": 2,
+      "19,4": 2,
+      "19,5": 2,
+      "26,0": 2,
+      "26,1": 2,
+      "26,2": 2,
+      "26,3": 2,
+      "26,4": 2,
+      "26,5": 2,
+      "26,6": 2,
+      "26,7": 8,
+      "26,8": 2,
+      "26,9": 2,
+      "26,10": 2,
+      "26,11": 2,
+      "26,12": 2,
+      "26,13": 2,
+      "26,14": 2,
+      "26,15": 2,
+      "26,16": 2,
+      "26,17": 2,
+      "26,18": 2,
+      "26,19": 2,
+      "26,20": 2,
+      "26,21": 2,
+      "26,22": 2,
+      "26,23": 2,
+      "26,24": 2,
+      "26,25": 2,
+      "26,26": 2,
+      "26,27": 2,
+      "26,28": 2,
+      "26,29": 2,
+      "26,30": 2,
+      "26,31": 2,
+      "26,32": 2,
+      "26,33": 2,
+      "26,34": 2,
+      "26,35": 2,
+      "26,36": 2,
+      "26,37": 2,
+      "26,38": 2,
+      "26,39": 2,
+      "26,40": 2,
+      "26,41": 2,
+      "26,42": 2,
+      "26,43": 2,
+      "26,44": 2,
+      "26,45": 2,
+      "26,46": 2,
+      "26,47": 2,
+      "26,48": 2,
+      "26,49": 2,
+      "26,50": 2,
+      "26,51": 2,
+      "26,52": 2,
+      "26,53": 2,
+      "26,54": 2,
+      "26,55": 2,
+      "26,56": 2,
+      "26,57": 2,
+      "26,58": 2,
+      "26,59": 2,
+      "27,2": 9,
+      "27,3": 2,
+      "27,4": 2,
+      "27,5": 2,
+      "27,6": 2,
+      "27,7": 10,
+      "27,8": 2,
+      "27,9": 2,
+      "27,10": 2,
+      "27,11": 2,
+      "28,7": 11
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "26,7,1,4",
+    "3,28,1,26",
+    "19,2,1,4",
+    "5,9,1,16",
+    "7,9,1,16",
+    "9,9,1,16",
+    "15,9,1,16",
+    "5,28,20,28",
+    "27,7,1,4",
+    "11,9,1,16",
+    "13,9,1,16",
+    "28,7,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "마스터 페이지1",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "Name": "c4193059-13d9-455b-9f84-a28e25d9b2c2.png",
+      "DisplayName": "배경 이미지1",
+      "StyleInfo": {
+        "Fill": "Background 1 -5"
+      },
+      "IsAutomaticFill": false,
+      "Location": "40,85",
+      "Size": "480,340"
+    }
+  ]
+}//DjKpa2V4Y7HfnE/seF2Uq56ClD2B4C7dDQEmGq1vRPhAjG9FapqJFmTjVMgp5/7PCQ8ov1q3wJ+VZ49NDRV3aR0KukVOWtlNo8Txl/gr+IIZKFcebJypmbbVSOwWKpgieBth9C7VCP7jAIc1wwwl2/Uv2Zj+KiUYp9bh8aIMNXKJ7Ue0G3eXd5IeUbeOQ7j+H4D/6AcYlSeyxplzXCbwj9qo0yCsLZln8sNs1CobA05Nj+9YkSRXoeYRfSKCm0n6B/Qox6pdjEVy2iZ8Ld4HaQK16X0VR+2xj2q+uk4i/+S0mXta0y7IenNfCEIXrJ4JO8Rx9IYfsZ6IoDFFJweeMDzbI84SWMUGefZAszA6xjQyBd/2GOBlhlCqAzV0AKSBoKEgccq1lkSp4R6IfODn0JXyT7AIga7wr7eEy9JPdNt+yZ41wjJYb8B5bzo/zLxwqAdPqVHhqbzUgBcAyFITx7sCzRKwEJU0mtrEjZXdkCChFP4/7sjJSJelikDDQusCwKNXnfR9Yz4vYjcgk+SM83uHr2a0r7gQhXYziqbVOJkdf3GkqkkPLcfR3xLAEoqMm9n5imy3OjKmC74e8Y8kGC1DGKAxaq/vNRZEuy3IJCptQq6gWC9QUcDVECvZZT16eKX3c7043VeU20BYF9HXy6Y00w5mZ0wwpu1pxKS2ykqDZ0pnVLuFQ3TbBr9tdIEMHLRWkCeYAebJ2/V7QAGbP4mUTxOun72wo0+L8K52o9u/u7PTY5LQ2dAhp1NUoeMZ7Qmjk5TI527csBRSIhX4aeEl4CM1bGIx0A1NZsqQlt0LqoWddzODRMk3qe142WRcl5UaGNj5Xz7Bx/irtJ7K6LzA4LLVmvrMqBGYxBOG5kdhayVAiAhHjsuub8TdeJohbdM5G914Dy9sMTGtE9eFtg==|920

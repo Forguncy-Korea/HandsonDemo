@@ -1,0 +1,366 @@
+{
+  "Rows": {
+    "InLogicalVisibleIndexes": [
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "4,2": "차량별 예약횟수",
+    "4,25": "사용자별 예약횟수",
+    "31,2": "차량별 예약횟수 리스트뷰",
+    "31,19": "사용자별 예약횟수 리스트뷰"
+  },
+  "AttachInfos": {
+    "32,2": {
+      "ListViewInfo": {
+        "Name": "리스트뷰1",
+        "TableName": "차량예약",
+        "RowIndex": 32,
+        "ColumnIndex": 2,
+        "RowCount": 8,
+        "ColumnCount": 14,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_NewFashionListStyle2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "32,19": {
+      "ListViewInfo": {
+        "Name": "리스트뷰2",
+        "TableName": "차량예약",
+        "RowIndex": 32,
+        "ColumnIndex": 19,
+        "RowCount": 8,
+        "ColumnCount": 13,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_NewFashionListStyle2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "33,2": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "차량_ID",
+        "GUID": "53784b2a-22bb-400a-aba9-566f1f74c5b9",
+        "RelationBinding": {
+          "RelatedTable": "차량정보",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "차종"
+        }
+      }
+    },
+    "33,8": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "차량별집계",
+        "GUID": "da6287cc-1c04-4601-a59e-3926fe3371a2"
+      }
+    },
+    "33,19": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "사용자",
+        "GUID": "8cb32688-68fd-4f2d-a406-258fecf07ffb"
+      }
+    },
+    "33,24": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "차량별집계",
+        "GUID": "d920f524-f77a-4892-97e4-6908dfc97edc"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontWeight": 0
+      },
+      {
+        "HorizontalAlignment": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Center",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "4,2": 0,
+      "4,25": 0,
+      "25,44": 1,
+      "31,2": 0,
+      "31,19": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "34,2,6,14",
+    "33,2,1,6",
+    "33,8,1,8",
+    "34,19,6,13",
+    "33,19,1,5",
+    "33,24,1,8",
+    "32,2,1,6",
+    "32,8,1,8",
+    "32,19,1,5",
+    "32,24,1,8"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "마스터 페이지1",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "Charts": [
+    {
+      "ChartType": 7,
+      "DataOrientation": 1,
+      "Tag": {
+        "$type": "Forguncy.Model.ChartDataMapping, ServerDesignerCommon",
+        "DataSeriesMapping": [
+          {
+            "SheetName": "대시보드",
+            "ListViewName": "리스트뷰1",
+            "ListViewColumnFormula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=대시보드!I34"
+            }
+          }
+        ],
+        "ItemsMapping": {
+          "SheetName": "대시보드",
+          "ListViewName": "리스트뷰1",
+          "ListViewColumnFormula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=대시보드!C34"
+          }
+        },
+        "DataSourceListviewName": "847718f5-1d02-40d6-98fc-7f7d6f5120b9"
+      },
+      "DisplayHidden": true,
+      "ChartColorPalette": {
+        "RepeatAlgorithmTint": [
+          0.0,
+          -40.0,
+          20.0,
+          -20.0,
+          40.0,
+          -50.0,
+          30.0,
+          -30.0,
+          50.0
+        ],
+        "ColorList": [
+          "Accent 1",
+          "Accent 2",
+          "Accent 3",
+          "Accent 4",
+          "Accent 5",
+          "Accent 6"
+        ]
+      },
+      "XAxises": [
+        {
+          "Items": [
+            "K5",
+            "그랜저",
+            "투싼"
+          ],
+          "UseCustomItems": true,
+          "LabelFormatter": "General",
+          "ShowMajorGridlines": false
+        }
+      ],
+      "YAxises": [
+        {
+          "Orientation": 1,
+          "Items": [
+            0.0,
+            "NaN"
+          ],
+          "LabelFormatter": "General"
+        },
+        {
+          "Visible": false,
+          "Orientation": 1,
+          "AxisPosition": 1,
+          "LabelFormatter": "General",
+          "ShowMajorGridlines": false
+        }
+      ],
+      "Legend": {},
+      "DataSeries": [
+        {
+          "ChartType": 7,
+          "Values": [
+            3.0,
+            2.0,
+            2.0
+          ],
+          "Name": "예약횟수",
+          "MarkerSize": "7,7"
+        }
+      ],
+      "PlotArea": {},
+      "StyleInfo": {
+        "Fill": "Background 1",
+        "StrokeDashType": 8,
+        "Stroke": "#FF868686",
+        "StrokeThickness": 0.0
+      },
+      "IsAutomaticStroke": false,
+      "IsAutomaticFill": false,
+      "Name": "Chart1",
+      "Location": "43,106",
+      "Size": "383,290"
+    },
+    {
+      "ChartType": 22,
+      "DataOrientation": 1,
+      "Tag": {
+        "$type": "Forguncy.Model.ChartDataMapping, ServerDesignerCommon",
+        "DataSeriesMapping": [
+          {
+            "SheetName": "대시보드",
+            "ListViewName": "리스트뷰2",
+            "ListViewColumnFormula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=대시보드!Y34"
+            }
+          }
+        ],
+        "ItemsMapping": {
+          "SheetName": "대시보드",
+          "ListViewName": "리스트뷰2",
+          "ListViewColumnFormula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=대시보드!T34"
+          }
+        },
+        "DataSourceListviewName": "7f7f556f-430f-4862-a3f6-5e69e084cbcf"
+      },
+      "DisplayHidden": true,
+      "ChartColorPalette": {
+        "RepeatAlgorithmTint": [
+          0.0,
+          -40.0,
+          20.0,
+          -20.0,
+          40.0,
+          -50.0,
+          30.0,
+          -30.0,
+          50.0
+        ],
+        "ColorList": [
+          "Accent 1",
+          "Accent 2",
+          "Accent 3",
+          "Accent 4",
+          "Accent 5",
+          "Accent 6"
+        ]
+      },
+      "XAxises": [
+        {
+          "Items": [
+            "김대리",
+            "이과장"
+          ],
+          "UseCustomItems": true,
+          "LabelFormatter": "General",
+          "ShowMajorGridlines": false
+        }
+      ],
+      "YAxises": [
+        {
+          "Orientation": 1,
+          "Items": [
+            0.0,
+            "NaN"
+          ],
+          "LabelFormatter": "General"
+        },
+        {
+          "Visible": false,
+          "Orientation": 1,
+          "AxisPosition": 1,
+          "LabelFormatter": "General",
+          "ShowMajorGridlines": false
+        }
+      ],
+      "Legend": {},
+      "DataSeries": [
+        {
+          "ChartType": 22,
+          "Values": [
+            3.0,
+            4.0
+          ],
+          "Name": "예약횟수",
+          "MarkerSize": "7,7",
+          "DataPoints": [
+            {},
+            {
+              "PointIndex": 1
+            }
+          ]
+        }
+      ],
+      "PlotArea": {},
+      "StyleInfo": {
+        "Fill": "Background 1",
+        "StrokeDashType": 8,
+        "Stroke": "#FF868686",
+        "StrokeThickness": 0.0
+      },
+      "IsAutomaticStroke": false,
+      "IsAutomaticFill": false,
+      "Name": "Chart2",
+      "Location": "499,107",
+      "Size": "417,290"
+    }
+  ]
+}//TXNqDIQXw/t/jZ8GTTFpvu5hHnf0+pZOMQhfYxT6TvMSgwC9FMUAMSvBUjKpXrJ/DTBXI8l+P8CPpW2cq0XF7RvJLOA2rNMihYa6XyP2EQ2egKyS/M1PljjHqEGUipz5IFVScavRtPIbPAsHSXfmS3dHluR8oxJ0JRLe+3NA5fOmlk+PXTOom1+T0F49JZeIcSlZGRXM5g+pg8wfHKYkr+3Al6d6uumMcASLxSqIhqScVVTbS0SvOH885vLrz502HranQ9bzwRyuuY3bHDcy898NKVstqsE5VMG8SJxjsNGjAVfCVQPCkHaSYThz7shz6ndOCudLxAcoVEIhzO/Iy3rcmKCGXKLEeq2XRposHv90sXtGaKLCvmFLMbw8y+flKDJwx0gT/MpCjdyN4IY4h0KAefBHtVsqdBL8Rym5E6J89Ern2T3hdFLH/BARH9NgonLtfWxMAM4rtJquE2HoGv932gIm9/nilRcLjBSQcogvFdA9Mjs0KdmVhs+BGjiHoyPzB6ODsqNMUV6KQ6vkdR9aUNKRlozXS3Sn25iuQerCJp47EO/4F4k+GjhwhmrwLo7yeT5XecQCAcVDI0b1q2f93o0LsdYQuCCvqegX9o3FfC8GN2AH9WVnxGCgQW2PBkt1aYuI435tVe7ma+gWZdq6lgywrOiWxBuGklG2jLsV3HAgVNz+qzbRAoZx3DvGwzAYBxP9dSMYCreI0R/iM5ahlaWfaQoB2hUkSp8HcrXc4Qt886CHtIwj6PP3yaSUg0kEsgoYbao2SeMJRzgwHv2tPjVT98hXwuwhBqt3gYW3Apeh6zIfcfqX3Ni+lCzNU8et8kysFiywjcoPeJRWPXZ8OVwFkZmH1Bcpk/ytESRE4ivX6u+hAz7YnYpERzWFz8LRaZuzQCZPUNhB9zHWUw==|920
