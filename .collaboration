@@ -127,7 +127,16 @@
   },
   {
     "ModuleName": "PCPage/차량등록페이지",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "LAPTOP-K6S99HCL\\hdg89",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2023-05-26T14:27:36.4656047+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\차량등록페이지.json"
+    ]
   },
   {
     "ModuleName": "PCPage/차량현황정보페이지",
