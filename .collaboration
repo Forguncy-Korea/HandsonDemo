@@ -144,7 +144,16 @@
   },
   {
     "ModuleName": "PCPage/차량예약페이지",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "LAPTOP-K6S99HCL\\hdg89",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2023-05-26T13:22:13.359163+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\차량예약페이지.json"
+    ]
   },
   {
     "ModuleName": "PCPage/차량예약현황페이지",
