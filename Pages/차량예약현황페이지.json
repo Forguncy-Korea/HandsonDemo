@@ -1,14 +1,9 @@
 {
   "Rows": {
     "RowColumnAttachedInfos": {
-      "4": {
+      "5": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 25.0
-        }
-      },
-      "8": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 28.0
         }
       },
       "9": {
@@ -16,28 +11,62 @@
           "DesignLengthInPixel": 28.0
         }
       },
-      "15": {
+      "10": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 30.0
+          "DesignLengthInPixel": 20.0
         }
       },
-      "18": {
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      },
+      "19": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 25.0
         }
       },
-      "23": {
+      "24": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 25.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      },
+      "32": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      },
+      "34": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      },
+      "36": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      },
+      "38": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
         }
       }
     },
     "InLogicalVisibleIndexes": [
       0,
-      1,
-      2
+      1
     ],
-    "Count": 50
+    "Count": 51
   },
   "Cols": {
     "Count": 80
@@ -48,38 +77,40 @@
     "1,0": "차량ID",
     "1,67": "선택한 차량 ID",
     "4,2": "차량 현황 페이지",
-    "6,3": "전체법인차량",
-    "6,15": "대여중인대수",
-    "6,27": "대여가능대수",
-    "6,38": "대여가능대수",
-    "6,41": "님의 예약 차량",
-    "7,11": "대",
-    "7,23": "대",
-    "7,35": "대",
-    "9,60": "차량 예약 하기",
-    "15,49": "예약정보",
-    "18,49": "번호/차종",
-    "30,49": "예약 날짜",
-    "33,49": "사용자",
-    "36,49": "예약시간",
-    "36,59": "~",
-    "39,49": "반납여부"
+    "6,48": "예약 하기",
+    "6,59": "반납 하기",
+    "7,3": "전체법인차량",
+    "7,14": "대여중인대수",
+    "7,25": "대여가능대수",
+    "7,36": "대여가능대수",
+    "7,39": "님의 예약 차량",
+    "8,10": "대",
+    "8,21": "대",
+    "8,32": "대",
+    "13,49": "상세 정보",
+    "28,49": "예약 날짜",
+    "30,49": "사용자",
+    "32,49": "예약시간",
+    "32,59": "~",
+    "34,49": "반납여부",
+    "36,49": "차량번호",
+    "38,49": "차량종류"
   },
   "Formulas": {
-    "39,53": "ODATA(\"차량예약?$select=반납여부&$filter=ID eq \"&IF(ISBLANK(BW2),\"null\",BW2))",
-    "18,58": "IFERROR(ODATA(\"차량정보?$select=차종&$filter=ID eq \"&IF(ISBLANK(BW2),\"null\",BW2)),\"\")",
-    "18,53": "IFERROR(ODATA(\"차량정보?$select=차량번호&$filter=ID eq \"&IF(ISBLANK(BW2),\"null\",BW2)),\"\")",
-    "20,50": "IFERROR(ODATA(\"차량정보?$select=차량사진&$filter=ID eq \"&IF(ISBLANK(BW2),\"null\",BW2)),\"\")",
+    "8,38": "IFERROR(ODATA(\"차량정보?$select=차종&$filter=ID eq \"&IF(ISBLANK(E2),\"null\",E2)),\"없음\")",
+    "30,53": "IFERROR(ODATA(\"차량예약?$select=사용자&$filter=ID eq \"&IF(ISBLANK(BW1),\"null\",BW1)),\"\")",
+    "8,15": "ODATA(\"차량예약/$count?$filter=예약날짜 eq \"&IF(ISBLANK(E1),\"null\",TEXT(E1,\"yyyy-MM-ddThh:mm:ssZ\")))",
+    "36,53": "IFERROR(ODATA(\"차량정보?$select=차량번호&$filter=ID eq \"&IF(ISBLANK(BW2),\"null\",BW2)),\"\")",
     "1,74": "ODATA(\"차량예약?$select=차량_ID&$filter=ID eq \"&IF(ISBLANK(BW1),\"null\",BW1))",
-    "30,53": "IFERROR(ODATA(\"차량예약?$select=예약날짜&$filter=ID eq \"&IF(ISBLANK(BW1),\"null\",BW1)),\"\")",
-    "33,53": "IFERROR(ODATA(\"차량예약?$select=사용자&$filter=ID eq \"&IF(ISBLANK(BW1),\"null\",BW1)),\"\")",
-    "36,53": "IFERROR(ODATA(\"차량예약?$select=예약시작시간&$filter=ID eq \"&IF(ISBLANK(BW1),\"null\",BW1)),\"\")",
-    "36,61": "IFERROR(ODATA(\"차량예약?$select=예약종료시간&$filter=ID eq \"&IF(ISBLANK(BW1),\"null\",BW1)),\"\")",
-    "7,4": "ODATA(\"차량정보/$count\")",
-    "7,16": "ODATA(\"차량예약/$count?$filter=예약날짜 eq \"&IF(ISBLANK(E1),\"null\",TEXT(E1,\"yyyy-MM-ddThh:mm:ssZ\")))",
-    "7,29": "E8-Q8",
-    "1,4": "IFERROR(ODATA(\"차량예약?$select=차량_ID&$filter=사용자 eq \"&IF(ISBLANK(AM7),\"null\",\"'\"&AM7&\"'\")&\" and 예약날짜 eq \"&IF(ISBLANK(E1),\"null\",TEXT(E1,\"yyyy-MM-ddThh:mm:ssZ\"))),\"\")",
-    "7,41": "IFERROR(ODATA(\"차량정보?$select=차종&$filter=ID eq \"&IF(ISBLANK(E2),\"null\",E2)),\"없음\")"
+    "32,61": "IFERROR(ODATA(\"차량예약?$select=예약종료시간&$filter=ID eq \"&IF(ISBLANK(BW1),\"null\",BW1)),\"\")",
+    "38,53": "IFERROR(ODATA(\"차량정보?$select=차종&$filter=ID eq \"&IF(ISBLANK(BW2),\"null\",BW2)),\"\")",
+    "8,27": "E9-P9",
+    "34,53": "ODATA(\"차량예약?$select=반납여부&$filter=ID eq \"&IF(ISBLANK(BW2),\"null\",BW2))",
+    "8,4": "ODATA(\"차량정보/$count\")",
+    "28,53": "IFERROR(ODATA(\"차량예약?$select=예약날짜&$filter=ID eq \"&IF(ISBLANK(BW1),\"null\",BW1)),\"\")",
+    "32,53": "IFERROR(ODATA(\"차량예약?$select=예약시작시간&$filter=ID eq \"&IF(ISBLANK(BW1),\"null\",BW1)),\"\")",
+    "1,4": "IFERROR(ODATA(\"차량예약?$select=차량_ID&$filter=사용자 eq \"&IF(ISBLANK(AK8),\"null\",\"'\"&AK8&\"'\")&\" and 예약날짜 eq \"&IF(ISBLANK(E1),\"null\",TEXT(E1,\"yyyy-MM-ddThh:mm:ssZ\"))),\"\")",
+    "16,49": "IFERROR(ODATA(\"차량정보?$select=차량사진&$filter=ID eq \"&IF(ISBLANK(BW2),\"null\",BW2)),\"\")"
   },
   "AttachInfos": {
     "0,4": {
@@ -92,7 +123,45 @@
         "TemplateKey": "_RS_NewLittleRoundCorner"
       }
     },
-    "6,38": {
+    "6,48": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "차량예약페이지"
+          }
+        ],
+        "Text": "예약 하기",
+        "TemplateKey": "_RS_Main2",
+        "Icon": {
+          "Name": "Application/004_add_4.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "6,59": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "차량반납페이지"
+          }
+        ],
+        "Text": "반납 하기",
+        "TemplateKey": "_RS_Success2",
+        "Icon": {
+          "Name": "Application/036_delete_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "7,36": {
       "CellType": {
         "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
         "CellCustomValue": "%CurrentUser%",
@@ -105,22 +174,47 @@
         }
       }
     },
-    "9,60": {
-      "CellType": {
-        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "차량예약페이지"
-          }
-        ],
-        "Text": "차량 예약 하기",
-        "TemplateKey": "_RS_Warning1"
-      }
-    },
-    "11,2": {
+    "12,2": {
       "CellType": {
         "$type": "ElementUI.CalendarCellType, ElementUI",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=차량예약현황페이지!E1"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=차량예약현황페이지!C13"
+                }
+              }
+            ]
+          }
+        ],
+        "ValueChangedCommand": {
+          "$type": "GrapeCity.Forguncy.Commands.CustomCommandObject, Forguncy.Commands",
+          "Commands": [
+            {
+              "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+              "PropertyItemsList": [
+                {
+                  "TargetCells": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=차량예약현황페이지!E1"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=차량예약현황페이지!C13"
+                  }
+                }
+              ]
+            }
+          ],
+          "ParamProperties": {}
+        },
         "DBClickCommand": {
           "$type": "GrapeCity.Forguncy.Commands.CustomCommandObject, Forguncy.Commands",
           "Commands": [
@@ -135,6 +229,21 @@
                   "Value": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                     "SerializeProperty": "=차량예약현황페이지!날짜"
+                  }
+                }
+              ]
+            },
+            {
+              "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+              "PageName": "차량예약상세현황페이지",
+              "PassValues": [
+                {
+                  "Source": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=차량예약현황페이지!날짜"
+                  },
+                  "TargetCell": {
+                    "SerializeProperty": "=차량예약상세현황페이지!G7"
                   }
                 }
               ]
@@ -200,7 +309,8 @@
                     "SerializeProperty": "=차량예약현황페이지!값"
                   }
                 }
-              ]
+              ],
+              "Disabled": true
             },
             {
               "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -215,7 +325,8 @@
                     "SerializeProperty": "=차량예약현황페이지!날짜"
                   }
                 }
-              ]
+              ],
+              "Disabled": true
             },
             {
               "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
@@ -230,7 +341,8 @@
                     "SerializeProperty": "=차량예약상세현황페이지!G7"
                   }
                 }
-              ]
+              ],
+              "Disabled": true
             }
           ],
           "ParamProperties": {
@@ -277,12 +389,12 @@
         "firstDayOfWeek": 1
       }
     },
-    "20,50": {
+    "16,49": {
       "CellType": {
         "$type": "Forguncy.ImageCellType, ServerDesignerCommon"
       }
     },
-    "30,53": {
+    "28,53": {
       "CellType": {
         "$type": "Forguncy.DateCellType, ServerDesignerCommon",
         "TemplateKey": "_RS_NewLittleRoundCorner"
@@ -307,61 +419,205 @@
         "Formatter": 4
       },
       {
-        "Background": 5
+        "Background": 5,
+        "FontFamily": 3,
+        "FontSize": 18.666666666666664,
+        "Foreground": 6,
+        "Formatter": 4
       },
       {
         "Background": 5,
-        "FontFamily": 6,
-        "FontSize": 16.0,
+        "Foreground": 6
+      },
+      {
+        "Background": 7,
+        "FontWeight": 2,
+        "Foreground": 6
+      },
+      {
+        "Background": 8,
+        "Foreground": 9
+      },
+      {
+        "Foreground": 9
+      },
+      {
+        "Background": 10,
+        "Foreground": 6
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 21.333333333333332,
         "FontWeight": 2,
         "Formatter": 4
       },
       {
-        "Background": 5,
-        "FontFamily": 1
-      },
-      {
-        "Background": 5,
-        "FontSize": 18.666666666666664
-      },
-      {
-        "Background": 5,
         "FontFamily": 1,
-        "Formatter": 4
-      },
-      {
-        "Background": 5,
-        "FontFamily": 1,
-        "FontSize": 18.666666666666664
-      },
-      {
-        "Background": 5,
-        "FontFamily": 1,
-        "FontSize": 18.666666666666664,
-        "HorizontalAlignment": 7
-      },
-      {
-        "FontSize": 16.0
-      },
-      {
-        "FontFamily": 1,
-        "FontSize": 16.0
-      },
-      {
-        "FontFamily": 1,
-        "Formatter": 4
-      },
-      {
-        "FontFamily": 1,
-        "FontSize": 16.0,
+        "FontSize": 21.333333333333332,
         "FontWeight": 2
       },
       {
-        "FontFamily": 1,
-        "FontSize": 18.666666666666664,
+        "Background": 5,
+        "FontFamily": 11,
+        "FontSize": 16.0,
         "FontWeight": 2,
+        "Foreground": 6,
         "Formatter": 4,
-        "HorizontalAlignment": 8
+        "HorizontalAlignment": 12
+      },
+      {
+        "Background": 7,
+        "FontFamily": 1,
+        "FontWeight": 2,
+        "Foreground": 6
+      },
+      {
+        "Background": 7,
+        "FontFamily": 11,
+        "FontSize": 16.0,
+        "FontWeight": 2,
+        "Foreground": 6,
+        "Formatter": 4
+      },
+      {
+        "Background": 8,
+        "FontFamily": 1,
+        "Foreground": 9
+      },
+      {
+        "Background": 8,
+        "FontFamily": 11,
+        "FontSize": 16.0,
+        "FontWeight": 2,
+        "Foreground": 9,
+        "Formatter": 4
+      },
+      {
+        "Background": 10,
+        "FontFamily": 11,
+        "FontSize": 16.0,
+        "FontWeight": 2,
+        "Foreground": 6,
+        "Formatter": 4
+      },
+      {
+        "Background": 10,
+        "FontFamily": 1,
+        "FontWeight": 2,
+        "Foreground": 6
+      },
+      {
+        "Background": 10,
+        "FontFamily": 1,
+        "Foreground": 6
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 21.333333333333332
+      },
+      {
+        "Background": 5,
+        "FontSize": 18.666666666666664,
+        "FontWeight": 2,
+        "Foreground": 6,
+        "HorizontalAlignment": 13
+      },
+      {
+        "Background": 5,
+        "FontFamily": 1,
+        "FontWeight": 2,
+        "Foreground": 6,
+        "Formatter": 4
+      },
+      {
+        "Background": 7,
+        "FontFamily": 1,
+        "FontSize": 18.666666666666664,
+        "FontWeight": 2,
+        "Foreground": 6,
+        "HorizontalAlignment": 13
+      },
+      {
+        "Background": 7,
+        "FontFamily": 1,
+        "FontWeight": 2,
+        "Foreground": 6,
+        "Formatter": 4
+      },
+      {
+        "Background": 8,
+        "FontFamily": 1,
+        "FontSize": 18.666666666666664,
+        "FontWeight": 2,
+        "Foreground": 9,
+        "HorizontalAlignment": 13
+      },
+      {
+        "Background": 8,
+        "FontFamily": 1,
+        "FontWeight": 2,
+        "Foreground": 9,
+        "Formatter": 4
+      },
+      {
+        "Background": 10,
+        "FontFamily": 1,
+        "FontSize": 18.666666666666664,
+        "FontWeight": 2,
+        "Foreground": 6,
+        "HorizontalAlignment": 13
+      },
+      {
+        "Background": 10,
+        "FontFamily": 1,
+        "Foreground": 6,
+        "Formatter": 4
+      },
+      {
+        "Background": 5,
+        "FontSize": 16.0,
+        "Foreground": 6
+      },
+      {
+        "Background": 7,
+        "FontFamily": 1,
+        "FontSize": 16.0,
+        "FontWeight": 2,
+        "Foreground": 6
+      },
+      {
+        "Background": 8,
+        "FontFamily": 1,
+        "FontSize": 16.0,
+        "Foreground": 9
+      },
+      {
+        "Background": 8,
+        "FontFamily": 1,
+        "Foreground": 9,
+        "Formatter": 4
+      },
+      {
+        "Background": 10,
+        "FontFamily": 1,
+        "FontSize": 16.0,
+        "FontWeight": 2,
+        "Foreground": 6
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 18.666666666666664,
+        "FontWeight": 2,
+        "Foreground": 14,
+        "Formatter": 4,
+        "HorizontalAlignment": 15
+      },
+      {
+        "FontWeight": 2
+      },
+      {
+        "Background": 9,
+        "FontFamily": 1
       },
       {
         "FontFamily": 1,
@@ -370,23 +626,13 @@
       },
       {
         "Background": 9,
-        "FontFamily": 1
+        "FontFamily": 1,
+        "Formatter": 16
       },
       {
         "Background": 9,
         "FontFamily": 1,
-        "Formatter": 10
-      },
-      {
-        "Background": 9,
-        "FontFamily": 1,
-        "HorizontalAlignment": 8
-      },
-      {
-        "FontWeight": 2
-      },
-      {
-        "Background": 9
+        "HorizontalAlignment": 15
       }
     ],
     "Types": {
@@ -396,11 +642,17 @@
         "Bold",
         "나눔스퀘어 네오 OTF ExtraBold",
         "[AUTO]General",
+        "Accent 6 80",
+        "Text 1 0",
+        "Accent 5 80",
+        "#FF6059D9",
+        "Background 1 0",
         "Accent 4 80",
         "나눔스퀘어 네오 OTF Regular",
+        "Left",
         "Right",
+        "#FF4265CF",
         "Center",
-        "Background 1 0",
         "h:mm:ss;@"
       ]
     },
@@ -424,20 +676,25 @@
       "2,76": 2,
       "2,77": 2,
       "2,78": 2,
+      "3,74": 2,
+      "3,75": 2,
+      "3,76": 2,
+      "3,77": 2,
+      "3,78": 2,
       "4,2": 3,
-      "5,2": 3,
       "6,2": 4,
       "6,3": 5,
-      "6,4": 4,
-      "6,5": 4,
-      "6,6": 4,
-      "6,7": 4,
-      "6,8": 4,
-      "6,9": 4,
-      "6,10": 4,
-      "6,11": 4,
-      "6,14": 4,
-      "6,15": 5,
+      "6,4": 5,
+      "6,5": 5,
+      "6,6": 5,
+      "6,7": 5,
+      "6,8": 5,
+      "6,9": 5,
+      "6,10": 5,
+      "6,11": 5,
+      "6,13": 6,
+      "6,14": 6,
+      "6,15": 6,
       "6,16": 6,
       "6,17": 6,
       "6,18": 6,
@@ -445,217 +702,181 @@
       "6,20": 6,
       "6,21": 6,
       "6,22": 6,
-      "6,23": 6,
-      "6,26": 4,
-      "6,27": 5,
-      "6,28": 6,
-      "6,29": 6,
-      "6,30": 6,
-      "6,31": 6,
-      "6,32": 6,
-      "6,33": 6,
-      "6,34": 6,
-      "6,35": 6,
-      "6,38": 5,
-      "6,41": 4,
-      "6,42": 4,
-      "6,43": 4,
-      "6,44": 6,
-      "6,45": 6,
-      "6,46": 6,
-      "6,47": 6,
-      "7,2": 4,
-      "7,3": 4,
-      "7,4": 7,
-      "7,10": 4,
-      "7,11": 8,
-      "7,14": 6,
-      "7,15": 6,
-      "7,16": 9,
-      "7,17": 2,
-      "7,18": 2,
-      "7,19": 2,
-      "7,20": 2,
-      "7,21": 2,
-      "7,22": 6,
-      "7,23": 8,
-      "7,26": 6,
-      "7,27": 6,
-      "7,28": 6,
-      "7,29": 9,
-      "7,30": 2,
-      "7,31": 2,
-      "7,32": 2,
-      "7,33": 2,
-      "7,34": 2,
-      "7,35": 8,
-      "7,38": 6,
-      "7,39": 6,
-      "7,40": 6,
-      "7,41": 10,
-      "7,42": 2,
-      "7,43": 2,
-      "7,44": 2,
-      "7,45": 2,
-      "7,46": 2,
-      "7,47": 8,
-      "8,2": 4,
-      "8,3": 4,
-      "8,10": 4,
-      "8,11": 2,
-      "8,14": 6,
-      "8,15": 6,
+      "6,24": 7,
+      "6,25": 7,
+      "6,26": 7,
+      "6,27": 7,
+      "6,28": 7,
+      "6,29": 7,
+      "6,30": 7,
+      "6,31": 7,
+      "6,32": 7,
+      "6,33": 7,
+      "6,34": 8,
+      "6,35": 9,
+      "6,36": 9,
+      "6,37": 9,
+      "6,38": 9,
+      "6,39": 9,
+      "6,40": 9,
+      "6,41": 9,
+      "6,42": 9,
+      "6,43": 9,
+      "6,44": 9,
+      "6,48": 10,
+      "6,59": 11,
+      "7,2": 5,
+      "7,3": 12,
+      "7,11": 5,
+      "7,13": 13,
+      "7,14": 14,
+      "7,22": 13,
+      "7,24": 15,
+      "7,25": 16,
+      "7,33": 15,
+      "7,34": 8,
+      "7,35": 9,
+      "7,36": 17,
+      "7,37": 2,
+      "7,38": 2,
+      "7,39": 18,
+      "7,44": 19,
+      "7,58": 20,
+      "7,68": 2,
+      "8,2": 5,
+      "8,3": 5,
+      "8,4": 21,
+      "8,10": 22,
+      "8,11": 5,
+      "8,13": 13,
+      "8,14": 13,
+      "8,15": 23,
       "8,16": 2,
       "8,17": 2,
       "8,18": 2,
       "8,19": 2,
       "8,20": 2,
-      "8,21": 2,
-      "8,22": 6,
-      "8,23": 2,
-      "8,26": 6,
-      "8,27": 6,
-      "8,28": 6,
-      "8,29": 2,
-      "8,30": 2,
-      "8,31": 2,
-      "8,32": 2,
-      "8,33": 2,
-      "8,34": 2,
-      "8,35": 2,
-      "8,38": 6,
-      "8,39": 6,
-      "8,40": 6,
+      "8,21": 24,
+      "8,22": 24,
+      "8,24": 15,
+      "8,25": 15,
+      "8,26": 15,
+      "8,27": 25,
+      "8,32": 26,
+      "8,33": 7,
+      "8,34": 8,
+      "8,35": 19,
+      "8,36": 19,
+      "8,37": 19,
+      "8,38": 27,
+      "8,39": 2,
+      "8,40": 2,
       "8,41": 2,
       "8,42": 2,
       "8,43": 2,
-      "8,44": 2,
-      "8,45": 2,
-      "8,46": 2,
-      "8,47": 2,
-      "9,4": 11,
-      "9,5": 11,
-      "9,6": 11,
-      "9,7": 11,
-      "9,8": 11,
-      "9,9": 11,
-      "9,12": 2,
-      "9,13": 2,
-      "9,14": 12,
-      "9,15": 12,
-      "9,16": 12,
-      "9,17": 12,
-      "9,18": 12,
-      "9,19": 12,
-      "9,20": 13,
+      "8,44": 28,
+      "8,58": 20,
+      "9,2": 5,
+      "9,3": 5,
+      "9,10": 2,
+      "9,11": 5,
+      "9,13": 13,
+      "9,14": 13,
+      "9,15": 2,
+      "9,16": 2,
+      "9,17": 2,
+      "9,18": 2,
+      "9,19": 2,
+      "9,20": 2,
+      "9,21": 2,
       "9,22": 2,
-      "9,23": 2,
-      "9,24": 12,
-      "9,25": 12,
-      "9,26": 12,
-      "9,27": 12,
-      "9,28": 12,
-      "9,29": 12,
-      "9,30": 13,
-      "9,38": 14,
-      "9,60": 14,
-      "9,61": 2,
-      "9,62": 2,
-      "9,63": 2,
-      "9,64": 2,
-      "9,65": 2,
-      "9,66": 2,
-      "11,2": 2,
-      "15,49": 15,
-      "15,50": 2,
-      "15,51": 2,
-      "15,52": 2,
-      "15,53": 2,
-      "15,54": 2,
-      "15,55": 2,
-      "15,56": 2,
-      "15,57": 2,
-      "15,58": 2,
-      "15,59": 2,
-      "15,60": 2,
-      "15,61": 2,
-      "15,62": 2,
-      "15,63": 2,
-      "15,64": 2,
-      "15,65": 2,
-      "15,66": 2,
+      "9,24": 15,
+      "9,25": 15,
+      "9,26": 15,
+      "9,32": 2,
+      "9,33": 7,
+      "9,34": 8,
+      "9,35": 19,
+      "9,36": 19,
+      "9,37": 19,
+      "9,38": 2,
+      "9,39": 2,
+      "9,40": 2,
+      "9,41": 2,
+      "9,42": 2,
+      "9,43": 2,
+      "9,44": 2,
+      "9,58": 20,
+      "10,2": 5,
+      "10,3": 5,
+      "10,4": 29,
+      "10,5": 29,
+      "10,6": 29,
+      "10,7": 29,
+      "10,8": 29,
+      "10,9": 29,
+      "10,10": 5,
+      "10,11": 5,
+      "10,13": 13,
+      "10,14": 30,
+      "10,15": 30,
+      "10,16": 30,
+      "10,17": 30,
+      "10,18": 30,
+      "10,19": 30,
+      "10,20": 24,
+      "10,21": 6,
+      "10,22": 13,
+      "10,23": 2,
+      "10,24": 31,
+      "10,25": 31,
+      "10,26": 31,
+      "10,27": 31,
+      "10,28": 31,
+      "10,29": 31,
+      "10,30": 32,
+      "10,31": 7,
+      "10,32": 7,
+      "10,33": 7,
+      "10,34": 8,
+      "10,35": 9,
+      "10,36": 9,
+      "10,37": 9,
+      "10,38": 33,
+      "10,39": 9,
+      "10,40": 9,
+      "10,41": 9,
+      "10,42": 9,
+      "10,43": 9,
+      "10,44": 9,
+      "10,58": 20,
+      "12,2": 2,
+      "13,49": 34,
       "16,49": 2,
-      "16,50": 2,
-      "16,51": 2,
-      "16,52": 2,
-      "16,53": 2,
-      "16,54": 2,
-      "16,55": 2,
-      "16,56": 2,
-      "16,57": 2,
-      "16,58": 2,
-      "16,59": 2,
-      "16,60": 2,
-      "16,61": 2,
-      "16,62": 2,
-      "16,63": 2,
-      "16,64": 2,
-      "16,65": 2,
-      "16,66": 2,
-      "17,49": 2,
-      "17,50": 2,
-      "17,51": 2,
-      "17,52": 2,
-      "17,53": 2,
-      "17,54": 2,
-      "17,55": 2,
-      "17,56": 2,
-      "17,57": 2,
-      "17,58": 2,
-      "17,59": 2,
-      "17,60": 2,
-      "17,61": 2,
-      "17,62": 2,
-      "17,63": 2,
-      "17,64": 2,
-      "17,65": 2,
-      "17,66": 2,
-      "18,49": 16,
-      "18,50": 2,
-      "18,51": 2,
-      "18,52": 2,
-      "18,53": 17,
-      "18,58": 17,
-      "18,59": 2,
-      "18,60": 2,
-      "18,61": 2,
-      "18,62": 2,
-      "19,49": 2,
-      "19,50": 2,
-      "19,51": 2,
-      "19,52": 2,
-      "19,53": 2,
-      "19,54": 2,
-      "19,55": 2,
-      "19,56": 2,
-      "19,57": 2,
-      "19,58": 2,
-      "19,59": 2,
-      "19,60": 2,
-      "19,61": 2,
-      "19,62": 2,
-      "19,63": 2,
-      "19,64": 2,
-      "19,65": 2,
-      "19,66": 2,
-      "20,49": 2,
-      "20,50": 2,
-      "20,66": 2,
+      "28,49": 1,
+      "28,50": 2,
+      "28,51": 2,
+      "28,52": 2,
+      "28,53": 2,
+      "28,54": 2,
+      "28,55": 2,
+      "28,56": 2,
+      "28,57": 2,
+      "28,58": 2,
+      "28,59": 2,
+      "28,60": 2,
+      "28,61": 2,
+      "28,62": 2,
+      "28,63": 2,
+      "28,64": 2,
+      "28,65": 2,
+      "28,66": 2,
+      "29,49": 35,
       "30,49": 1,
       "30,50": 2,
       "30,51": 2,
       "30,52": 2,
-      "30,53": 2,
+      "30,53": 36,
       "30,54": 2,
       "30,55": 2,
       "30,56": 2,
@@ -669,37 +890,20 @@
       "30,64": 2,
       "30,65": 2,
       "30,66": 2,
-      "31,49": 2,
-      "31,50": 2,
-      "31,51": 2,
-      "31,52": 2,
-      "31,53": 2,
-      "31,54": 2,
-      "31,55": 2,
-      "31,56": 2,
-      "31,57": 2,
-      "31,58": 2,
-      "31,59": 2,
-      "31,60": 2,
-      "31,61": 2,
-      "31,62": 2,
-      "31,63": 2,
-      "31,64": 2,
-      "31,65": 2,
-      "31,66": 2,
-      "32,49": 2,
+      "31,49": 35,
+      "32,49": 37,
       "32,50": 2,
       "32,51": 2,
       "32,52": 2,
-      "32,53": 2,
+      "32,53": 38,
       "32,54": 2,
       "32,55": 2,
       "32,56": 2,
       "32,57": 2,
       "32,58": 2,
-      "32,59": 2,
+      "32,59": 39,
       "32,60": 2,
-      "32,61": 2,
+      "32,61": 38,
       "32,62": 2,
       "32,63": 2,
       "32,64": 2,
@@ -709,12 +913,25 @@
       "33,50": 2,
       "33,51": 2,
       "33,52": 2,
-      "33,53": 17,
-      "34,49": 2,
+      "33,53": 2,
+      "33,54": 2,
+      "33,55": 2,
+      "33,56": 2,
+      "33,57": 2,
+      "33,58": 2,
+      "33,59": 2,
+      "33,60": 2,
+      "33,61": 2,
+      "33,62": 2,
+      "33,63": 2,
+      "33,64": 2,
+      "33,65": 2,
+      "33,66": 2,
+      "34,49": 1,
       "34,50": 2,
       "34,51": 2,
       "34,52": 2,
-      "34,53": 2,
+      "34,53": 36,
       "34,54": 2,
       "34,55": 2,
       "34,56": 2,
@@ -728,7 +945,7 @@
       "34,64": 2,
       "34,65": 2,
       "34,66": 2,
-      "35,49": 2,
+      "35,49": 1,
       "35,50": 2,
       "35,51": 2,
       "35,52": 2,
@@ -746,21 +963,17 @@
       "35,64": 2,
       "35,65": 2,
       "35,66": 2,
-      "36,49": 16,
+      "36,49": 37,
       "36,50": 2,
       "36,51": 2,
       "36,52": 2,
-      "36,53": 18,
-      "36,59": 19,
-      "36,60": 2,
-      "36,61": 18,
-      "36,62": 2,
-      "36,63": 2,
-      "36,64": 2,
-      "36,65": 2,
-      "36,66": 2,
-      "39,49": 20,
-      "39,53": 21
+      "36,53": 36,
+      "37,49": 35,
+      "38,49": 35,
+      "38,53": 36,
+      "40,50": 2,
+      "40,51": 2,
+      "40,52": 2
     },
     "SheetStyle": {
       "FontFamily": 1
@@ -769,29 +982,35 @@
   "Spans": [
     "0,74,1,5",
     "1,74,1,5",
-    "15,49,1,18",
-    "30,53,1,14",
-    "20,50,9,16",
-    "36,61,1,6",
-    "36,59,1,2",
-    "18,58,1,5",
-    "18,53,1,5",
-    "33,53,1,14",
-    "36,53,1,6",
-    "11,2,31,44",
-    "39,53,1,14",
-    "7,4,2,6",
+    "12,2,31,44",
+    "8,4,2,6",
     "0,4,1,11",
-    "7,11,2,1",
-    "7,16,2,6",
-    "7,23,2,1",
-    "7,35,2,1",
-    "7,29,2,6",
-    "9,60,1,7",
-    "6,38,1,3",
-    "7,47,2,1",
-    "7,41,2,6",
-    "1,4,1,11"
+    "1,4,1,11",
+    "28,53,1,14",
+    "30,53,1,14",
+    "32,61,1,6",
+    "32,59,1,2",
+    "32,53,1,6",
+    "34,53,1,14",
+    "8,15,2,6",
+    "8,22,2,1",
+    "8,44,2,1",
+    "8,38,2,6",
+    "8,10,2,1",
+    "8,21,2,1",
+    "7,36,1,3",
+    "8,27,2,5",
+    "8,32,2,1",
+    "7,3,1,8",
+    "7,14,1,8",
+    "7,25,1,8",
+    "7,39,1,5",
+    "6,48,5,10",
+    "6,59,5,9",
+    "16,49,11,18",
+    "36,53,1,14",
+    "38,53,1,14",
+    "13,49,2,18"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -826,8 +1045,8 @@
         "Fill": "Background 1 -5"
       },
       "IsAutomaticFill": false,
-      "Location": "959,302",
-      "Size": "400,577"
+      "Location": "959,250",
+      "Size": "400,687"
     }
   ]
-}//9d2DraQcge5cxD9uVpBPwCBTEs9a66s7gGK2vELu59gaZjxhPkyC/UJWBiIhehEKXnY3iFlRuXwRKdsUvcyll4pligLti2N6sU8C4HSryZTKIni/yX7xuFYjPv9ClE+aPiaWwd7A/AMe515Q/zEcma3/taHgCqY0y9OHHN5t6KjB8C4iljPMbOiJybTVETrGMpP6w4FG58PI35XAdKMEZlCUcQuCZl7Jnfyzw43RPEpOKAG/cfniGAbm41qIzxsXllex/FoRZm2dFgkUpIQVNTyX5sILwRIAnQeixrdCUIucAtDDwT27IlqHVF7IuzfHfZ104zzYe+4cFPHjj60EZea+XZGRlyFlut6mNgOJfkj4JUJlu79c8GiqMvUxLWnpFhovY6+rlYREFaqNMqVsSLm7+NWNw1msuvg5Cl/kO4zgp+PJZsRQe+4kD7r7bueOo5MOiXNyZABjX28uufA0DSMim+iwwJTexmh3dnkneJ1f0qYO7BvWuSZl1ZXc/iTvWqP6UnsylSJi53iEFGgYsUfSvdtXWdq+nqm+2++RpxYSS7ekdt1RTWZTbztLySIn/J+N+QsqehflJLhgmYQVuJbMteXB6l9wy8FlOOpRdpCAIbpv+ELQ/wzZYEnD+lfFInuETuULnM6EPzImGfnb9u6V7YhgWFcT150zBotplOkhVo1YLoU5TS5CL4qfOtvKF+8+hJ0rX7vkfOBLq6gBr9SBaf78ZOT9V3wN0ieeEksg4Rt3x+khv725OJkyRkmCqbOxsLGXGJIrfCgqadmEf4rYiVRMnbwhvElBjtQ31lFYPbVgvAT1sbwldHo4XEXh7rOfSITMorGDMq/hmee/z2lnfJcm/MzYpMZdLmvPAm0dQvXJMr4umdWkk+6tgIklN1hm+ZKqBsHoO+BTJJayMg==|920
+}//mknYOmE3UM2hCcC3tEltJGx18gEMXNGNinJS2TLo56Nz1ce8sC3/4LuTWZugUBudxVPmHDF+bM1p86tK0mkqSA0p7liFPSkKMaScKKET1RnEb18U9F6THicf8/McUhfqyxgasrH3/TQkbedaKHM0O+j4gpRFIu+7nNsG6qwS7kfJfho04EtAzMjcj0q3zXfiTW8F6jjmBLJsspsvY2WJJL3lvAwpXgIUQO8FueBMyM8iD22IUI9tFP8w/gNcrq/TlvZMsgj3ctXPDY2lGtLYETt4Xjdbk8dW9z3xOnFqWOv8wvMbRYN1i7y0cjIoSQb05/+dRj7BX99NnW3KmKttsISiSvqE8SoZMqaLBos4abtjdCX4V9Mr2M8lzJpu9kBu7I/3uOYglMxYUZ5jKamllZxgC69Z/cnsTiah1yK8ynKU4rtAfTW0kKckvZbKI+6Em5UoHSCRmsNZg+g7F/Hdu0DRiWMbQVsDNtqRLg/exkyKqK1tOFlYe3lgjffqicR1LXcXc2Csndc8XJ4qB4Lp2ec42R13w38Sl89d7hzsD+9P2m9MAUFn46NpE+SKdowTjRj0zI+tfFErsbDbEv56CsSovCkJ1D2h337Le+tT++FafUBv2eAjrlDO7F5ntOiAAO9LK9F2KhFxIsFzbK/zsjx4tJpa6Apbx36yzc6VDYaCJrc1cEO6CE+V5jUAZgaRvEeYnovlB8l1onH8rZ/bFaz2LxWLkGU4ImtHhCW6qEWATQ0vvWWIezzNmraWQtTq/y60hmPctnRYFAx5XhEYPC2ddlze7XGNGtnTCQ2mvxBpiqIyQnHts7fin69KEHZDvp2w+pfBHHhuc9sw4fP1vIgMZetikaXI3c3guDNQaLmdqnnqUEjsM4xebNpVyvnqiWJ7p/00v9c7qIjhV40NBg==|920
