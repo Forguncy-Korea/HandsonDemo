@@ -234,7 +234,18 @@
   },
   {
     "ModuleName": "UserService",
-    "ModuleType": 11
+    "State": 1,
+    "LockedBy": {
+      "UserName": "LAPTOP-K6S99HCL\\hdg89",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2023-05-26T10:50:54.2082271+09:00",
+    "ModuleType": 11,
+    "ToRemoveFiles": [
+      "UserServiceDB.sqlite3",
+      "CloudStorageProvider\\data.json",
+      "SecurityProviderV2\\data.json"
+    ]
   },
   {
     "ModuleName": "CustomLibrary",
