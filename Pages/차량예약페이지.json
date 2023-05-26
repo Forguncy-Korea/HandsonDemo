@@ -91,7 +91,7 @@
     "9,3": "예약시작시간",
     "11,3": "예약종료시간",
     "13,3": "차량 선택",
-    "15,3": "거래처",
+    "15,3": "목적지",
     "19,22": "예약",
     "26,2": "예약여부확인",
     "27,2": "현재시간",
@@ -304,7 +304,7 @@
     "15,9": {
       "BindingInfo": {
         "TableName": "차량예약",
-        "ColumnName": "거래처",
+        "ColumnName": "목적지",
         "GUID": "8bc27a46-78f0-4cda-925b-2effa898c7d9"
       },
       "CellType": {
@@ -344,7 +344,7 @@
                     "MessageFormula": "차량이 이미 예약되어 있습니다."
                   }
                 ],
-                "ID": "e1a59cb4-c822-4241-8758-0cd97d968692"
+                "ID": "8ee2f4a1-c6b5-4d90-9564-c792080dd93b"
               },
               {
                 "CommandList": [
@@ -410,7 +410,7 @@
                             "MessageFormula": "차량을 성공적으로 예약하였습니다."
                           }
                         ],
-                        "ID": "d55f728b-4b51-4954-be7a-a03d386228b3"
+                        "ID": "d7a70e7f-9972-494e-9c61-9cf4573c52d6"
                       },
                       {
                         "Condition": {
@@ -451,7 +451,7 @@
                             "MessageFormula": "차량을 성공적으로 예약하였습니다."
                           }
                         ],
-                        "ID": "69e09348-5802-415d-9422-b9c82a3bb55a"
+                        "ID": "4346b06d-4513-47c1-b01f-663ff946e0f2"
                       },
                       {
                         "CommandList": [
@@ -460,12 +460,12 @@
                             "MessageFormula": "예약날짜, 예약시간에 문제가 있습니다."
                           }
                         ],
-                        "ID": "099f478e-684f-4ab2-be11-cde8743c8334"
+                        "ID": "b86a0283-13cb-4285-a9b5-76380629ba45"
                       }
                     ]
                   }
                 ],
-                "ID": "752535f0-b6f8-4e2d-abb3-9bf918b9243b"
+                "ID": "5f2f04f3-22d4-4d49-b19f-4b4b18b9dd95"
               }
             ]
           }
@@ -912,4 +912,4 @@
       "Size": "480,383"
     }
   ]
-}//dEEJca9svdp3tl5sTJVnIQslfeygh+ZcDBc2csgES3O6VSsdkieiwGKxKXSRnztKP6ehjkjc39VfnS8y0rPA0nKLoWMvdGVC5lSP/c98GoDejfrQ8T2BAuHLta0HIJB9sxU6HOyPi+rFVtvH6MqjVj+4F/DpUGytwxm4GaqW7l8czjtZWHLuedIb8baBoYDy1naR4KWirOPFugih/O2R8Y3FS8UpbySNeZt8MeR0bcLNcipeIm2bfPBSpYcehfqJjVxXGGwSs9FXxJrHOp+SOftybWUT1ephtaoiUVvGtIvjvYjgYnOFu3wscofDIrh7sfyNkCDvnOf+9msIaQYfqpTZCitOe65tWzOjXMPWLIMxq7oVD3Z43ZYsZ/EwbJF2ocAK9JaYA9JasFNFKXJXCP2zg/KlZnI6pcQX7loXPZ5j3j7SO8FgNlxBWh68GhGm1i3vATPpDDtNYrLXkV1VpNl15OZW9Fv9eQBoxVg409Ts2GOigeZy35zWdi3L0RvMHZtQLvSwbi5KqBN8iXbNOzgc8XWNyCZnwLGSb43QU+IgaEIfYiWl7The0/xSEJ0SoM+9COjmjNjrRPymnxSRJthuMYWLrY6rll2n+WladA4cyNjGw///cxLYM38J5E8H+mxDxZ0+/pU2zrFI8O746gHAi9MXR9lcwyuE5jixvFrLsG+CsQSnllGJTWN0bPwvGKohP99C6ewKTQeXcXfaYGuzAqm1g6//UztZmf7F2agXQajXdQSkL6kWBngq3eA1FA+5UP7123mzXbDKrXoUtX1DDysJJHB7BnInX9CHab534v167U9grCCbZkI3TX6plukhduA2ggb08GxrFwTbsmjiUE5hvNH2y/A6YE7udVyIvF1oHbXRq2mSI+pza7QLBZCMwxb19O0OW/ob5E4jzw==|920
+}//FeoR93yTPvkYsqp1C2qSvfOZUVqrILiNvPH8fNtOmui5O9Axg3eJALskNJqUPSLkrH35RLZiVpXRC7nni+qNjc9b4ohB8OgRtLnRAp+sqYVI8Ulsa5XUB/GKY5bp0vl1EYdbKhuFAqLRp7Xg4N6uZI5rCQFG/5T27FNEpddqAv4YmqlH/X/qZvRYHEVZQ28n5abG+PqbA8Y9obIx7pZJDE2zrMK1oCe5byMoLzXrTJ6nqKgpA+3sfVSUcykSnHOlT4SEl7JTQNG/zTN7LpD9dz/8tL/+c9c5SFNzW4Pa1k8yiEMFOZ31lG8jHhCYT5qpYo2c2aDAdYOGm0TQErV5NmGMvjb9mNrYzO98/nrixIGSOkf73ghDFOh0r9mS5DTlupGYCJ8ZtkqLDzWZNBNW0DTrOtCLGep3eCNWesorsuaokjvp87bBinib2OuAPWlzWLPbgMzR30Gv0kZL/5sPWX5bRuCb7CdO1badWrqcHjccYnUBH3GEd2xrYkLYhgEp6Ii6jejGZIpa79taRXmGkdIVsb8rw2r0KDsRIyFaZmFHhDfNm1dVXlda/pASGBoBHmdI906e/Y2OTJ3V3YAa9+nNNWA9qWGF+AZrPrnjNJDekIB7r7uDoF6OFIc6bxbV7VSypy2kWehxkoORYzB8K6iOwlU9pk8i+EFMWesOmoo90Ozd6djNt05viEmOuMBQmybSir8kxpJ67xlx7wUL/2uqhZHfxWM5owtWHxuiZGWZP85PofTTzC9beubeDkdeXuoCZHMB6rwoCvcIZhjvk7T4uM4fYzgYAA84VVom5GAhavra1j9XV7XQLzmhOcv9wCftY/hjxU9pl7z0rZ0QfxBKjNDvoLRI28XO6mfL8eaBfAmwuh+dxyc0wHzrgnCat7ibadfAOZP2SJ+x5nwavA==|920

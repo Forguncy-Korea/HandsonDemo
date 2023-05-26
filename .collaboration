@@ -1,32 +1,12 @@
 [
   {
     "ModuleName": "Table/차량정보",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-SFEU14D\\NamHee",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-26T16:36:37.408237+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\차량정보.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/차량예약",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-SFEU14D\\NamHee",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-26T16:36:37.408233+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\차량예약.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
@@ -131,29 +111,11 @@
   },
   {
     "ModuleName": "PCPage/차량현황정보페이지",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-SFEU14D\\NamHee",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-26T16:36:37.408486+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\차량현황정보페이지.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/차량예약페이지",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-SFEU14D\\NamHee",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-26T16:36:37.4084402+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\차량예약페이지.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/차량예약현황페이지",
@@ -174,16 +136,7 @@
   },
   {
     "ModuleName": "PCPage/차량예약상세현황페이지",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-SFEU14D\\NamHee",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-26T16:36:37.4083419+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\차량예약상세현황페이지.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/차량반납페이지",
@@ -239,18 +192,7 @@
   },
   {
     "ModuleName": "UserService",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-SFEU14D\\NamHee",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-26T16:42:26.0675571+09:00",
-    "ModuleType": 11,
-    "ToRemoveFiles": [
-      "UserServiceDB.sqlite3",
-      "CloudStorageProvider\\data.json",
-      "SecurityProviderV2\\data.json"
-    ]
+    "ModuleType": 11
   },
   {
     "ModuleName": "CustomLibrary",

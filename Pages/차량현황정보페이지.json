@@ -6,6 +6,11 @@
           "DesignLengthInPixel": 25.0
         }
       },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
       "7": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 33.0
@@ -14,6 +19,11 @@
       "10": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 25.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
         }
       },
       "13": {
@@ -50,16 +60,6 @@
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0
         }
-      },
-      "5": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 10.0
-        }
-      },
-      "11": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 33.0
-        }
       }
     },
     "Count": 47
@@ -85,9 +85,14 @@
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 10.0
         }
+      },
+      "33": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 44.0
+        }
       }
     },
-    "Count": 75
+    "Count": 84
   },
   "Values": {
     "2,3": "차량 현황 페이지",
@@ -95,8 +100,8 @@
     "7,3": "차량 번호",
     "11,3": "차량 모델",
     "11,24": "차량 이용 현황",
-    "13,31": "부서",
-    "13,38": "반납날짜/시간",
+    "13,29": "부서",
+    "13,36": "반납날짜",
     "24,3": "구매날짜",
     "26,3": "주행거리",
     "26,7": "\t\t\t\t\t\t\t\t\t\t",
@@ -209,7 +214,7 @@
                     ]
                   }
                 ],
-                "ID": "f73c99a6-e08b-4f8a-a1d3-a563dbae2c8e"
+                "ID": "a11ef540-ebfb-4e75-afd2-175e3901359f"
               }
             ]
           }
@@ -240,13 +245,13 @@
         "RowIndex": 13,
         "ColumnIndex": 24,
         "RowCount": 20,
-        "ColumnCount": 50,
+        "ColumnCount": 58,
         "SqlCondition": {
           "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
           "ColumnBindingInfo": {
             "TableName": "차량예약",
             "ColumnName": "차량_ID",
-            "GUID": "a4b12bf7-1985-4481-bc32-11063dad19f3"
+            "GUID": "e30bab2c-9f5b-4a79-86e0-967dbb87086f"
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -267,56 +272,81 @@
       "BindingInfo": {
         "TableName": "차량예약",
         "ColumnName": "사용자",
-        "GUID": "51116d3a-381b-4cc2-8781-eec3e10440b3"
+        "GUID": "e5aa1db5-a195-40f2-9be4-479809c84773"
       }
     },
-    "14,34": {
+    "14,29": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "사용자",
+        "GUID": "921b929e-7327-4400-b078-17990d1f8fe8",
+        "AttachType": {
+          "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
+          "UserColumnAttachType": 3
+        }
+      }
+    },
+    "14,33": {
       "BindingInfo": {
         "TableName": "차량예약",
         "ColumnName": "반납여부",
-        "GUID": "bc7d6b79-486f-403d-ac4b-e30d35ff4442"
+        "GUID": "194bdbca-9870-4137-bd37-7d8cd751bb5b"
       }
     },
-    "14,38": {
+    "14,36": {
       "BindingInfo": {
         "TableName": "차량예약",
         "ColumnName": "반납날짜",
-        "GUID": "709648e6-f57e-4c00-9129-f06676dd1e1b"
+        "GUID": "b7b91a60-e39a-48b6-bd76-71606f4e8d6b"
       }
     },
-    "14,45": {
+    "14,41": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "운행시작시간",
+        "GUID": "83518b9f-58ef-43e6-b5e1-12f3a32cee08"
+      }
+    },
+    "14,47": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "운행종료시간",
+        "GUID": "5ad21bba-6fc3-45fd-b2c8-5a4367ae1087"
+      }
+    },
+    "14,53": {
       "BindingInfo": {
         "TableName": "차량예약",
         "ColumnName": "주행거리",
-        "GUID": "ce181b95-5de1-4d2f-a9a4-49e5ef00b4f0"
+        "GUID": "981c8f74-71d4-49c2-a4a6-0211945b3d03"
       }
     },
-    "14,50": {
+    "14,58": {
       "BindingInfo": {
         "TableName": "차량예약",
-        "ColumnName": "거래처",
-        "GUID": "46ac43c2-b687-41e9-abc0-a8519845da72"
+        "ColumnName": "목적지",
+        "GUID": "32ad1ef8-bbe4-466e-8763-a2b7387500f1"
       }
     },
-    "14,55": {
+    "14,63": {
       "BindingInfo": {
         "TableName": "차량예약",
         "ColumnName": "예약날짜",
-        "GUID": "b7727b09-cc30-411b-8e18-7d7af6b0160b"
+        "GUID": "f1f04ce2-5782-40bc-a0b0-cae6e93d8a4f"
       }
     },
-    "14,62": {
+    "14,70": {
       "BindingInfo": {
         "TableName": "차량예약",
         "ColumnName": "예약시작시간",
-        "GUID": "91440520-7a65-4e8c-8d6f-8d8c7e448ee0"
+        "GUID": "3748ce17-fa0a-43a3-98aa-9e44c0145503"
       }
     },
-    "14,68": {
+    "14,76": {
       "BindingInfo": {
         "TableName": "차량예약",
         "ColumnName": "예약종료시간",
-        "GUID": "334959f9-e862-44c9-ab7a-231fb4d10c99"
+        "GUID": "62da93b3-535a-4fb4-8bd3-45a9836c1a97"
       }
     },
     "24,7": {
@@ -448,69 +478,51 @@
       "13,22": 6,
       "13,24": 1,
       "13,25": 8,
-      "13,26": 1,
-      "13,27": 1,
-      "13,28": 1,
-      "13,30": 1,
-      "13,31": 8,
-      "13,34": 8,
-      "13,35": 1,
-      "13,36": 1,
-      "13,38": 9,
-      "13,45": 8,
-      "13,46": 1,
-      "13,47": 1,
-      "13,48": 8,
-      "13,49": 1,
-      "13,50": 8,
-      "13,51": 1,
-      "13,52": 1,
-      "13,53": 1,
+      "13,29": 8,
+      "13,33": 8,
+      "13,36": 8,
+      "13,41": 1,
+      "13,53": 8,
       "13,54": 1,
-      "13,55": 8,
-      "13,56": 1,
+      "13,55": 1,
+      "13,56": 8,
       "13,57": 1,
-      "13,58": 1,
+      "13,58": 8,
       "13,59": 1,
       "13,60": 1,
-      "13,61": 8,
-      "13,62": 8,
-      "13,63": 1,
+      "13,61": 1,
+      "13,62": 1,
+      "13,63": 8,
       "13,64": 1,
       "13,65": 1,
       "13,66": 1,
-      "13,67": 8,
-      "13,68": 8,
+      "13,67": 1,
+      "13,68": 1,
       "13,69": 8,
       "13,70": 8,
-      "13,71": 8,
-      "13,72": 8,
-      "13,73": 8,
-      "13,74": 9,
+      "13,71": 1,
+      "13,72": 1,
+      "13,73": 1,
+      "13,74": 1,
+      "13,75": 8,
+      "13,76": 8,
+      "13,77": 8,
+      "13,78": 8,
+      "13,79": 8,
+      "13,80": 8,
+      "13,81": 8,
+      "13,82": 9,
+      "13,83": 9,
       "14,22": 6,
       "14,24": 1,
       "14,25": 1,
-      "14,26": 1,
-      "14,27": 1,
-      "14,28": 1,
       "14,29": 1,
-      "14,30": 1,
-      "14,34": 1,
-      "14,35": 1,
-      "14,36": 1,
-      "14,37": 1,
-      "14,38": 1,
-      "14,45": 1,
-      "14,46": 1,
-      "14,47": 1,
-      "14,48": 1,
-      "14,49": 1,
-      "14,50": 1,
-      "14,51": 1,
-      "14,52": 1,
+      "14,33": 1,
+      "14,36": 10,
+      "14,41": 1,
       "14,53": 1,
       "14,54": 1,
-      "14,55": 10,
+      "14,55": 1,
       "14,56": 1,
       "14,57": 1,
       "14,58": 1,
@@ -518,7 +530,7 @@
       "14,60": 1,
       "14,61": 1,
       "14,62": 1,
-      "14,63": 1,
+      "14,63": 10,
       "14,64": 1,
       "14,65": 1,
       "14,66": 1,
@@ -529,6 +541,14 @@
       "14,71": 1,
       "14,72": 1,
       "14,73": 1,
+      "14,74": 1,
+      "14,75": 1,
+      "14,76": 1,
+      "14,77": 1,
+      "14,78": 1,
+      "14,79": 1,
+      "14,80": 1,
+      "14,81": 1,
       "15,22": 6,
       "15,24": 1,
       "15,25": 1,
@@ -1521,29 +1541,33 @@
   },
   "Spans": [
     "7,9,1,18",
-    "15,24,18,50",
-    "14,25,1,6",
-    "14,31,1,3",
-    "14,55,1,7",
-    "14,62,1,6",
-    "14,68,1,6",
-    "14,50,1,5",
-    "14,45,1,5",
-    "14,34,1,4",
-    "14,38,1,7",
     "11,8,1,14",
     "13,3,10,19",
     "24,7,1,15",
-    "13,25,1,6",
-    "13,31,1,3",
-    "13,34,1,4",
-    "13,38,1,7",
-    "13,45,1,5",
-    "13,50,1,5",
-    "13,55,1,7",
-    "13,62,1,6",
-    "13,68,1,6",
-    "26,7,1,11"
+    "26,7,1,11",
+    "14,25,1,4",
+    "14,36,1,5",
+    "15,24,18,58",
+    "14,53,1,5",
+    "14,58,1,5",
+    "14,63,1,7",
+    "14,70,1,6",
+    "14,76,1,6",
+    "14,41,1,6",
+    "14,47,1,6",
+    "13,25,1,4",
+    "13,36,1,5",
+    "13,41,1,6",
+    "13,47,1,6",
+    "13,53,1,5",
+    "13,58,1,5",
+    "13,63,1,7",
+    "13,70,1,6",
+    "13,76,1,6",
+    "13,33,1,3",
+    "14,33,1,3",
+    "13,29,1,4",
+    "14,29,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1593,7 +1617,7 @@
       },
       "IsAutomaticFill": false,
       "Location": "40,115",
-      "Size": "1400,73"
+      "Size": "1424,73"
     }
   ]
-}//SKvaq/dysmGCglfNqCGVzcMjhipOCfd5TeHxaDWBy6/klL1aCyzMSUUB+K/dIuazk4TvOAtdyNIsC4yJeKKw8SkIM0xJfP8LOjX/aMecVYXp8D+N5btIoiAoO1vJJddxlq/4ilkh+53UDvwhTERngL/zpggG62SND+lJPU1EEoL+aNRlfRCIjQLbl/mPnckKbL7ctTaU79ux4Ecg5KlXMqnhkdqx2T/BgjUwM5YmX1e/g+zwCyZgLnhVGZFpmLlD267588b38oXoGqtCcmdnCjGNh66Bb6B5eXluohOJnXmKwbWu0TQeqdOKXsk04V/d4b3S2Qi1+sEj2xhNp/V4T1ty3wOKrW3GICbJdK6imf8ZAPFvsN/xoA+34LT0FPw8fumEYCKKLhYPmTit4w0y1D9vBRqTUi6wHD5cUaVkjBvoDW6uDk1BAlFSCZnTUGl2dVt7pwKaVKmT1E3Wc93O5gnYRA7lgdKhLPRdrO2fX9SbHR1PoRt4swSXKjVm9rsvicEG9PJxDs6AJcBvVisbFyYZfxHE9zxcNHLVCuEYcBvIzckbI0qRUK2ieQPIPluj4sURN90q/ASXEnBsHLAfSYf/FvG5O2Bga6xwpJy+44l6PkIz5c9Zm0XofuXfHLqcYvWuiSB9SBuMGaRqQfCy4s4GhMIvHpn4vsK5Vnyhzw85//4AfrIj9Pt0WxuphTjUONV7x5Atwiupm8+LJy5+/vco8cy9E701bUkOgPddrLyXS2ECEOhniMNNO5TBvZ7/neZ2d8qND4X9ys06BqNKNQ0RLCOVUAx/y7pVMcRF5fmUoxXiHDv6hvwkgJmn322CBbrC13xoI33hGF6inUmk1WK/hAHrliwJt5HoTIsORRdAth6rCf4ZGZMt7JOwR9T05CVun9qL5bLf/ADlvzLxXw==|920
+}//gzTjlJtdxx1AVOYdSE/v7esIUjAo0qx9serZHXYFrU9eiNRmR5tilxdRSeiGEO5BNzadgyq3jHPAiAYxcGXx3S/tA48b4QidpAmoQCEF9C/QC16AEJwf0QbgYJIFx5jj/6s+SZM122OJO9LVFPAvvRv+edC7ykk+OxMpad37k3ud4Tubj12J/m+GBVlaVwN3cfZy8HOVKswtaxKCfiwaHdQFBdF1ksV6VoccyLRJR/bJHAn3nuKhsTypouTJREKuyVqnKdpkEFosV7L/pcBIZzvCmZmUbvz7qkP5b9phg1xIj7nlKLnMkylS/goVcLUkZoVRjQBbbF1mamhzhQE3ncX+TV+UzvzPc1sFvyG8keAxcq7WsKvv3blf1jUSp/6+8Nj7f3MNdhMuJRhitR7oqfg0u/1O6zimz4wp0NdqPYRQd/O3wNrZKeYsYII/R97cPKyPMvnVhA7qR+EtfIpGH4UpOLXsAxeX7Mf2p9Pi9knpI797iymZy8jN1XMVDpUEH/vBQVdrYzRw4EWfBKR1+vgkH3F/LfYmz1CAfLD5iatXiGgJiRRxhW+4nfiwydjSw/vfRqAeNDrJpzI1R5cwCXc/vZNimdwVxGTiGIUQTJP0WnVoYJ35gMCOdjK69r63GkWKW23X5bUS/ts9TH4gA/+f8PlhX9AdRBarT+l+WEGmrBCuAMDiTFiWysDfap7c867qqpKFIQKPSnP7SzNIIpy02YepdK6QWwozsVKQfaDRqAykHWFO8Tp71IlBj5Cg2zK0KsB7UyA+CvHb0HEIDiJHlhMs6Zor8TwEh2th2S+YJZVhtq8tC8om6hJ9Qf329EwaXXKhmrMgaAwReMPA11khwoclO4V/84HL0KzR9JMbzKMfmkU6TBdYdS0YWn81ilIHN60n8LTxHaL3M2d9ew==|920
