@@ -13,27 +13,27 @@
       },
       "4": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 15.0
+          "DesignLengthInPixel": 20.0
         }
       },
       "5": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 25.0
+          "DesignLengthInPixel": 33.0
         }
       },
       "6": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 12.0
+          "DesignLengthInPixel": 20.0
         }
       },
       "7": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 25.0
+          "DesignLengthInPixel": 33.0
         }
       },
       "8": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 12.0
+          "DesignLengthInPixel": 20.0
         }
       },
       "9": {
@@ -43,17 +43,17 @@
       },
       "17": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 12.0
+          "DesignLengthInPixel": 20.0
         }
       },
       "18": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 25.0
+          "DesignLengthInPixel": 33.0
         }
       },
       "19": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 12.0
+          "DesignLengthInPixel": 20.0
         }
       },
       "22": {
@@ -65,18 +65,18 @@
     "Count": 45
   },
   "Cols": {
-    "Count": 60
+    "Count": 61
   },
   "Values": {
     "2,2": "차량 등록 페이지",
-    "5,2": "차량 번호",
-    "7,2": "차량 종류",
-    "9,2": "차량 사진",
-    "18,2": "구매 날짜",
-    "22,1": "저장"
+    "5,3": "차량 번호",
+    "7,3": "차량 종류",
+    "9,3": "차량 사진",
+    "18,3": "구매 날짜",
+    "22,21": "저장"
   },
   "AttachInfos": {
-    "5,7": {
+    "5,8": {
       "BindingInfo": {
         "TableName": "차량정보",
         "ColumnName": "차량번호",
@@ -92,7 +92,7 @@
         "TemplateKey": "_RS_NewLittleRoundCorner"
       }
     },
-    "7,7": {
+    "7,8": {
       "BindingInfo": {
         "TableName": "차량정보",
         "ColumnName": "차종",
@@ -108,7 +108,7 @@
         "TemplateKey": "_RS_NewLittleRoundCorner"
       }
     },
-    "9,7": {
+    "9,8": {
       "BindingInfo": {
         "TableName": "차량정보",
         "ColumnName": "차량사진",
@@ -122,7 +122,7 @@
         }
       }
     },
-    "18,7": {
+    "18,8": {
       "BindingInfo": {
         "TableName": "차량정보",
         "ColumnName": "구매날짜",
@@ -133,7 +133,7 @@
         "TemplateKey": "_RS_NewLittleRoundCorner"
       }
     },
-    "22,1": {
+    "22,21": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -174,11 +174,6 @@
       },
       {
         "FontFamily": 3
-      },
-      {
-        "Background": 4,
-        "FontWeight": 1,
-        "Foreground": 5
       }
     ],
     "Types": {
@@ -186,34 +181,35 @@
         "나눔스퀘어 네오 OTF ExtraBold",
         "Bold",
         "@",
-        "Body",
-        "Background 1 -15",
-        "black"
+        "Body"
       ]
     },
     "CellStyles": {
       "2,2": 0,
-      "3,2": 0,
-      "5,2": 1,
-      "5,7": 2,
-      "7,2": 1,
-      "7,7": 2,
-      "8,15": 3,
-      "9,2": 4,
-      "9,7": 5,
-      "18,2": 1,
-      "22,1": 6
+      "3,3": 0,
+      "5,3": 1,
+      "5,8": 2,
+      "7,3": 1,
+      "7,8": 2,
+      "8,16": 3,
+      "9,3": 4,
+      "9,8": 5,
+      "18,3": 1,
+      "22,21": 4,
+      "22,22": 5,
+      "22,23": 5,
+      "22,24": 5
     },
     "SheetStyle": {
       "FontFamily": 3
     }
   },
   "Spans": [
-    "5,7,1,14",
-    "7,7,1,14",
-    "18,7,1,14",
-    "22,1,1,4",
-    "9,7,8,8"
+    "5,8,1,14",
+    "7,8,1,14",
+    "18,8,1,14",
+    "9,8,8,8",
+    "22,21,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -247,8 +243,8 @@
         "Fill": "Background 1 -5"
       },
       "IsAutomaticFill": false,
-      "Location": "20,80",
-      "Size": "454,323"
+      "Location": "40,80",
+      "Size": "467,384"
     }
   ]
-}//G3YGiYWC+H5pYHxeF0q0u8+fQZp8LZcDLlJUmBg9Deb1wcVjzt3EkZoDMaIOrfTS0655idG3S+8XpRBfu5aQ4B+McOuaDEAG4w09pAjsJdm5YdXc82yM38EION8oEFRXuCjp1tAcg7VU5BGYCUON/WVUNPwcb3H75vaXbIKFZbMf+mKXkRsH9oyeZjGVk64+itcxjNDMvisutnmUmW2NQtXVt+P6lhLj5SbGsJSOI0DQYJ6rUJED6pBAAvfWthYwVBdOXHaH7jRAH+JOKHOy7AVeamjSCYOeWTbmOk6DS0V9+do39Sf8TTOK9UnMsnlq1E2VV7PILoaKjN2wHELrGKA4wgXu4fmC1LBkAehFh7RQReoZ6hGDtyQYc6kblzvAUOV7OkBwW1sj4fsC8subT2WO9Qoenynti7WMb1n+e07s7G4rkS0Qf3FLVbC26MD1W4V5eKTijyAvR2u2umsuAoGBhe6xq0jRt+6y41W1j2gr1lHqLpQ+x3IFt7bwoql4trQ6B5MkuTcFWU1zQGJV0e5o3p8OqG0L9OVjutCuSpxJOXs1ldNA2PAvUXn5b714gNh5xYqUQG/0GaVeTN21pOP8x0pWmUEwkvzjungJ/RG3JGUiUOseUJOw7tLTsJATRsb7GPw0acgfyKp0kwv7ohAte0RpTARzkR5j4m1Dstoh/3Cvm1HjwLTpwtHnqc4BftqBcKPLGkmGPfWfIn7tWd0YSFKY4/y+w6YEASPnCwW4yTcVx+BDfdyMamFr7xcZIY6pfOLpo9Hs4qkaKbRxtPr6VUk9Rg56K3y1lwKmXi8e6Cs9awHfrImfsU0/Ti7R3g6o+R689rQMlWDdQiP/yUxQL4OcVIn20biwjNzN4dPMf45bCZz77dYeKfgbyrBtX51KdcFo9SN9ONUJG0JliA==|920
+}//cQwvN8Lgp/GyPhV8EWZJdS0JwNUNydU2Z5Ho1pM6UR4HrOHs3vC1NeuiCIvuacdbWzNTcNFPnGAJLKOVSPiJWgDBpqjBkdTyGvuW7Jx2Zhb/XNQsWdLnKBykUjBx+pzXTnnsTQxBAW0KCCE17SeBlK+rG9cc8jG5rV0p3XHQo/DY7ciwIhiVYJ3c+J/ltLjcSl/K2qS4Uwi5rLJdoM+IMM6EXEPr6WKUlxO13zhsDAb+p0X6x98CyRrQbdzmP5YaljKior5ZAP9j1YQxxm6pZxYS6beT4oiHA1Tu2lcIyaD5LLDRV7mQqzTwQ49g8Cglc7zONq1X63V95p4KvfYpY9RiVjYKTjIsYZFMwDZJI+2m26rdFjrn2ppGEuBJwm2w1dKigJT4Jk1UCP24D0ttQzbSYmmAhhq7CUZLSn72Mmjs9yWSrhnZhNGnAynMcJ9qf99Zd0iT1NCXVQfjp/VuanAyhTsdu4HKiXPuPmWhAhloEAc4ip4SkR/j4GYNme5axriUWIvCdtvr05A+WwqOwx+ecnUkE1g2pi8tQjeodrVf5YJc7VsmacSCcSkp9BHWITKs4TtdX059Aa0I3ePZDXdNArCvIa7EgZadHCZI5aVnvamopVjYLZ0OlL16s+1qkgCQ6ORwzbNEMG988a1DP46HtGPjDziZkq6vZmuSgYPJ8WjLiLYdFQqRtj+2YDOa6HjjVf3+cdM5X4lVDw5Wz4SPVgobMfI2ZUCvxXLUB8djErTVUBWXXsFAhsBkRj6Jkj6xJKj1oUkqhAQgGRCZ2HouWs6vhNOfFwv5cx3pJtXEXg2bU6UGjoHbHhFvImbGjuJRvaLizdWLzZm1YvluRP2rzLUXjK6fiahrh6IxvePPadFcMTAeNW9hUSyb07kRDS87oK1j08p4JIWv/R194A==|920
