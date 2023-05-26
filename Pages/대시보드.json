@@ -1,5 +1,12 @@
 {
   "Rows": {
+    "RowColumnAttachedInfos": {
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 26.0
+        }
+      }
+    },
     "InLogicalVisibleIndexes": [
       44,
       45,
@@ -18,7 +25,7 @@
   },
   "Values": {
     "12,3": "차량별 예약횟수",
-    "12,25": "사용자별 예약횟수",
+    "12,25": "차량별 운행거리",
     "44,2": "차량별 예약횟수 리스트뷰",
     "44,19": "사용자별 예약횟수 리스트뷰"
   },
@@ -1755,33 +1762,47 @@
       "IsAutomaticStroke": false,
       "IsAutomaticFill": false,
       "Name": "Chart3",
-      "Location": "59,287",
+      "Location": "59,293",
       "Size": "383,290"
     },
     {
-      "ChartType": 24,
+      "ChartType": 7,
       "DataOrientation": 1,
       "Tag": {
         "$type": "Forguncy.Model.ChartDataMapping, ServerDesignerCommon",
         "DataSeriesMapping": [
           {
-            "SheetName": "대시보드",
-            "ListViewName": "리스트뷰2",
-            "ListViewColumnFormula": {
-              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=대시보드!Y47"
-            }
+            "ListViewColumnFormula": "주행거리"
           }
         ],
         "ItemsMapping": {
-          "SheetName": "대시보드",
-          "ListViewName": "리스트뷰2",
-          "ListViewColumnFormula": {
-            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=대시보드!T47"
-          }
+          "ListViewColumnFormula": "차종"
         },
-        "DataSourceListviewName": "2cb4e0a3-f725-44bc-88c1-665334f1f4c6"
+        "IsDataSourceEnabled": true,
+        "DataSource": {
+          "$type": "ServerDesignerCommon.Model.BindingDataSourceModel, ServerDesignerCommon",
+          "TableName": "차량정보",
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "차량정보",
+                "ColumnName": "차종",
+                "GUID": "7ee1633d-44ef-4dcd-845c-042fae8ada88"
+              },
+              "ColumnName": "차종"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "차량정보",
+                "ColumnName": "주행거리",
+                "GUID": "bf71e576-6bf7-4627-beaf-d8054630837e"
+              },
+              "ColumnName": "주행거리"
+            }
+          ],
+          "IsListviewDataSource": true
+        },
+        "DataSourceListviewName": "1c62aef0-3c96-4d91-90db-9e3b42bf24df"
       },
       "DisplayHidden": true,
       "ChartColorPalette": {
@@ -1808,8 +1829,11 @@
       "XAxises": [
         {
           "Items": [
-            "김대리",
-            "이과장"
+            "K3",
+            "K5",
+            "그랜저",
+            "투싼",
+            "소나타"
           ],
           "UseCustomItems": true,
           "LabelFormatter": "General",
@@ -1836,49 +1860,30 @@
       "Legend": {},
       "DataSeries": [
         {
+          "ChartType": 7,
           "Values": [
-            3.0,
-            4.0
+            "NaN",
+            20.0,
+            50.0,
+            40.0,
+            "NaN"
           ],
-          "Name": "예약횟수",
-          "MarkerSize": "7,7",
-          "DataPoints": [
-            {
-              "IsAutomaticStroke": false,
-              "IsAutomaticFill": false,
-              "StyleInfo": {
-                "Fill": "Accent 1",
-                "StrokeDashType": 8,
-                "Stroke": "Background 1",
-                "StrokeThickness": 2.0
-              }
-            },
-            {
-              "PointIndex": 1,
-              "IsAutomaticStroke": false,
-              "IsAutomaticFill": false,
-              "StyleInfo": {
-                "Fill": "Accent 2",
-                "StrokeDashType": 8,
-                "Stroke": "Background 1",
-                "StrokeThickness": 2.0
-              }
-            }
-          ]
+          "Name": "주행거리",
+          "MarkerSize": "7,7"
         }
       ],
       "PlotArea": {},
       "StyleInfo": {
         "Fill": "Background 1",
         "StrokeDashType": 8,
-        "Stroke": "Background 1 0",
+        "Stroke": "#FF868686",
         "StrokeThickness": 0.0
       },
       "IsAutomaticStroke": false,
       "IsAutomaticFill": false,
-      "Name": "Chart4",
-      "Location": "502,288",
-      "Size": "417,290"
+      "Name": "Chart1",
+      "Location": "463,290",
+      "Size": "480,290"
     }
   ]
-}//nubnMRq+PqFYVrSYYhiLobRzztyWRi1zhSU7iLeYrYh0hWOKSWg4uyJI0J508dFGRVt//Fv9ac8jwx6buCmY2aw9HCAskmAJ8cdpJszqMfLbXucGjdzJCDzRjtrXLxmEVoyLRVyPXKdwGEy47+topwHjiI/TpWgs1rM4+AFtIY3fALJpsi9k4PK/SZ4jzEUynfn6A+0Lx1SlCQu6uxr3lcTejnq6iYYGBOU5Z2trEPkPfhm4kzTB0dyaSH0AyJxshvrTHJ1bqzvW+JhBfcfhFcX6azm7vVD46dnqacFefnQe5AJ+Fdl+N/3B/UiE+Dlwv+rP5VKfGX3lo1+jnWp4JoiYk4ZnRQvMHqZV1iHvL1mbNRjaTw6ldBEORVP5ri4z5HWq6ElsfPQBTQzDA/4vQLQQiQo+Zin9AO3D/STG83j79ND8vWDzFeQ1d+eGpixzJAAINlCL4ZZ2wf/U95oS9aVrdHbnB0WSBu5+jEnIhDAvZ6aOGqrC8TFzgdRAZPLb7/gKkg8uUjev13XZg6HdrrlHTCJHcl7/xMDMLTqHwgTyk1vGmXqFNn8jnpgwJ7ygPrz/xCQ+nBDRluKkYfZX9fdic4cVQTXax2R1x8OyvRYs9MvIqWMpvA2DGJB9zn+ipTup6ljM/pkR14WMngLOT1HDpbQoWQw50R0eoP1KBXHl2vuFWKslEBVz6DHojj/b6TCU7TGH1ZSnjjgw6Z3purBF7HZdVSY2TPj9IQa9AwZs13UQIr5r68sFpodYK64g8ntyBvIhgx/vYQeaYwAy/2h950FlHX6HKgJXglIegjdYWogaeNPfaRyDWJcT5q6EhQqxMTSRA69ukhbHaT9/GklZcqYoBe9NuK76DRIaZ3OIC4g9SqDGR3ZuL6F0EU55ZL/zRSeQfZVaU427yO8g5w==|920
+}//Bgu6WMSVx5KWL2SYb2d2KDDtGopvSqlkwYr/AN1nZUVUuHFER3ghQuFPthPvDYSo5LXW5b14njQk62EGSkkq1rhWdfPU0FtdEPI4Cw52LgQmEa7LrlJG3xf0QnsFsMCKnxxq89C/f4yomTJR/daFkIw8twAxWf+Zpf37RYiwH8GbkuFbAZ2t8j9Zs26jOEgPkHD8O6eZJoisUVs0NWDpohKhuT4/WoI9UGilpB99jEljAD2vmM4/9fZsrDKJAKBPBseaH7hJcsXGWxBsXLjrvctC1/jeuS3GKMEGmWFnIk3hiWfoZNcfBycyzswfHwUVbQZ0yEjX56GfBJHlxhUXXeM7KV+PFeC99pj+6GBhMFnX8qDL/n3FkYW4Qlr+SBcVNUy8fegVYPr534yWtvzpi5Vxm5Jg4AASxZz64qoeSDaYeLJf95xv7sOmnXOGGu1U2FWjJSrtihFpM7X+9ltCOrmabFHa4741Fh+B3A98DZp7M9WEhsk9smLe1fqnORDzQHKmIBzudvbXpqx5gbDHyLFi6B3mcydJUXhuQjkjsBvtuXVd6em+Dc+tH65zh1JN0xGw3fiHybWOcji134YzICyVwHTLI5sgG8bt7DxD2unDbi1IdZG6oTZ/J0490sDM1pN7Q4g8uMoo1RlKnyiLEQZhZwrMfnJ51Y075m4RYcS6gkaRIn+E1E4h+QA5a01keJZRp855/OKqBEvQGIQ1Oht0phVD/p8D+rWX1Tytf5qVzbcTrrPRqwHTvJGy8awDpl94DFYXS4+mjzq9aHSglNVHBCWbVMESLk8aFQ1Q0CpbRGtMEs2y8at56LdhrxbN9ti0WwQCfYsCMXozNrBL4W80WQXMz2lAJA7hU/7xhxIxe2RKJbldHHfAVbjjbMZ+zz2IBC/5H8m2OZ6TZpz2vw==|920

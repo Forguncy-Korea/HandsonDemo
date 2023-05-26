@@ -119,29 +119,11 @@
   },
   {
     "ModuleName": "PCPage/차량예약현황페이지",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-SFEU14D\\NamHee",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-26T12:09:52.3279535+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\차량예약현황페이지.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/대시보드",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-SFEU14D\\NamHee",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-26T12:56:39.4282522+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\대시보드.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/차량예약상세현황페이지",
@@ -169,20 +151,7 @@
   },
   {
     "ModuleName": "Theme",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-SFEU14D\\NamHee",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-26T16:26:25.1412907+09:00",
-    "ModuleType": 9,
-    "ToRemoveFiles": [
-      "Theme\\CellTypeStyles",
-      "Theme\\ListViewStyles",
-      "Theme\\StyleDefaultNames",
-      "Theme\\ThemeConfig",
-      "Reports\\DefaultTheme.rdlx-theme"
-    ]
+    "ModuleType": 9
   },
   {
     "ModuleName": "image/기본 제공 이미지",

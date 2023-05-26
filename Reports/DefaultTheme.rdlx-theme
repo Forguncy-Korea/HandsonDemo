@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?><Theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><Colors><Dark1>#034560</Dark1><Dark2>#FFFFFF</Dark2><Light1>#FFFFFF</Light1><Light2>#EBEBEB</Light2><Accent1>#4265CF</Accent1><Accent2>#FEA498</Accent2><Accent3>#F68FE9</Accent3><Accent4>#1D9F98</Accent4><Accent5>#DE6E6F</Accent5><Accent6>#6059D9</Accent6><Hyperlink>#FFFFFF</Hyperlink><HyperlinkFollowed>#FFFFFF</HyperlinkFollowed></Colors><Fonts><MajorFont><Family>나눔스퀘어 네오 OTF Regular</Family><Style>Normal</Style><Size>10pt</Size><Weight>Normal</Weight></MajorFont><MinorFont><Family>나눔스퀘어 네오 OTF Regular</Family><Style>Normal</Style><Size>10pt</Size><Weight>Normal</Weight></MinorFont></Fonts><Images /><Constants /></Theme>
+<?xml version="1.0" encoding="utf-8"?>
+<Theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Colors>
+    <Dark1>#034560</Dark1>
+    <Dark2>#FFFFFF</Dark2>
+    <Light1>#FFFFFF</Light1>
+    <Light2>#EBEBEB</Light2>
+    <Accent1>#4265CF</Accent1>
+    <Accent2>#FEA498</Accent2>
+    <Accent3>#F68FE9</Accent3>
+    <Accent4>#1D9F98</Accent4>
+    <Accent5>#DE6E6F</Accent5>
+    <Accent6>#6059D9</Accent6>
+    <Hyperlink>#FFFFFF</Hyperlink>
+    <HyperlinkFollowed>#FFFFFF</HyperlinkFollowed>
+  </Colors>
+  <Fonts>
+    <MajorFont>
+      <Family>맑은 고딕</Family>
+      <Style>Normal</Style>
+      <Size>10pt</Size>
+      <Weight>Normal</Weight>
+    </MajorFont>
+    <MinorFont>
+      <Family>맑은 고딕</Family>
+      <Style>Normal</Style>
+      <Size>10pt</Size>
+      <Weight>Normal</Weight>
+    </MinorFont>
+  </Fonts>
+  <Images />
+  <Constants />
+</Theme>
