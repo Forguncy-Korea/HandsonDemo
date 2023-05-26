@@ -200,5 +200,15 @@
   {
     "ModuleName": "Upload",
     "ModuleType": 26
+  },
+  {
+    "ModuleName": "PCPage/차량예약현황페이지 (2)",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "LAPTOP-K6S99HCL\\hdg89",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2023-05-26T18:00:40.7362536+09:00",
+    "ModuleType": 1
   }
 ]
