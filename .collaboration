@@ -208,7 +208,16 @@
   },
   {
     "ModuleName": "MasterPCPage/마스터 페이지1",
-    "ModuleType": 3
+    "State": 1,
+    "LockedBy": {
+      "UserName": "LAPTOP-K6S99HCL\\hdg89",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2023-05-26T14:00:23.7315546+09:00",
+    "ModuleType": 3,
+    "ToRemoveFiles": [
+      "MasterPages\\마스터 페이지1.json"
+    ]
   },
   {
     "ModuleName": "ApplicationSetting",
