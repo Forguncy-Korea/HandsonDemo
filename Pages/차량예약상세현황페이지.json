@@ -3,11 +3,31 @@
     "RowColumnAttachedInfos": {
       "2": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 25.0
+          "DesignLengthInPixel": 33.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
         }
       }
     },
-    "Count": 22
+    "Count": 20
   },
   "Cols": {
     "Count": 40
@@ -15,11 +35,11 @@
   "Values": {
     "2,2": "차량 예약 상세 페이지",
     "4,2": "차종 ",
-    "4,5": "ALL",
+    "4,6": "ALL",
     "6,2": "예약 날짜"
   },
   "AttachInfos": {
-    "4,5": {
+    "4,6": {
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "TemplateKey": "_RS_NewLittleRoundCorner",
@@ -44,11 +64,11 @@
         "TemplateKey": "_RS_NewLittleRoundCorner"
       }
     },
-    "10,2": {
+    "8,2": {
       "ListViewInfo": {
         "Name": "리스트뷰1",
         "TableName": "차량예약",
-        "RowIndex": 10,
+        "RowIndex": 8,
         "ColumnIndex": 2,
         "RowCount": 10,
         "ColumnCount": 30,
@@ -64,7 +84,7 @@
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=차량예약상세현황페이지!F5"
+                "SerializeProperty": "=차량예약상세현황페이지!G5"
               }
             },
             {
@@ -82,7 +102,7 @@
           ]
         },
         "TopCondition": null,
-        "ListViewStyleName": "_RS_NewFashionListStyle2",
+        "ListViewStyleName": "사용자 정의1",
         "ShowColumnHeaderInDesigner": true,
         "IsRowHeaderVisible": true,
         "ShowEditStatusIcon": true,
@@ -90,7 +110,7 @@
         "ColumnOperation": 2
       }
     },
-    "11,3": {
+    "9,3": {
       "BindingInfo": {
         "TableName": "차량예약",
         "ColumnName": "차량_ID",
@@ -102,35 +122,35 @@
         }
       }
     },
-    "11,7": {
+    "9,7": {
       "BindingInfo": {
         "TableName": "차량예약",
         "ColumnName": "예약시작시간",
         "GUID": "e4bfdd38-21dd-4b20-9669-f7e4487f3801"
       }
     },
-    "11,12": {
+    "9,12": {
       "BindingInfo": {
         "TableName": "차량예약",
         "ColumnName": "예약종료시간",
         "GUID": "1885b3c5-1d3e-4afd-b5f1-5aba74d3fcbe"
       }
     },
-    "11,17": {
+    "9,17": {
       "BindingInfo": {
         "TableName": "차량예약",
         "ColumnName": "사용자",
         "GUID": "3f941480-acc3-42ba-8032-8ff32665709c"
       }
     },
-    "11,24": {
+    "9,24": {
       "BindingInfo": {
         "TableName": "차량예약",
         "ColumnName": "거래처",
         "GUID": "428ce490-fcdd-418b-9db4-3e96a04b08d9"
       }
     },
-    "11,27": {
+    "9,27": {
       "BindingInfo": {
         "TableName": "차량예약",
         "ColumnName": "반납여부",
@@ -146,10 +166,11 @@
         "Formatter": 1
       },
       {
-        "FontWeight": 2
+        "FontWeight": 2,
+        "Foreground": 3
       },
       {
-        "FontFamily": 3
+        "FontFamily": 4
       }
     ],
     "Types": {
@@ -157,42 +178,46 @@
         "나눔스퀘어 네오 OTF ExtraBold",
         "[AUTO]General",
         "Bold",
+        "#FF4265CF",
         "Body"
       ]
     },
     "CellStyles": {
       "2,2": 0,
       "4,2": 1,
+      "4,6": 2,
       "6,2": 1,
-      "10,7": 2,
-      "10,12": 2,
-      "10,17": 2,
-      "10,24": 2,
-      "11,7": 2,
-      "11,12": 2,
-      "11,17": 2,
-      "11,24": 2
+      "8,7": 2,
+      "8,12": 2,
+      "8,17": 2,
+      "8,24": 2,
+      "9,7": 2,
+      "9,12": 2,
+      "9,17": 2,
+      "9,24": 2
     },
     "SheetStyle": {
-      "FontFamily": 3
+      "FontFamily": 4
     }
   },
   "Spans": [
-    "4,5,1,7",
     "6,6,1,10",
-    "11,3,1,4",
-    "11,24,1,3",
-    "11,7,1,5",
-    "11,12,1,5",
-    "11,17,1,7",
-    "12,2,8,30",
-    "11,27,1,5",
-    "10,3,1,4",
-    "10,7,1,5",
-    "10,12,1,5",
-    "10,17,1,7",
-    "10,24,1,3",
-    "10,27,1,5"
+    "9,3,1,4",
+    "9,24,1,3",
+    "9,7,1,5",
+    "9,12,1,5",
+    "9,17,1,7",
+    "9,27,1,5",
+    "10,2,8,30",
+    "8,3,1,4",
+    "8,7,1,5",
+    "8,12,1,5",
+    "8,17,1,7",
+    "8,24,1,3",
+    "8,27,1,5",
+    "4,6,1,10",
+    "4,2,1,4",
+    "6,2,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -217,4 +242,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//6D7bxwnphm7ex++b9bjrL89yMXbpcEwDGoibTdCYep+7N4jwt7LvjATkU7Lu7B8lBHbmVzOsqDSoeekVPckPMTk4fyTOndKkEUv+ykA4hRjGMcw2gMQKJxZMUyYQOFr71QKDlBO+CRSua3/V/dSy+VTW4Cme1P18daEf9Ks7WpEKVew3+JuSFOSrJT7cKM7PMvvCjQzkiTLwErmIt6OHTR08hwhvUbDQRj6WE8ZXzLjazABXy8YgZJX2oFHGEvs6aLAfT4baMMMQMnuAGGQ305k17AgVh6iMdNXDGBkANSQDUnK34ZzUo/z6Qre2R4qVEehnenYEJkFA8ouwOWY+XGTYzFQJ0kUe4AJ8Sbj81NpRBAUkHiFvgpB6X4aIAPNINHuvJfLbZ+mh3HF46bm/xfkJWXBMaAPBpMTo9wvTgelZAygGgmIGJtHAbO2M14LrssqpKxryqzY4xNBhcaGEonG38XEoVBY6iJ8BiYj5WVl03wu4T8WaXnh16TpdoMsWUspmVYmHwyQx9Hba234noT9drQpWcohWhCt2aW2d52DJo5SZK2ZZ2WVRpe9u3vIPG0x1fWBEpn1qtDdtTd5rdv1myZYDkxEalZ5rr8h0NRO91U1dEWqr03DD6xR3zSPfyTtLcA3uNuxpuTl29AuzVSAQDRARGOYZ0ecvpYQARGaymdzRVdSz0YTXP6zGqy60CsUHHdrQJJ8bjycVFv36xVLog39hCPS5Psoccf/9C+0zthnzavOOgLLEOGzqmcIMZ0M6eh0Dl1Qga/xtJLeAyDPJBpemsWwcm1nNmlzYjPRA/IB6HLM4m8pR0VJOv1CKImkGg0yEQUsZbMsOXf9M14dt1jzOqnZg7a+xk+9L2g9vfosjWKMcfh3vilQ8MtqfC60sgYda+n8VfAtINQxhHA==|920
+}//uCSxZkws8ImejGhCVIxdsg02W72xX1o6cjLSE8BGnczSIOAUcR0w2aseGuTAq+o50zCVMOYZzBpoXdg0apPsftJbHkVesqqOkCzseJBab5Dz4/Kj8yMWPqTigjA3AgNCVz2j7MSYCQ/b2xFDdAzTfzXAHP0+dj3YoZGX/e188+ctQujd/jbCTQIbI+/unDSb3FnCEDI+h9U1QZL/RJYW/7gX5+khDHU1XRAZelm5WdeEDt/qqefAY7//zczmquHsB6VtUp9ik83zdM/WbE7Ba1KknqOyeKFtKuUdN8sLXzAWXZaPbTztYefz8gFQOCfbgCbHPj5ZQtai4exH6jQivy0YV1A15ma8vdeXXF1GsV90vJKLuV5sW9+lbnNMb6LUqiIlfARuk/LldcQoqQGDvL9OoJ3QyZQP+Hs1L3Lv8L9/UGy80FgDt21/HiV4TqqSZlHzTtfSxhZnJMghFkccamKF6+/LMA1UBwJCX3J+UP1qb3FWMYGrczXyiUN/mSvvWEYRqGumjAToc0EzuqDhEkaZ/P/ntBNNyVEyT2PJXNLASCFwvivKAP5cEgcNYND6ciVWPVNzKUEBOK4o8ZC3ZL5sFSZh7oXeJJZIM6px3OabHEzkDjIE5e3AXiHeMW6Sr2svBmY2bDsdcXZJe7W+AoZC6HJVU4jkuWKxJTbLYwvLjaLhtIsxV8RFEe5UQ5nFO7RySh0i6SQy+/b3sFKWm0kmskcCeoXjE4sbHboBfEh0x89MSd6zwddu8ZlEyFX4w6GIRURueRijQWiUvfzRZRLouVeD2uQMJh7FYnngZl6HGt3R2tztksqXJi0pElNIYgDBN1Z28632gNoL4mgbi1jggHhaK5lcv+b/+cRrYLwPo6gwMyPEenZ3wW0wO4FW6nR5K2OG8w/qnuz9yLuRzQ==|920
