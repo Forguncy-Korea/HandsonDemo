@@ -200,7 +200,16 @@
   },
   {
     "ModuleName": "PCPage/예약검색페이지",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "LAPTOP-K6S99HCL\\hdg89",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2023-05-26T14:10:25.8916506+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\예약검색페이지.json"
+    ]
   },
   {
     "ModuleName": "MasterPCPage/FGC_유저마스터페이지",
