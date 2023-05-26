@@ -375,11 +375,11 @@
               "BindingInfo": {
                 "TableName": "차량예약",
                 "ColumnName": "차량_ID",
-                "GUID": "4f1ac4ed-a35e-4420-9c6c-ffc5082e8a0e",
+                "GUID": "30f0ed0d-f3d4-4972-ae6f-786ab209a6ee",
                 "RelationBinding": {
                   "RelatedTable": "차량정보",
                   "RelatedColumn": "ID",
-                  "DisplayColumn": "차종"
+                  "DisplayColumn": "차량번호"
                 }
               },
               "ColumnName": "text"
@@ -1049,4 +1049,4 @@
       "Size": "400,687"
     }
   ]
-}//mknYOmE3UM2hCcC3tEltJGx18gEMXNGNinJS2TLo56Nz1ce8sC3/4LuTWZugUBudxVPmHDF+bM1p86tK0mkqSA0p7liFPSkKMaScKKET1RnEb18U9F6THicf8/McUhfqyxgasrH3/TQkbedaKHM0O+j4gpRFIu+7nNsG6qwS7kfJfho04EtAzMjcj0q3zXfiTW8F6jjmBLJsspsvY2WJJL3lvAwpXgIUQO8FueBMyM8iD22IUI9tFP8w/gNcrq/TlvZMsgj3ctXPDY2lGtLYETt4Xjdbk8dW9z3xOnFqWOv8wvMbRYN1i7y0cjIoSQb05/+dRj7BX99NnW3KmKttsISiSvqE8SoZMqaLBos4abtjdCX4V9Mr2M8lzJpu9kBu7I/3uOYglMxYUZ5jKamllZxgC69Z/cnsTiah1yK8ynKU4rtAfTW0kKckvZbKI+6Em5UoHSCRmsNZg+g7F/Hdu0DRiWMbQVsDNtqRLg/exkyKqK1tOFlYe3lgjffqicR1LXcXc2Csndc8XJ4qB4Lp2ec42R13w38Sl89d7hzsD+9P2m9MAUFn46NpE+SKdowTjRj0zI+tfFErsbDbEv56CsSovCkJ1D2h337Le+tT++FafUBv2eAjrlDO7F5ntOiAAO9LK9F2KhFxIsFzbK/zsjx4tJpa6Apbx36yzc6VDYaCJrc1cEO6CE+V5jUAZgaRvEeYnovlB8l1onH8rZ/bFaz2LxWLkGU4ImtHhCW6qEWATQ0vvWWIezzNmraWQtTq/y60hmPctnRYFAx5XhEYPC2ddlze7XGNGtnTCQ2mvxBpiqIyQnHts7fin69KEHZDvp2w+pfBHHhuc9sw4fP1vIgMZetikaXI3c3guDNQaLmdqnnqUEjsM4xebNpVyvnqiWJ7p/00v9c7qIjhV40NBg==|920
+}//aWkNyvZKGw3RhtIFCM7qtc9CF/ObNwUUVDVyoMIrM5hX7OvYftdsQX0HOxJviWjanbQV2KR+VqT4DfCjs4dBIA4sK0k94u2y5rvWusG7RyQ7ot8SenyGltfV8W6aAsEqw5etQJTloCKrsWe7WIH8/IxfKDRwa3O0ADOtkfFhCONRUGxjOw6w/ofHSiC4Z2naAkbS+LvIpOut6/5BPj+q2WiM7sidcbhQYSAorOFV5TZzqeUzDaPWzidtR1gyXFyHaFVCaFfyePRwDDTax3zvxZ3KfW6nNFl9NGzQmEADMT3iR6x889A9e/gRYmzSy5JRIsWm4wlutniOLqhY4hhVABV27AiOjRXbR40LFSPPyROCT36k1ce2+nVmmDFiFezUD72Nb29y5EPzyPH+yCPuk710iayjZ5P1LcUVYxwKQqCAIFpSiqfVDiKonhdVXnVT/2/C8N0AhAktLwNHX2+FvIpSqLAQ6mnBDdXX/4SUdR/YdQJy5pYAMyutb1CiGNHyB02611JbAqD67BNbra7RhCClMw7y5EZG8VIMZvNixLFU9PYGts+Sd2jj4Y8M62Y2LNv4AjSHmJ16uML9OmMVLjldU8eYuW7TrBpyWjfiw3quno17EL0SEubDkkzIPOaw75nmGG6LWhfRINLAV7RI1W5yIH7kFYzPMFj1AB//z+9xny42oRIWVSDpXMfoHmo7qCVj3w7YoPTPibccK6Sajk6MNrxspLgZ/Nyt1ENLCvWj9Hu4YR5bfduKUTmXXNSa9+QCT2KFBae8w8fOiWd8e+7YRTybJ8qBPfA866QPkEATV0PmHqmoXBV/lM0fgcNQ2fDzMCaKHIIoZHZwNyxisuec5kuwbLy3V/MhisjeAcqlqYW1GgUYkJr8VprVMz24o9yqDfYt+4HxGAktSULqrg==|920
