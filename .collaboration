@@ -143,7 +143,16 @@
   },
   {
     "ModuleName": "PCPage/대시보드",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "LAPTOP-K6S99HCL\\hdg89",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2023-05-30T18:29:22.6914017+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\대시보드.json"
+    ]
   },
   {
     "ModuleName": "PCPage/차량예약상세현황페이지",
