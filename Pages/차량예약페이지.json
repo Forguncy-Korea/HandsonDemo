@@ -243,6 +243,11 @@
       }
     },
     "5,9": {
+      "BindingInfo": {
+        "TableName": "차량예약",
+        "ColumnName": "사용자",
+        "GUID": "e0b7c2b7-40e4-401c-95f6-f5e78c60f255"
+      },
       "CellType": {
         "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
         "CellCustomValue": "%CurrentUser%",
@@ -462,7 +467,7 @@
                     "MessageFormula": "차량이 이미 예약되어 있습니다."
                   }
                 ],
-                "ID": "6ac931c1-176c-4098-b17a-1f4f3fd70b87"
+                "ID": "7e790e95-0f2d-4af2-b23b-c61e5007d3f3"
               },
               {
                 "CommandList": [
@@ -517,7 +522,7 @@
                                 "BindingInfo": {
                                   "TableName": "차량예약",
                                   "ColumnName": "반납여부",
-                                  "GUID": "66a1ebc5-c506-47ce-8cf9-8d8166243e97"
+                                  "GUID": "5c916ed5-b3a7-4c3b-b17c-917fa01c01b3"
                                 },
                                 "Value": "예약중"
                               }
@@ -528,7 +533,7 @@
                             "MessageFormula": "차량을 성공적으로 예약하였습니다."
                           }
                         ],
-                        "ID": "c2f02143-1cc9-4b60-80c1-ed30c547af1e"
+                        "ID": "e0be6233-daff-49c2-9233-0f23da66ca5e"
                       },
                       {
                         "Condition": {
@@ -558,7 +563,7 @@
                                 "BindingInfo": {
                                   "TableName": "차량예약",
                                   "ColumnName": "반납여부",
-                                  "GUID": "eafa559d-b7c1-43f3-8f1d-743f677be043"
+                                  "GUID": "99a147e3-60ee-417d-9238-f4e9067fea0c"
                                 },
                                 "Value": "예약중"
                               }
@@ -567,9 +572,13 @@
                           {
                             "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
                             "MessageFormula": "차량을 성공적으로 예약하였습니다."
+                          },
+                          {
+                            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                            "PageName": "차량예약현황페이지"
                           }
                         ],
-                        "ID": "bb593508-9303-47cd-9340-269589e33eda"
+                        "ID": "3a0f4a0f-5c18-4bd7-96a4-c483d0f33801"
                       },
                       {
                         "CommandList": [
@@ -578,12 +587,12 @@
                             "MessageFormula": "예약날짜, 예약시간에 문제가 있습니다."
                           }
                         ],
-                        "ID": "90f3e6f6-1bbb-48a7-8a9f-e2fdfd38d24e"
+                        "ID": "e260f546-b252-404d-8559-61c7b98b030a"
                       }
                     ]
                   }
                 ],
-                "ID": "e4a9da3e-72db-4eb4-b539-b532ff3bb616"
+                "ID": "164e9b39-7325-4353-af7c-1cd99285ecb9"
               }
             ]
           }
@@ -1089,12 +1098,12 @@
     "26,7,1,4",
     "4,28,20,30",
     "2,28,1,30",
-    "5,9,1,16",
     "13,9,1,16",
     "33,2,5,5",
     "32,3,1,4",
     "31,11,5,11",
-    "31,3,1,4"
+    "31,3,1,4",
+    "5,9,1,16"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1213,4 +1222,4 @@
       "Size": "473,383"
     }
   ]
-}//nj277kaaZSHPzm2VoWoyJmApcDjYcEtCR5OcN2BHKmKJHKzwYwQTJFkWACxe8o7oQOntxoj3JI1nCsstnaJMcPYLJlQ2llNUUL5n/P06KFWbH5b2qCKi9d1UoBOK1pj1TbeyYQllpsSxHgPUwlQ27R2276FeTJuPi3o+zGier8321zn8hs76BazoslKLUVNa+VT+PE8y5/fQ4u1ruaSc4LIt3dNQe7aWha4cYHHIpYDklgxaGUuDgJGL5SJEESwra3DcLx5RNicowQOut4JVTzDQ+Y0PoWG8DASJTW1E1DnTSQqIydLnDyeUVOKsCw4B+j8Tal4u41Gj1n2/lFc6Gr/btijTWlStxd6M6V/VW4f7RUHQLz/Q3IUBZkx6urQj2UTGXkMq4xxYA+F+QBTPbtTHAKPccrkevZGh3/kKNePY+zT2Hmef9EJfDsUlW1bNj0G+ONKsUf9Ja4Rp3jsiKSpMAtlBsCz/itQWDprK6n3y+rTbfXiTRW8h/vuVi1FEGRtEpcWvYZ57U5X8H4WK4h3Vuqcga6v4KwYwT59iJlJjt83Oj8KddYAZwn7Y4GvUMlZ8y0jXm1TSQomYZEgiVTtIe0Ol5ogGMFv0R4LOqSxFv51JrrSva+Fvp0Tx8+aIn8dH6GNUSuOMa1TKZo5aeuJ84vG5KCTfYmM/qbcTKoFz7PeCCypu3UOlaaU/6dfhfFstTmKtXwAmvnYXhYiAEyedhVCW+j2uQCYiuIu9gW/sbtzoLdHtdmsqO0rkqRfKnjTDKTBFL02bY6Az5kKrKGjRr+QnZnbq5DwcAli7eY4aEvSnocvZIkNautGVioWWf+cRC65/r1vh8FSKhiQpdk2/CilpF/j8nlrRPhDoC2Awz+kkKlTkVwNjMDfZWVr9v+4fsoRbwrNF7cAt15PHew==|920
+}//xZANWg9OL/mU5r2/D1IAnnruLUAgx3IOkL6khQvHEjAyRvpCP6GOLxYjE4/fc/c3GIiz3ipl4qpL9VGfpqTMCy9lKfigS99UD4vfbgOYJRw5pG5+bURlUWDW3sxuLgq7D5KwtkDhLB5fy6FI6CUYz51vOQnYvF1Lo0+hYxp6yAcw/5hZPTbP3s2vo6XiqgJwGXrrfuAuIvXJsKSu6GHhJAlfEu+qGZCh5DFLPG0IhIHQBz9llU5aepWpM0bhNve/oSuMmX9JIxEi9SV9gOPlKv76fIhcBEa88oyYP/8GNTiYSWrOJH0ZC6RHtXeJr4HylD4vez1BQ7vqeQkyR5OUuZn6g0JseTs47p+c+FuIAalkFSm5C3P/H+yDoNkbNDv21Ag8z/Ppk2qGvg5yyDJod14C9SFc3s6LJzE1O23mXOiMmtCDIh2xsTQkiILrWOobOFbrdLKFeRsCvMKBSizLjS1KnhHLtaZ0pIFTGH+pxy3g7xDt+pSQ0cqkseL9U7vxdV1bYbgny7ykNcz/Tp0NJvi6gcQ2V74QVe4lIto2A1G2QnegTwUG7wMCJWJtGWY6yiuB7CWaHhEcPyMwTP3Pf3MyBCoNYg0hLHayJNpHfeK0izfUi9jlukh3CmtrzcNuqL2M5kTvcNPqA/eg7qXKSX9k7jXm8C7NzRTkYMOlq2aj41o2iOWmjYkf9JOdEuc9jNgZ+cQliZWuZAmHWKR/AVxHJA1KUbOyRkxdVnDQ5qCHbRvpdCMFjjllWn2LH3VP8gOUy8hKmF8vqh31vx6as4sOWJsRziqYUjXfr0DTKF6bOXbMYzee5SfCpEJvnvBLix2CFp+nGoV8ZcIJK1aJ8Zh+js4IGu6iaDkZBSYyjRIaDDIDG89SDJsqRHSMzj+XmicYnubUE2mGSVCaaaY4Ig==|920
