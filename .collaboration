@@ -246,15 +246,5 @@
     },
     "LockDateTime": "2023-05-26T18:00:40.7362536+09:00",
     "ModuleType": 1
-  },
-  {
-    "ModuleName": "PCPage/차량조회페이지",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-SFEU14D\\NamHee",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-30T13:44:40.6005971+09:00",
-    "ModuleType": 1
   }
 ]
