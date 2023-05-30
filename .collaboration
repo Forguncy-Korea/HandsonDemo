@@ -1,12 +1,32 @@
 [
   {
     "ModuleName": "Table/차량정보",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-SFEU14D\\NamHee",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2023-05-30T15:42:01.1216891+09:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\차량정보.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/차량예약",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-SFEU14D\\NamHee",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2023-05-30T15:42:01.1216912+09:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\차량예약.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
