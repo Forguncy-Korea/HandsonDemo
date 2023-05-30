@@ -35,7 +35,16 @@
   },
   {
     "ModuleName": "PCPage/FGC_로그인",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-SFEU14D\\NamHee",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2023-05-30T16:27:17.6354673+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\기본 제공 페이지\\FGC_로그인.json"
+    ]
   },
   {
     "ModuleName": "PCPage/FGC_401_권한없음",
