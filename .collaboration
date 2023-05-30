@@ -259,15 +259,5 @@
     "LockDateTime": "2023-05-30T15:46:24.9427885+09:00",
     "ModuleType": 7,
     "ExclusiveType": 0
-  },
-  {
-    "ModuleName": "PCPage/페이지1",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-SFEU14D\\NamHee",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-30T15:46:36.8709271+09:00",
-    "ModuleType": 1
   }
 ]
