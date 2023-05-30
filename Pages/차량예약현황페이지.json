@@ -105,7 +105,7 @@
     "32,61": "IFERROR(ODATA(\"차량예약?$select=예약종료시간&$filter=ID eq \"&IF(ISBLANK(BW1),\"null\",BW1)),\"\")",
     "38,53": "IFERROR(ODATA(\"차량정보?$select=차종&$filter=ID eq \"&IF(ISBLANK(BW2),\"null\",BW2)),\"\")",
     "8,27": "E9-P9",
-    "34,53": "ODATA(\"차량예약?$select=반납여부&$filter=ID eq \"&IF(ISBLANK(BW2),\"null\",BW2))",
+    "34,53": "IFERROR(ODATA(\"차량예약?$select=반납여부&$filter=ID eq \"&IF(ISBLANK(BW2),\"null\",BW2)),\"\")",
     "8,4": "ODATA(\"차량정보/$count\")",
     "28,53": "IFERROR(ODATA(\"차량예약?$select=예약날짜&$filter=ID eq \"&IF(ISBLANK(BW1),\"null\",BW1)),\"\")",
     "32,53": "IFERROR(ODATA(\"차량예약?$select=예약시작시간&$filter=ID eq \"&IF(ISBLANK(BW1),\"null\",BW1)),\"\")",
@@ -1050,4 +1050,4 @@
       "Size": "400,687"
     }
   ]
-}//HF26rVc4NxTNqkom4e/6C7fAfCYPmIbURD7OQ+SG8vTO1xrMGZJ9RFOvrR3lhSlCC2xnhY5EniWa6yZWeKSHVAnhupASMm674zg+UdGL74bJ6y8C/ugKkmgYwTlASlKtZT9gMJH5ITkCWEwGauYEala4TOTdLo5fkDUoHQ/iaqOeL7b3zCvx7kHhpUu9F/CV5uMogJZM8iZpGXk8iMsCQC6HqCfjRfraxiHvgg87UlgHB0/JHGISiVST/TXxHzOGKHaEmWyesrmbsACsP0WD7cVT7wD3rF3bqzXHT3A7xO7yGuUVapxqlRgtoaLVVRiWEcFqDWY46n/7olGb64pfE3rTSTjuabEVCc5iqXjkSXPN/wHVV0o0JCdbTVDS7kzDOcVb11EBfzA8lM5dF8UmlnwXs8lJBqX5/r89c3Vd+JhIICdJrW8tbC7+50KNMhohhw51+htvijSEOy4A40Dbk5QuCVqBLDl8FvjeG1j43liSmfDksr//d0IgtjbCfnNsmiu+VdDVQHAn4VqPbY38Gj4peKlA5rJDYL9eRQRJei23UFZg4Rn9JwnoX20V2iDDq3J2zNQzSVw2ekpD+SdzD3lwtBYSqNI9FYCeB6xJrxb7hqHmYMCXRCoF+4UhTRIYoeYkAGobOlkXOUb7Nd27Y7iZ5RcvYNhhL1E1Y3JTnXNXY605FrsqWwBF7naYSmwp0mZJrC+26ND0NGmI5YCFmQjB+++ER2jVaxOT/gp2S9Xa/pbBZcu2vCOoAli/Gcgjv3oAOLXko1gSxJdLHj6+3w3WDUIbOLtsPxRjbeKsQpMuElRBQbZAK/aQJdeRaV44Pm6aUpuow1MVJeLGpy3TmWWeYhQR2b8o/ezvv7Soj3SINwpEGGoNLQxmb5tukTudy4Eiu9b6VQwjJfJgCcntAg==|920
+}//g6IkhAA6snU9PKnM0suUAXisVZUTxqBkZFNhuUYT7hjdxEPm2AzcJJqcnH7DzO0VLiOfN3bMLIrzqAM/XhYTmdD9bExgm5AFHDJiIy+y3vjnClSeMFlKpT3bcp84WWwpL9/KoJu0THavhh+YoV2hsPM0u2548UOitguFePHiupGKv+4BMm8VIs7KJbgUwY6UYY3aux4R/UGJCBppHNAJXU62xfPAIEOSD5J1Dxr4Ioq3rD12lNRGK3YCMRmLbHdiYsaP5t5k/mAO3NtgT0nxs0ZNBL2JqmF3uj7DllHm8vATo5GfeEshsTrhby8XOynmE0bR4wG4jky4rpF/eAzzUQEHP61p6BEJe7gh1HCn2QDor4n6BOdx7OJVQuoA1xIQmIL/5ntvsNJkKDl0vnaiMC3HWszR2PS0y1fqoOQG+EtzzBPIKsHC1JEFDDe3btR4H6e4GJlQbg4WsT05chaaXWQI/Rg95tyKHmT2pITBTEuckd8HU+E1pM4IwUY4ytundtA/8/5XpqkCVuXH9cCXkZNDGWfTNt7+j3TBzztL5axOrSdAs/u3YFW+CMKEtxyxphHq0A+Nx/YHonu8M5cHF/ZadJHL/u0RpwICGxC1rhKsZV1zaJycZ7TPJlzhzCKRzEBcvufmrC9/NvZI7dVbEiw7m+pfIYtxVIn/bGehrYBVJnSL/SfnxckK52CnAPtp3hq4Yw5DIneSJaJa0pCmL3hJuVlLZedw5qbqnsmW3gQiklV5meIyjiVlMfrQ2JC7w8l4xCPP8jeYMEk482EksKMF9VaWyGvnFt8we615ssdjGPsCtNH5uww74OuNenWYvEiwfqQC0HUe0xcjAGt0f68ZgeNT2BSNEjgZoi8oUkFvje2ZBDDaKWibT/TPRX40GO0YV28ruAyXOT4Mq9Bk2g==|920
