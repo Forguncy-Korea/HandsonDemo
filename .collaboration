@@ -191,7 +191,16 @@
   },
   {
     "ModuleName": "PCPage/예약검색페이지",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "DESKTOP-SFEU14D\\NamHee",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2023-05-30T19:38:40.1495388+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\예약검색페이지.json"
+    ]
   },
   {
     "ModuleName": "MasterPCPage/FGC_유저마스터페이지",
