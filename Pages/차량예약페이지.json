@@ -313,7 +313,7 @@
                 }
               }
             },
-            "ID": "532874f5505c40b2b1b8e3117c6af97e"
+            "ID": "20ec7a1c77014e828f8d900f12213f86"
           },
           {
             "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
@@ -467,7 +467,7 @@
                     "MessageFormula": "차량이 이미 예약되어 있습니다."
                   }
                 ],
-                "ID": "7e790e95-0f2d-4af2-b23b-c61e5007d3f3"
+                "ID": "dba63bfe-de1f-465d-ac3f-6f560bdf80fd"
               },
               {
                 "CommandList": [
@@ -533,7 +533,7 @@
                             "MessageFormula": "차량을 성공적으로 예약하였습니다."
                           }
                         ],
-                        "ID": "e0be6233-daff-49c2-9233-0f23da66ca5e"
+                        "ID": "f2e28348-17e2-4ef3-9bef-817c4bd8c095"
                       },
                       {
                         "Condition": {
@@ -578,7 +578,7 @@
                             "PageName": "차량예약현황페이지"
                           }
                         ],
-                        "ID": "3a0f4a0f-5c18-4bd7-96a4-c483d0f33801"
+                        "ID": "b16165d9-b1ef-42b9-9f2f-592d423a709c"
                       },
                       {
                         "CommandList": [
@@ -587,12 +587,12 @@
                             "MessageFormula": "예약날짜, 예약시간에 문제가 있습니다."
                           }
                         ],
-                        "ID": "e260f546-b252-404d-8559-61c7b98b030a"
+                        "ID": "789f1de6-37b3-4025-b4ef-d61119ada2ad"
                       }
                     ]
                   }
                 ],
-                "ID": "164e9b39-7325-4353-af7c-1cd99285ecb9"
+                "ID": "619e183b-1647-48ca-b953-198b53b9103b"
               }
             ]
           }
@@ -1099,11 +1099,11 @@
     "4,28,20,30",
     "2,28,1,30",
     "13,9,1,16",
-    "33,2,5,5",
     "32,3,1,4",
     "31,11,5,11",
-    "31,3,1,4",
-    "5,9,1,16"
+    "5,9,1,16",
+    "33,2,5,5",
+    "31,3,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1148,7 +1148,7 @@
             }
           }
         },
-        "ID": "77f3ffa9ac0241d18f3777141a4c6cd7"
+        "ID": "3e428725e91c4788b2817d56a2f98e99"
       },
       {
         "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
@@ -1222,4 +1222,4 @@
       "Size": "473,383"
     }
   ]
-}//xZANWg9OL/mU5r2/D1IAnnruLUAgx3IOkL6khQvHEjAyRvpCP6GOLxYjE4/fc/c3GIiz3ipl4qpL9VGfpqTMCy9lKfigS99UD4vfbgOYJRw5pG5+bURlUWDW3sxuLgq7D5KwtkDhLB5fy6FI6CUYz51vOQnYvF1Lo0+hYxp6yAcw/5hZPTbP3s2vo6XiqgJwGXrrfuAuIvXJsKSu6GHhJAlfEu+qGZCh5DFLPG0IhIHQBz9llU5aepWpM0bhNve/oSuMmX9JIxEi9SV9gOPlKv76fIhcBEa88oyYP/8GNTiYSWrOJH0ZC6RHtXeJr4HylD4vez1BQ7vqeQkyR5OUuZn6g0JseTs47p+c+FuIAalkFSm5C3P/H+yDoNkbNDv21Ag8z/Ppk2qGvg5yyDJod14C9SFc3s6LJzE1O23mXOiMmtCDIh2xsTQkiILrWOobOFbrdLKFeRsCvMKBSizLjS1KnhHLtaZ0pIFTGH+pxy3g7xDt+pSQ0cqkseL9U7vxdV1bYbgny7ykNcz/Tp0NJvi6gcQ2V74QVe4lIto2A1G2QnegTwUG7wMCJWJtGWY6yiuB7CWaHhEcPyMwTP3Pf3MyBCoNYg0hLHayJNpHfeK0izfUi9jlukh3CmtrzcNuqL2M5kTvcNPqA/eg7qXKSX9k7jXm8C7NzRTkYMOlq2aj41o2iOWmjYkf9JOdEuc9jNgZ+cQliZWuZAmHWKR/AVxHJA1KUbOyRkxdVnDQ5qCHbRvpdCMFjjllWn2LH3VP8gOUy8hKmF8vqh31vx6as4sOWJsRziqYUjXfr0DTKF6bOXbMYzee5SfCpEJvnvBLix2CFp+nGoV8ZcIJK1aJ8Zh+js4IGu6iaDkZBSYyjRIaDDIDG89SDJsqRHSMzj+XmicYnubUE2mGSVCaaaY4Ig==|920
+}//i5phD4OdblrNnBrdG5cTosp/SQKJww0dBxjn/JxPWcIgV4qk4tUepSYHNdxr1dncpUlecIlmnHLV9x5l9ZgtRjMvgkEnrohtu9tyDuiFI3LAVnAX4sLmBXGJm+Em2eQCH+L18ADvlBBt7N2hnBhN2rv06iCuirKOgbKNzReD/ivK58zo6LDe2ianjLTr0bne8O8dJq92MLfWoNhKeOM6nMmGczlKelGpjS25Md3HmFjb1jiJSbbmUhBrgWiKfd/4ZDsCk6TLSspMusAc0nZUYMUcQAEo+M6Q8na3Yylhjp+iMiUuoSNLqnR2EMOjPhhE+tf1DkzIc15FpR3u3grKJELy3WtyLQOntS2C6/5e8ur8xHYyt7jfOJ8qvCmpR4oGCGw0SOfDoifUHJXJeyKatLc8cL7DkkR8iHj9UbxLVhrgJVqpua+6HtVwXVCA8qraL2BLrbyq/CC+nFiDt4DoXo7n/7p58jY0NX052WDJ3t2SQ69KVWfNh7gBzGct1eJcu46/sHWhHPaPpSpB0X4r+LLeJnt6EgFA2OoPe6KliHfnCT37ASHaULZMjULoI/TSZljfUsEYz5LeyR4IhuMNFYuA6lyBDkFeRkpiMf/hGUckfZ7W0fNVCxZzonOOWAyNpaorkOJPfV0B7972WHnlP2mX+gwFYCsYWEYOtLgj93ImNwP2lqBUBX1Pqyz7OLpo650rV/8mCTHqdoW377c1nvC4+liY+7plNPhbER4RPdV8c+x1SoqlFjqClT5bvz2xtzW/+RWJLgs8g1OjmjJ54Z2jUIxCDvwteuqEW8NTjsjbQlWIuSirdiJuP4u0TMYk2br1jowXm+WTuxlSgdozlqvLlRpmER2uGW9WIUfVo6m9t8K6L4FB/RwuN9eoDE+CvgY8Ueb9pSNMVY/1Oiw15Q==|920

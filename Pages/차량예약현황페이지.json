@@ -97,9 +97,9 @@
     "38,49": "차량종류"
   },
   "Formulas": {
-    "8,38": "IFERROR(ODATA(\"차량정보?$select=차종&$filter=ID eq \"&IF(ISBLANK(E2),\"null\",E2)),\"없음\")",
+    "8,38": "IFERROR(ODATA(\"차량정보?$select=차종&$filter=ID eq \"&IF(ISBLANK(C13),\"null\",C13)),\"없음\")",
     "30,53": "IFERROR(ODATA(\"차량예약?$select=사용자&$filter=ID eq \"&IF(ISBLANK(BW1),\"null\",BW1)),\"\")",
-    "8,15": "ODATA(\"차량예약/$count?$filter=예약날짜 eq \"&IF(ISBLANK(E1),\"null\",TEXT(E1,\"yyyy-MM-ddThh:mm:ssZ\"))&\" and 반납여부 eq '예약중'\")",
+    "8,15": "ODATA(\"차량예약/$count?$filter=예약날짜 eq \"&IF(ISBLANK(C13),\"null\",TEXT(C13,\"yyyy-MM-ddThh:mm:ssZ\"))&\" and 반납여부 eq '예약중'\")",
     "36,53": "IFERROR(ODATA(\"차량정보?$select=차량번호&$filter=ID eq \"&IF(ISBLANK(BW2),\"null\",BW2)),\"\")",
     "1,74": "ODATA(\"차량예약?$select=차량_ID&$filter=ID eq \"&IF(ISBLANK(BW1),\"null\",BW1))",
     "32,61": "IFERROR(ODATA(\"차량예약?$select=예약종료시간&$filter=ID eq \"&IF(ISBLANK(BW1),\"null\",BW1)),\"\")",
@@ -1051,4 +1051,4 @@
       "Size": "400,687"
     }
   ]
-}//m+UsTY3g62ylYJsvOhutKv3lUxe6f+kcmMWTe4enLoJogW05Mc271vlWdNBOenD5qajhYC/HsWSMxD+C42uuQsrfJD2NX0PCc1lqW6bpgJ4SPQ5cI1RAYRNXewnfRuhJQ8NFJzag8BnBccqhajNptxP6NdCBhjUqohnm4YpTj3IneWksxJtjNA9fOHoxmP/dAFWMg8TZxHR5NMapnaPT6LeINrt2aXxzX6hMPN3jgqRxoTGk8zLCoUnswWnWN/0yEV2rd0xoCe3POoEW4KYjaZl2uAXFzoVSANcW6MqvGBtqWaIAx9OQ20jdBGxv/sVY3TzClVKVRBzP01hDZ+4HO2ulKaYwtDohk3td+3L08qr6QIJ8uGnah58NShbTqls+6Ue3VlUUPapQFeFZDpiuflOcoaXkpIF4I/rHe4GPjbT+nsnZk0sP08u6J/vIBSSXzuiGmD9yKXk2RxbqBTY+pRjlYadjTlEpEmTf7a6B8Tjt11LCzj5Pwl9XQCvYycuat7XrOrlYYqkXzQVaAybhO1b1XpXC0oG84q9B2skj17EHxCmQT/0dEqqNkTrOlZifk6Wsf01395FqVXkubWahlJ5TNVUhivntEiQvrjzRe1WaD7UP4WwDEIWlGSDb8yZtXf4sMGa+nQVdRzRJJUMnnvUytlgFIrYKxrlOgBFIZQSmtMFgiu9BizEtQqXSk3IFkX9Ni+W607sTZSrC4bhUJhFIDCCz6mBeFPp/M9ObCr2cLpPlE5hPhP4G3hMezeH2DdVFSjZSbAtIgpNah+TJvdcIkV4q6vWEfKry7sbyf/HiG+mnCXYFERqyKjzzWbkeBLVcwBMu5YY+gYPBxWz/ba13+LFv7xh9DPq7ELdYOE3aw7cM5iVuosWG+9DRSwzWf/zTpvfn558j80VLM9t/eA==|920
+}//J435m5IDW18qCE8Nou+a8I6JX+Wf3YU9xLyL7x+In+ubsasudqJvTXAPxNGnjHzx66pZmzIxlK1t2+t7ANhinBbY/lPIT0kSny9opCpCz59FPl5DrD10nfOENxoNJh/cEZUOUCe9/MfwYAu2VHfodlz8bxgZuYitFVLadsUi5u9SUII2xa4uPElNUGBdBNhtbubZN1ek+jTrAcz1yhY9MD9jXCnNef36jbzuUVys1DbhtsFOJt0KBSLDcb+/uidm9hIj4C1LXgQkagl1CuZ2M/zFMRJSTRYz8bWdMyNp1/CYm5uQKNsYa7ULCOIOjDZvkcZCqW/jVIqXsozh5Y0ievHKo0dptnOvVf3KOjkal63HftRqRhOdUGZK4YA+6XluUIKo+foxxia90z3Rg8MAWCuzLEmQIdmC90m+/IWdwRfJJhVoz4eTkyDnWPWPV4gVfu5OwMrtugtY9Kp9jwptMxJxxA7009tj6Zy7Ef1JtM1BafRSAh536GVTvFBbkBbdOUaDSMUT2oyLD2Owd6iJurD3DsfxivFpuR/EM7sTVRtiSO3XBE0tMuL1nmDC5KyJHpgO/r2GOoXxCBI0q1J6hxW1C2axoz1HzS6fumsX7FveOG7SG70hX4dp5tpAeTpHBmgTK0qF9AEbiDoqG0SIuB+TAKtVNli7VM6mQOApj3s3/tC9L8Tg06ONq74qBBApoOh0tjGOoLKA2od0ETjrS4/slxanNaB3xaRfpyS9UysmQQ2KnhoD5/rEQ7LX8rNXJuNyHZCk8RJt7m/rtrcJ4c9c9NduNjI7e6IuPCdSm1ubYFxPOYs/SP+Z49FVynAO+6+1WRwPexnvttipDGWZNoqsEH4qlGEmvh+A166MnVn8W5lyQaZiTGS0BTSuh0pNUhUvnu/O9yutfYCKWLB0xQ==|920
