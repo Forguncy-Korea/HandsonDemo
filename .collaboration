@@ -6,7 +6,7 @@
       "UserName": "DESKTOP-SFEU14D\\NamHee",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2023-05-30T18:16:25.6491518+09:00",
+    "LockDateTime": "2023-05-30T18:16:34.4430724+09:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\차량정보.json",
@@ -21,7 +21,7 @@
       "UserName": "DESKTOP-SFEU14D\\NamHee",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2023-05-30T18:16:25.6491531+09:00",
+    "LockDateTime": "2023-05-30T18:16:34.4430743+09:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\차량예약.json",
@@ -289,16 +289,5 @@
     },
     "LockDateTime": "2023-05-26T18:00:40.7362536+09:00",
     "ModuleType": 1
-  },
-  {
-    "ModuleName": "Table/Sheet1",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "DESKTOP-SFEU14D\\NamHee",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-30T18:16:25.649147+09:00",
-    "ModuleType": 7,
-    "ExclusiveType": 0
   }
 ]
