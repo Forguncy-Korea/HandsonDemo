@@ -191,7 +191,7 @@
                     "SerializeProperty": "=차량예약페이지!날짜"
                   },
                   "TargetCell": {
-                    "SerializeProperty": "=차량예약상세현황페이지!G7"
+                    "SerializeProperty": "=차량예약상세현황페이지!G6"
                   }
                 }
               ],
@@ -313,7 +313,7 @@
                 }
               }
             },
-            "ID": "20ec7a1c77014e828f8d900f12213f86"
+            "ID": "1b8f6c5db5ba4fb2a10153b7787e9ab4"
           },
           {
             "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
@@ -467,7 +467,7 @@
                     "MessageFormula": "차량이 이미 예약되어 있습니다."
                   }
                 ],
-                "ID": "dba63bfe-de1f-465d-ac3f-6f560bdf80fd"
+                "ID": "7bf23132-dbb2-4070-bd71-cec30de05852"
               },
               {
                 "CommandList": [
@@ -533,7 +533,7 @@
                             "MessageFormula": "차량을 성공적으로 예약하였습니다."
                           }
                         ],
-                        "ID": "f2e28348-17e2-4ef3-9bef-817c4bd8c095"
+                        "ID": "84254623-1a61-4041-954b-5dcf9f055492"
                       },
                       {
                         "Condition": {
@@ -578,7 +578,7 @@
                             "PageName": "차량예약현황페이지"
                           }
                         ],
-                        "ID": "b16165d9-b1ef-42b9-9f2f-592d423a709c"
+                        "ID": "f3af8075-f597-4019-9f5d-7558897eb2de"
                       },
                       {
                         "CommandList": [
@@ -587,12 +587,12 @@
                             "MessageFormula": "예약날짜, 예약시간에 문제가 있습니다."
                           }
                         ],
-                        "ID": "789f1de6-37b3-4025-b4ef-d61119ada2ad"
+                        "ID": "f2e859bc-efd8-4e67-8033-a347db58acfd"
                       }
                     ]
                   }
                 ],
-                "ID": "619e183b-1647-48ca-b953-198b53b9103b"
+                "ID": "a765bfac-9c40-49a3-9a3a-93fcfd9a968d"
               }
             ]
           }
@@ -1110,9 +1110,9 @@
     "31,11,5,11",
     "5,9,1,16",
     "33,2,5,5",
-    "31,3,1,4",
     "2,28,1,40",
-    "4,28,21,40"
+    "4,28,21,40",
+    "31,3,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1157,7 +1157,7 @@
             }
           }
         },
-        "ID": "3e428725e91c4788b2817d56a2f98e99"
+        "ID": "c7f73918d77c473688e304710d3d8cfe"
       },
       {
         "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
@@ -1207,7 +1207,9 @@
         {
           "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
           "roleNames": [
-            "FGC_LoginUser"
+            "기술지원팀",
+            "영업관리팀",
+            "Administrator"
           ]
         }
       ]
@@ -1231,4 +1233,4 @@
       "Size": "473,383"
     }
   ]
-}//W0us2cRhY8bJLTWyS8V6tgutkx+Y1l1WvGj5UQ4CKbMuv4iXxxhInFcWTwLrch+CqofnoicW6qt2AS28+kYddmz53/RbdybkhVgDG2ExiKsoVVhWmFC1fQg15F6vp4DW6tqMzwoA0J56P49sU7DAkvewCEU7KM54LnQnp5nqzclvAtUL+cr1/Yx25spOgbL5tCtFtc0ujKoF1jMcTCdDehuyJX50Mc/y3w2P/QzZd4oD1lRwZWbU3pKUDMVKgy2h3rQHasp0rJpIMW9rOapsDuJRyKfJfQxtZ371K2CEwQgy3HGcPXWvBWTouT/I7DW2vpXv1AEgTvcBzuMB5lb/SdVAw4sBX6KkKdhxChqMYRDPCZlHD0nwOxu7nAo4TEdVJnpo7jEPbLJre3AzRiErOdEfsmwC4+m9YHab1ek0VD5D7o96b7k8YYLFWRvJwT2v7t9vvOv2NeMOAEP1P6gO3tcV79KVTSY6/GGT6J3z7ka8iti3uc4tlagOxszCv7FJyPBNKM46QwjSt6O5eVF88rvMwgklvMf5qn8qbHuRVUKbXcgTfBz0rBr2l3pckO08IP/+W7glWEqbbJPr7OxjwW4+uramWgIAU71yiMHo+v2VCjrxOoEWd+l8nWTibQ8Hy9900lj/Zth29qHfo9cwXUXPQfj7GuMSJBNyuHu920/BkBMHPbzGItBfyZGNuN+rzz55jvumL2rapN+aW7tzgMMoNux0VgSgE6mCEpLohLnfwtZ/yWH4vutLhuhKAUqlN/VN5G96+lPnGaK4bTFcPrgVLZOZTOYfI+0qN2VVSiUEn/juSJQ/567FR+kxgqtKSB4+WMJBtMBOgy80n378DYo4dZQ3+Hobw1bch3xJ1di0Mw+O9tmikLbf5ERDW2pBIN2F4n5hbs9BiexzY7+wxQ==|920
+}//f0rdfsjpw1x+1jzCjMup+Lh8j0L7ILlxzeI6Su2E+xePbdOQ65u5dQmJ96IN+3g/lsIeDUBubdnOTyXj4WvGuvZwGa6tNpJsJd6l+4g6g80KgwzpfjFQOStgPo05gl2lY/mfEmfGxAg0dKtkFhTsHYnWQ6Eh7mcM1hSMpm8vBfnwbmqMUSYCbnd1BRoLSjj/GDUwCOs3v2QN9U9rkNS06weHWxUTYgNKIQRr/9+eii6j5Dqg5C3frZCutYnmcMHRApMRLPC4mCPgXGjN/GOECYvJ9qOiH0DERoH9Bu3TuM1M8Z++P88jvSVpdqiEkVuPPNcE/k1N1GR/7gcQlarEDMNeulPPRcdB+2dqXEv2TX+T4UT8XaBP0htcd5aORu/bNSggnw7XSE6Jj3d1020vNbQ5BKvOjZoNwn0sJDLdaAApewVYPPehW+DLjAl9aVDegHynEOnJJP83HY7/kiR+2tadchzQnSugWGlk4WsnSzqEPOQvq2rtSeEuPDTONtVeBWovFduWbiAy21v2gmtf6LLfpYXNMRWdKpuBb7D1FELJmUZ/y9DNxCnI+JY3+px10praYZOABJu9Qqjw6jpOvASzmmvLmH0AO5/EsdRmtRQrq+gvf3l2w60dD4MDUUXxG/IgpmUBCe2gyAf+CGDm0OPk/jJDTH2x8hkfzgN9ISXmGNti6FCUpR9DwDE5pBoTqDjDz3+zabarKk/qnHqQlgyOhg3eyGVWeFSrAbaUpXs2Q5lV8APW4qq2YQODH9FGFSekXudPwkwHZ472eKK8fg/hKbpNsB6SIHVezfDulUFn27TjURdh04UKOe2ClqEnePDMVAOwuLYjLAYwpyCLrRbZKQs5UN04X+g+sebplMccJeJVco2BcIL49JrJ5uw6Ukw32mUysX4f7QpbAGufow==|920

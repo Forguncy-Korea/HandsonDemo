@@ -72,9 +72,7 @@
     "Count": 70
   },
   "Values": {
-    "0,0": "선택날짜",
     "0,55": "선택한 예약 정보 ID",
-    "1,0": "차량ID",
     "1,55": "선택한 차량 ID",
     "4,2": "차량 현황 페이지",
     "6,48": "예약 하기",
@@ -98,31 +96,20 @@
   },
   "Formulas": {
     "8,38": "IFERROR(ODATA(\"차량정보?$select=차종&$filter=ID eq \"&IF(ISBLANK(C13),\"null\",C13)),\"없음\")",
-    "30,53": "IFERROR(ODATA(\"차량예약?$select=사용자&$filter=ID eq \"&IF(ISBLANK(BK1),\"null\",BK1)),\"\")",
     "8,15": "ODATA(\"차량예약/$count?$filter=예약날짜 eq \"&IF(ISBLANK(C13),\"null\",TEXT(C13,\"yyyy-MM-ddThh:mm:ssZ\"))&\" and 반납여부 eq '예약중'\")",
     "36,53": "IFERROR(ODATA(\"차량정보?$select=차량번호&$filter=ID eq \"&IF(ISBLANK(BK2),\"null\",BK2)),\"\")",
     "1,62": "ODATA(\"차량예약?$select=차량_ID&$filter=ID eq \"&IF(ISBLANK(BK1),\"null\",BK1))",
     "32,61": "IFERROR(ODATA(\"차량예약?$select=예약종료시간&$filter=ID eq \"&IF(ISBLANK(BK1),\"null\",BK1)),\"\")",
     "38,53": "IFERROR(ODATA(\"차량정보?$select=차종&$filter=ID eq \"&IF(ISBLANK(BK2),\"null\",BK2)),\"\")",
     "8,27": "E9-P9",
-    "34,53": "IFERROR(ODATA(\"차량예약?$select=반납여부&$filter=ID eq \"&IF(ISBLANK(BK2),\"null\",BK2)),\"\")",
+    "34,53": "IFERROR(ODATA(\"차량예약?$select=반납여부&$filter=ID eq \"&IF(ISBLANK(BK1),\"null\",BK1)),\"\")",
     "8,4": "ODATA(\"차량정보/$count\")",
-    "28,53": "IFERROR(ODATA(\"차량예약?$select=예약날짜&$filter=ID eq \"&IF(ISBLANK(BK1),\"null\",BK1)),\"\")",
+    "30,53": "IFERROR(ODATA(\"차량예약?$select=사용자&$filter=ID eq \"&IF(ISBLANK(BK1),\"null\",BK1)),\"\")",
     "32,53": "IFERROR(ODATA(\"차량예약?$select=예약시작시간&$filter=ID eq \"&IF(ISBLANK(BK1),\"null\",BK1)),\"\")",
-    "1,4": "IFERROR(ODATA(\"차량예약?$select=차량_ID&$filter=사용자 eq \"&IF(ISBLANK(AK8),\"null\",\"'\"&AK8&\"'\")&\" and 예약날짜 eq \"&IF(ISBLANK(E1),\"null\",TEXT(E1,\"yyyy-MM-ddThh:mm:ssZ\"))),\"\")",
+    "28,53": "IFERROR(ODATA(\"차량예약?$select=예약날짜&$filter=ID eq \"&IF(ISBLANK(BK1),\"null\",BK1)),\"\")",
     "16,49": "IFERROR(ODATA(\"차량정보?$select=차량사진&$filter=ID eq \"&IF(ISBLANK(BK2),\"null\",BK2)),\"\")"
   },
   "AttachInfos": {
-    "0,4": {
-      "CellType": {
-        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
-        "CellDefaultValue": {
-          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-          "SerializeProperty": "=TODAY()"
-        },
-        "TemplateKey": "_RS_NewLittleRoundCorner"
-      }
-    },
     "6,48": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
@@ -177,44 +164,6 @@
     "12,2": {
       "CellType": {
         "$type": "ElementUI.CalendarCellType, ElementUI",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
-            "PropertyItemsList": [
-              {
-                "TargetCells": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=차량예약현황페이지!E1"
-                },
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=차량예약현황페이지!C13"
-                }
-              }
-            ]
-          }
-        ],
-        "ValueChangedCommand": {
-          "$type": "GrapeCity.Forguncy.Commands.CustomCommandObject, Forguncy.Commands",
-          "Commands": [
-            {
-              "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
-              "PropertyItemsList": [
-                {
-                  "TargetCells": {
-                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=차량예약현황페이지!E1"
-                  },
-                  "Value": {
-                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=차량예약현황페이지!C13"
-                  }
-                }
-              ]
-            }
-          ],
-          "ParamProperties": {}
-        },
         "DBClickCommand": {
           "$type": "GrapeCity.Forguncy.Commands.CustomCommandObject, Forguncy.Commands",
           "Commands": [
@@ -244,7 +193,7 @@
                     "SerializeProperty": "=차량예약현황페이지!날짜"
                   },
                   "TargetCell": {
-                    "SerializeProperty": "=차량예약상세현황페이지!G7"
+                    "SerializeProperty": "=차량예약상세현황페이지!G6"
                   }
                 }
               ]
@@ -268,21 +217,6 @@
                   "Value": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                     "SerializeProperty": "=차량예약현황페이지!값"
-                  }
-                }
-              ]
-            },
-            {
-              "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
-              "PropertyItemsList": [
-                {
-                  "TargetCells": {
-                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=차량예약현황페이지!E1"
-                  },
-                  "Value": {
-                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=차량예약현황페이지!날짜"
                   }
                 }
               ]
@@ -339,7 +273,7 @@
                     "SerializeProperty": "=차량예약현황페이지!날짜"
                   },
                   "TargetCell": {
-                    "SerializeProperty": "=차량예약상세현황페이지!G7"
+                    "SerializeProperty": "=차량예약상세현황페이지!G6"
                   }
                 }
               ],
@@ -391,14 +325,14 @@
       }
     },
     "16,49": {
+      "BindingInfo": {
+        "TableName": "차량정보",
+        "ColumnName": "차량사진",
+        "GUID": "ab27ba12-a5b6-4bee-8eaf-e62897eb42b3",
+        "IsImagePath": true
+      },
       "CellType": {
         "$type": "Forguncy.ImageCellType, ServerDesignerCommon"
-      }
-    },
-    "28,53": {
-      "CellType": {
-        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
-        "TemplateKey": "_RS_NewLittleRoundCorner"
       }
     }
   },
@@ -615,11 +549,11 @@
         "HorizontalAlignment": 15
       },
       {
-        "FontWeight": 2
-      },
-      {
         "Background": 9,
         "FontFamily": 1
+      },
+      {
+        "FontWeight": 2
       },
       {
         "FontFamily": 1,
@@ -672,7 +606,7 @@
       "0,64": 2,
       "0,65": 2,
       "0,66": 2,
-      "1,55": 2,
+      "1,55": 1,
       "1,56": 2,
       "1,57": 2,
       "1,58": 2,
@@ -860,7 +794,7 @@
       "28,50": 2,
       "28,51": 2,
       "28,52": 2,
-      "28,53": 2,
+      "28,53": 35,
       "28,54": 2,
       "28,55": 2,
       "28,56": 2,
@@ -874,12 +808,12 @@
       "28,64": 2,
       "28,65": 2,
       "28,66": 2,
-      "29,49": 35,
+      "29,49": 36,
       "30,49": 1,
       "30,50": 2,
       "30,51": 2,
       "30,52": 2,
-      "30,53": 36,
+      "30,53": 35,
       "30,54": 2,
       "30,55": 2,
       "30,56": 2,
@@ -893,7 +827,7 @@
       "30,64": 2,
       "30,65": 2,
       "30,66": 2,
-      "31,49": 35,
+      "31,49": 36,
       "32,49": 37,
       "32,50": 2,
       "32,51": 2,
@@ -934,7 +868,7 @@
       "34,50": 2,
       "34,51": 2,
       "34,52": 2,
-      "34,53": 36,
+      "34,53": 35,
       "34,54": 2,
       "34,55": 2,
       "34,56": 2,
@@ -970,10 +904,10 @@
       "36,50": 2,
       "36,51": 2,
       "36,52": 2,
-      "36,53": 36,
-      "37,49": 35,
-      "38,49": 35,
-      "38,53": 36,
+      "36,53": 35,
+      "37,49": 36,
+      "38,49": 36,
+      "38,53": 35,
       "40,50": 2,
       "40,51": 2,
       "40,52": 2
@@ -985,14 +919,9 @@
   "Spans": [
     "12,2,31,44",
     "8,4,2,6",
-    "0,4,1,11",
-    "1,4,1,11",
-    "28,53,1,14",
-    "30,53,1,14",
     "32,61,1,6",
     "32,59,1,2",
     "32,53,1,6",
-    "34,53,1,14",
     "8,15,2,6",
     "8,22,2,1",
     "8,44,2,1",
@@ -1008,12 +937,15 @@
     "7,39,1,5",
     "6,48,5,10",
     "6,59,5,9",
-    "16,49,11,18",
     "36,53,1,14",
     "38,53,1,14",
     "13,49,2,18",
     "0,62,1,5",
-    "1,62,1,5"
+    "1,62,1,5",
+    "16,49,11,18",
+    "28,53,1,14",
+    "30,53,1,14",
+    "34,53,1,14"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1027,7 +959,9 @@
         {
           "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
           "roleNames": [
-            "FGC_LoginUser"
+            "기술지원팀",
+            "영업관리팀",
+            "Administrator"
           ]
         }
       ]
@@ -1052,4 +986,4 @@
       "Size": "400,687"
     }
   ]
-}//uGS4CeewpdKLsuDbjoELLWO3DvEY+6lANmG/Y6w0mvwowF4+UNyHP1jIeMgkRMxWCQlrqftZurwcBsmsQ8Zg4IOspjn+S4WgZcTn7JVKI1e9Bl1Mmfl8BYxSzyU424Bof2MRd+/CCeDbJd7ciKqyndn5v/ctjDfKA1Z/cw52icf4i17Mvrp8gPxsyMeRn8WGhJyxe/DU/JHowBsER0hTWPZUJtXO7Yr3aoEEXHjgMoKf7VjlA4jICunrMvY2ZGurXZoKxqkwTmmtVxUNRRgcxooGMMFtVFDnLktpjfXzPe/jucuGwhqwNPCz4oKce0HR7DAYxoXztr624OI1pDFxjvzPYamClVKzpffo2Q9vw1OlmRz3oD1qmi7hc61cWmwseNNZaICgzm7a2b9kwapX1sjGWZJJ0OJqF9RVrhb7etqj6eVH6eSEdyXfZfzdpcuzyelee5XR4qKv9UWE/0iO+Dv5/dEjabgOPVDZcCB3vuMKL3gwg6Ohjx0B9cl56pCepi31Wps0hEX0j3nVOxfOueNHAkiTJFFdhlRpf3I75/NxC+Q+ctiLhWs7pqExN9wQ0eTo3IuccWmR0SgQOvWwxDQnMT0UWQP/X4zBae4DjOjqLCEQrQ5/N4U7UnVW4xdVAx1wJbrrqkSVLJQFRPW+Lyo6ildxSKWT8oRo+T4+Ybwpc4UL2ylr8zBWS+hDRZbRHT+4MUWt72ffiMCCEFukVKyZmJiOqoJxUbgdZjRNPEPUdGEooLkQnqRo99qVQhMvVTF3oVXL5R7mXUyEdMd9pMMhpYTsWmERUUMOxUxgYlpRxztk8NqFT10GRFZ6sgIJNdWQhmSSM8DpdDGh8eIRGM9yNO8MN9aHUjwIc0GKK3DyWO+Kj5JnTLyGepdR3Th3GnaHbIHXftOgfgksUgaZjQ==|920
+}//JftfbGtsQUk/wQZGiHwRYAtfJntSh0hs9SogAbSx5tVDHIvz+2hX/BQjeqxIE/gKeoLKeZ4qyGojqVZXNvl/HW3KscodhUQGCFHsIMCzSFqqrW7Qc03eXaDQ3D7OP+PJoCQgkvHVAicGShyXiREvxNMZ6ANfJ8B2RrsTXNn37o+C/8NxSrjixPtcHGvxMisM57cmMNf5Bsef4c6P/AmRA9jaqvJbNfjDT0CmaXpZtA3SlrqHq8ei1zKTr/0oKa1SMOJ7hSed688GLqPU6KC+307GxlJAk/4dgZIxLrsYpzhECKt80p+/AteXplDz3PODAuh0BxcF95AFp910m6MZhm9+MNssLl1yZxfP4mVUASIn+gYeMdfaAXoHHIjoCkYO7qaDDhtT/1odWXap4Aiz08sYt3Zz9gO7fFO9Bj2B1/lIjw0GfWcru9jCUq9DVjSwkJbLwOk4KqemNi2VSgo2NuUhA528ZgUF1ejJXJZzRkKmcTCj9/3CD8r+2H0ZlJLPRtKGyAHVX1GUXThCMtwtpPnyevPt8IDvhTywREu35h3Ds8vpPmHxyTu/GsYZORDskz3FRFfDLf4r11DkiuxxAixkTJlUe8lMofa9CddzDf/LNuNpB2X3apVRiyOL+L8ORUb7yPnL6t00CYCUQXd+aYwek2D9/uBSnP3HHfIfGvaaqkNlkIF7EoiApUstCfi4hWnd6keRsKIxvmQVIIuYR9ahPIrH7EqIfpt9huxaM/2pYMqybAmXtLuqL6s6WJPcSnLWF+1uVhqPgfiXjgei54rkwy+7N6uR1FUfXX9l+zQsFoLqmFubSHdqADu0bxXIT6r2wn9Zc5EfL1DSvz1duXFmnHgH6C5FZ8gKI/G9b6Jlh96vTso6267tESqW7cDBFrIIytmgGvTpO4MHKnZRqw==|920

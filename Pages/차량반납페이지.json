@@ -11,6 +11,11 @@
           "DesignLengthInPixel": 33.0
         }
       },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
       "7": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 33.0
@@ -106,16 +111,10 @@
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 23.0
         }
-      },
-      "6": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 10.0
-        }
       }
     },
     "InLogicalVisibleIndexes": [
-      23,
-      26
+      23
     ],
     "Count": 37
   },
@@ -148,7 +147,7 @@
   },
   "Formulas": {
     "26,21": "J27+J24",
-    "26,9": "ODATA(\"차량정보?$select=주행거리&$filter=ID eq \"&IF(ISBLANK(J8),\"null\",J8))",
+    "26,9": "ODATA(\"차량정보?$select=주행거리&$filter=차량번호 eq \"&IF(ISBLANK(J8),\"null\",\"'\"&J8&\"'\"))",
     "23,9": "J22-J20"
   },
   "AttachInfos": {
@@ -168,7 +167,7 @@
                     "SerializeProperty": "=차량예약페이지!날짜"
                   },
                   "TargetCell": {
-                    "SerializeProperty": "=차량예약상세현황페이지!G7"
+                    "SerializeProperty": "=차량예약상세현황페이지!G6"
                   }
                 }
               ],
@@ -410,7 +409,7 @@
                     "MessageFormula": "대여자 계정이 아니므로 반납이 불가능합니다."
                   }
                 ],
-                "ID": "87456820-b6c1-4398-94a5-3fc7d8340836"
+                "ID": "995d5309-39b0-4e2d-a0d2-ea82422b47c2"
               },
               {
                 "CommandList": [
@@ -423,7 +422,7 @@
                         "BindingInfo": {
                           "TableName": "차량예약",
                           "ColumnName": "주행거리",
-                          "GUID": "c51a3e2a-2965-4e4f-b376-03a2b13cbdcb"
+                          "GUID": "53a4ec8f-a57b-4a16-a378-ec56a9bbee34"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -434,7 +433,7 @@
                         "BindingInfo": {
                           "TableName": "차량예약",
                           "ColumnName": "반납여부",
-                          "GUID": "74a0d923-4d28-4c22-8ed7-c5a7d5bdb70b"
+                          "GUID": "7abcab74-cb0f-450d-ab70-5aefbda1e4de"
                         },
                         "Value": "반납"
                       }
@@ -449,8 +448,8 @@
                       "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                       "ColumnBindingInfo": {
                         "TableName": "차량정보",
-                        "ColumnName": "ID",
-                        "GUID": "7fe32de5-a90e-46b7-987e-c186c73c7796"
+                        "ColumnName": "차량번호",
+                        "GUID": "e6c5009a-ca0d-4a22-9273-726b0a593ffc"
                       },
                       "Value": {
                         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -462,7 +461,7 @@
                         "BindingInfo": {
                           "TableName": "차량정보",
                           "ColumnName": "주행거리",
-                          "GUID": "ecc738c5-d1c1-448f-a282-c55a4d799062"
+                          "GUID": "08ac6f8e-bce1-4c1c-91f2-1ccd6ced20a9"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -476,7 +475,7 @@
                     "MessageFormula": "차량을 성공적으로 반납하였습니다."
                   }
                 ],
-                "ID": "0d93b370-7d16-458b-8744-30a1bb3ac876"
+                "ID": "dbb0686c-da57-49fc-be71-2f1048964971"
               }
             ]
           }
@@ -910,7 +909,9 @@
         {
           "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
           "roleNames": [
-            "FGC_LoginUser"
+            "기술지원팀",
+            "영업관리팀",
+            "Administrator"
           ]
         }
       ]
@@ -935,4 +936,4 @@
       "Size": "474,565"
     }
   ]
-}//+SitZQ/aDKW4DTSGJSsE9GKSOS5PRCB5q7+V162UjG9Xmvq3vG6//t+kbApVgRY/uTNtbpQib7bnaaJaWrLC3rzmtPAh8+rhsVoZi6VgYxy4WPsZ3qmj2KHqtArUaxYtf9q9Ef9ueFbLz+VUOZ/0SE6XF0ncGrteaa6/sDyGqEoIueC4W5wOuOLFWuDT63998z4BITyR2K7ayMxu0urjyJPQqGjRgoJSeVIsmwLnMwAjmQT//KvAbiHU3XIYLlz0SgIJHiUtrgbE0vL1FseKz3Be0tGJatZ6+meThjp0nYLCa9VMpzMoVwqjEpkLqBa7U3Qck1vnDUV57filiqSICG95OkyVzaGb66k9pWMUWsc/fGXQMGkzWh+Bs95c+F/KT/RXjT7wF3gOyZfTpB/EnQGbB9GJhPekR2i1jVcZAwvIfJbpFi+9Lr9dHOX5pLxGnm/W2/K2ny3nBkYCCjbGGCys+PlDvcuH0fvJkdqTzBWxhxSLK5yJSeFfHNN9Za78O9H/L8guctTa7XJ8jCYgtZ06qt7WSVgWPokR8KjhfiCO/JTy6JlEAy5iQhDP+BoGh6cHy3qImfi8MI8lAcNV1SXAnm6q4HODW9mmX0+2Wg6r+DwcnD4BRMhA3bimnQZIk2pZu8OJ+0q4oZE7jypKpzKUJgpVyouGe4K6/BMQcKGjYBY8L2Bi9Yf6yEmzOS1UuZoih+oK2yCwgeu1gOaJozt+c9UTj+nJ1H3afO0HYh7uXLTXwOZyObYJu5lElMl8Eopb/EUPnyBoX+II+nnV4yAjaD0+hTu6qSuD88LkFrbROwrraOFFuMkN0lPcAe9sdfdEZFZesL9G+Tl9Rqs0u+pXssI5VeNFXXgleM5hAX5uB4L0XZ14zYT6/R7QGMhbjAltxnfSypA9TJqUnRP9Pg==|920
+}//IZZqbolvh/bgmCvDFWG4m5I9zBd2Cntxn1HQ0JRBCZ79xC5iJu7NnIylALBlJJezTCJDQDN4KQ5eKEaD3DYUKOus5K6VM2Wk1XX30ODPSWebSwP9ddqIaPyEv7Bptn21IwLNPYmFg0nHtxLaWBKV6bRSh2Rb0/CuPiIXf7L30sK+uzoS0DndDHdLbop49JJKvNbUsKDfOngR1v2B0DIA3U6+RJTVZEQyQMz/VNBPUhDSxOo0I8gws8ET+mXEctGzS88tf/M/5/AIyvk/2t5NwiUYZUGfZxMtKoTKkF4i5duKsTERhe8PRQgRx5PI7uqOWziizu7XGtuQtDSvyGr0vcE0HsFNuCm7tAJwuZqCOV+gRjZY1FMBVn09gOAqd1JDHO6I1TnSSpQ2O8zN+3EdQW/H3mTZ1OgpcIcPXSTB41KRGX/EOw9KsmXdnqXpX5YM0R6nzOX52all7Ck3GQ5uAaf2zX3AOhwnP7PRuy3fLCgEpunYDLu6Iord4f8G1lMCO5UxRM84UJuwnRn0JGAQz3Ex/GPK60lIeuBh+6Pwx4tPg6T4wQi19blcOq3To/mh5hPLWTNhbmxt8BhHBGt7tvapgGYJucJYy0Xtxj5/4hF4VgS/Y22G/nJ2GR86vzjwVj23P3zpwRuvgfzl6xUJmx+SeJAjVoG8K+yXHCSbFjRzvpdOWc1H8G3wfrzQnHm/3DnnWjjjvfCeAxePA5rwgLDfl1d3O8+a62vO+6qPxmRTw5uOCU6eNF3Imnxwg9OVcmQEc/ZRP7sYC+BmPIgJ1V21nECcqRfxpY0Lx6h0eWvaRRsniG2oM9k7A7FY/+xevJeQfiSMTNGQvwE+nMdlzOYchJftV0VDzgwdXaDqe/SgOWaivNz+I5IEDcKdW6UlYoD5CH2oarJfvwb7lH8pkA==|920
