@@ -131,55 +131,19 @@
   },
   {
     "ModuleName": "PCPage/차량현황정보페이지",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "LAPTOP-K6S99HCL\\hdg89",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-30T18:48:41.2622171+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\차량현황정보페이지.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/차량예약페이지",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "LAPTOP-K6S99HCL\\hdg89",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-30T18:39:23.4565206+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\차량예약페이지.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/차량예약현황페이지",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "LAPTOP-K6S99HCL\\hdg89",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-30T18:42:21.9620963+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\차량예약현황페이지.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/대시보드",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "LAPTOP-K6S99HCL\\hdg89",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-30T18:29:22.6914017+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\대시보드.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/차량예약상세현황페이지",
@@ -187,16 +151,7 @@
   },
   {
     "ModuleName": "PCPage/차량반납페이지",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "LAPTOP-K6S99HCL\\hdg89",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-30T18:36:49.3399711+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\차량반납페이지.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/예약검색페이지",

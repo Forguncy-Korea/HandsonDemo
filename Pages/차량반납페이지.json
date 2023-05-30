@@ -117,7 +117,7 @@
       23,
       26
     ],
-    "Count": 51
+    "Count": 37
   },
   "Cols": {
     "RowColumnAttachedInfos": {
@@ -127,11 +127,11 @@
         }
       }
     },
-    "Count": 60
+    "Count": 70
   },
   "Values": {
     "2,2": "차량 반납 페이지",
-    "2,28": "예약현황",
+    "2,28": "  예약현황",
     "5,3": "내 예약차량 조회",
     "7,3": "차량번호",
     "9,3": "차종",
@@ -189,7 +189,7 @@
               "BindingInfo": {
                 "TableName": "차량예약",
                 "ColumnName": "사용자",
-                "GUID": "01dd4f99-791e-47f7-a852-7a5c600d4715"
+                "GUID": "82cb0cef-6955-4176-8dda-af0629c5bb1e"
               },
               "ColumnName": "value"
             },
@@ -197,7 +197,7 @@
               "BindingInfo": {
                 "TableName": "차량예약",
                 "ColumnName": "예약날짜",
-                "GUID": "241f30d1-8bea-4e47-bbdc-7199eeab3553"
+                "GUID": "8a5cdee3-ec7b-49e0-a347-405a25222b45"
               },
               "ColumnName": "date"
             },
@@ -205,7 +205,7 @@
               "BindingInfo": {
                 "TableName": "차량예약",
                 "ColumnName": "차량_ID",
-                "GUID": "57082ab8-92e6-43fa-a44f-af6359fd6617",
+                "GUID": "279eb599-eee5-4c17-9f32-08b576649e69",
                 "RelationBinding": {
                   "RelatedTable": "차량정보",
                   "RelatedColumn": "ID",
@@ -253,7 +253,7 @@
       "BindingInfo": {
         "TableName": "차량예약",
         "ColumnName": "차량_ID",
-        "GUID": "066e9aa1-e683-4fee-b8fc-15af571fadb5",
+        "GUID": "b8aef4cf-7389-42b0-93d8-439ec77032eb",
         "RelationBinding": {
           "RelatedTable": "차량정보",
           "RelatedColumn": "ID",
@@ -276,7 +276,7 @@
       "BindingInfo": {
         "TableName": "차량예약",
         "ColumnName": "차량_ID",
-        "GUID": "74a1b8b1-a735-4724-b06f-12ab59335883",
+        "GUID": "0dd05e98-b323-4728-ac67-56e9e72776a4",
         "RelationBinding": {
           "RelatedTable": "차량정보",
           "RelatedColumn": "ID",
@@ -297,7 +297,7 @@
       "BindingInfo": {
         "TableName": "차량예약",
         "ColumnName": "사용자",
-        "GUID": "50a48fde-de0b-4b07-b8be-dd672333ccf0"
+        "GUID": "10420d72-468d-484a-bb24-cac0d48cfac4"
       },
       "CellType": {
         "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
@@ -313,7 +313,7 @@
       "BindingInfo": {
         "TableName": "차량예약",
         "ColumnName": "반납날짜",
-        "GUID": "5806db47-f08f-47d4-8fa9-af146154aa7f"
+        "GUID": "1dffe2fd-a8d2-44fb-97d3-b97175edd1c8"
       },
       "CellType": {
         "$type": "Forguncy.DateCellType, ServerDesignerCommon",
@@ -331,7 +331,7 @@
       "BindingInfo": {
         "TableName": "차량예약",
         "ColumnName": "운행시작시간",
-        "GUID": "c22c327e-7cfe-4043-8511-7b90f00b22e9"
+        "GUID": "13cab996-539f-4b54-947f-75b7ac304dff"
       },
       "CellType": {
         "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
@@ -345,7 +345,7 @@
       "BindingInfo": {
         "TableName": "차량예약",
         "ColumnName": "운행종료시간",
-        "GUID": "2b0b0ee0-ceb0-48ba-96f1-c5502a48061c"
+        "GUID": "b0d733d6-ecc1-4f6d-b351-bf8e149e5e2c"
       },
       "CellType": {
         "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
@@ -410,7 +410,7 @@
                     "MessageFormula": "대여자 계정이 아니므로 반납이 불가능합니다."
                   }
                 ],
-                "ID": "bc895219-eec7-419b-bda0-4ea52e2fd990"
+                "ID": "87456820-b6c1-4398-94a5-3fc7d8340836"
               },
               {
                 "CommandList": [
@@ -423,7 +423,7 @@
                         "BindingInfo": {
                           "TableName": "차량예약",
                           "ColumnName": "주행거리",
-                          "GUID": "e677fad9-ff24-4e65-9774-12d189d99cf5"
+                          "GUID": "c51a3e2a-2965-4e4f-b376-03a2b13cbdcb"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -434,7 +434,7 @@
                         "BindingInfo": {
                           "TableName": "차량예약",
                           "ColumnName": "반납여부",
-                          "GUID": "94f368e6-4c33-41c7-a4f1-336840e27089"
+                          "GUID": "74a0d923-4d28-4c22-8ed7-c5a7d5bdb70b"
                         },
                         "Value": "반납"
                       }
@@ -450,7 +450,7 @@
                       "ColumnBindingInfo": {
                         "TableName": "차량정보",
                         "ColumnName": "ID",
-                        "GUID": "7bea136d-ea31-4111-b05a-4d8037cd2c38"
+                        "GUID": "7fe32de5-a90e-46b7-987e-c186c73c7796"
                       },
                       "Value": {
                         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -462,7 +462,7 @@
                         "BindingInfo": {
                           "TableName": "차량정보",
                           "ColumnName": "주행거리",
-                          "GUID": "47128aa2-dae5-41cf-b54f-d9c837c3d5cc"
+                          "GUID": "ecc738c5-d1c1-448f-a282-c55a4d799062"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -476,7 +476,7 @@
                     "MessageFormula": "차량을 성공적으로 반납하였습니다."
                   }
                 ],
-                "ID": "7631315d-5e99-4f66-836c-3fb723ce4d56"
+                "ID": "0d93b370-7d16-458b-8744-30a1bb3ac876"
               }
             ]
           }
@@ -521,18 +521,14 @@
         "Formatter": 6
       },
       {
-        "Background": 4,
+        "Background": 8,
         "FontFamily": 2
       },
       {
         "FontWeight": 3
       },
       {
-        "Background": 8
-      },
-      {
-        "FontFamily": 2,
-        "Formatter": 9
+        "Background": 9
       },
       {
         "Background": null
@@ -541,20 +537,50 @@
     "Types": {
       "Strs": [
         "나눔스퀘어 네오 OTF ExtraBold",
-        "Accent 6 0",
+        "Background 1 -5",
         "Body",
         "Bold",
-        "Background 1 0",
+        "Text 1 0",
         "Center",
         "[AUTO]General",
         "@",
-        "Accent 3 0",
-        "h:mm:ss;@"
+        "Background 1 0",
+        "Accent 3 0"
       ]
     },
     "CellStyles": {
       "2,2": 0,
       "2,28": 1,
+      "3,38": 2,
+      "3,39": 2,
+      "3,40": 2,
+      "3,41": 2,
+      "3,42": 2,
+      "3,43": 2,
+      "3,44": 2,
+      "3,45": 2,
+      "3,46": 2,
+      "3,47": 2,
+      "3,48": 2,
+      "3,49": 2,
+      "3,50": 2,
+      "3,51": 2,
+      "3,52": 2,
+      "3,53": 2,
+      "3,54": 2,
+      "3,55": 2,
+      "3,56": 2,
+      "3,57": 2,
+      "3,58": 2,
+      "3,59": 2,
+      "3,60": 2,
+      "3,61": 2,
+      "3,62": 2,
+      "3,63": 2,
+      "3,64": 2,
+      "3,65": 2,
+      "3,66": 2,
+      "3,67": 2,
       "4,28": 2,
       "5,3": 3,
       "6,3": 4,
@@ -844,103 +870,33 @@
       "28,22": 6,
       "28,23": 2,
       "28,24": 2,
-      "28,25": 2,
-      "34,0": 2,
-      "34,1": 2,
-      "34,2": 2,
-      "34,3": 2,
-      "34,4": 2,
-      "34,5": 2,
-      "34,6": 2,
-      "34,7": 4,
-      "34,8": 2,
-      "34,9": 2,
-      "34,10": 2,
-      "34,11": 2,
-      "34,12": 2,
-      "34,13": 2,
-      "34,14": 2,
-      "34,15": 2,
-      "34,16": 2,
-      "34,17": 2,
-      "34,18": 2,
-      "34,19": 2,
-      "34,20": 2,
-      "34,21": 2,
-      "34,22": 2,
-      "34,23": 2,
-      "34,24": 2,
-      "34,25": 2,
-      "34,26": 2,
-      "34,27": 2,
-      "34,28": 2,
-      "34,29": 2,
-      "34,30": 2,
-      "34,31": 2,
-      "34,32": 2,
-      "34,33": 2,
-      "34,34": 2,
-      "34,35": 2,
-      "34,36": 2,
-      "34,37": 2,
-      "34,38": 2,
-      "34,39": 2,
-      "34,40": 2,
-      "34,41": 2,
-      "34,42": 2,
-      "34,43": 2,
-      "34,44": 2,
-      "34,45": 2,
-      "34,46": 2,
-      "34,47": 2,
-      "34,48": 2,
-      "34,49": 2,
-      "34,50": 2,
-      "34,51": 2,
-      "34,52": 2,
-      "34,53": 2,
-      "34,54": 2,
-      "34,55": 2,
-      "34,56": 2,
-      "34,57": 2,
-      "34,58": 2,
-      "34,59": 2,
-      "35,2": 3,
-      "35,3": 2,
-      "35,4": 2,
-      "35,5": 2,
-      "35,6": 2,
-      "35,7": 10,
-      "35,8": 2,
-      "35,9": 2,
-      "35,10": 2,
-      "35,11": 2
+      "28,25": 2
     },
     "RowStyles": {
-      "34": 11,
-      "35": 11,
-      "36": 11
+      "34": 10,
+      "35": 10,
+      "36": 10
     },
     "SheetStyle": {
       "FontFamily": 2
     }
   },
   "Spans": [
+    "5,3,1,22",
+    "7,9,1,16",
+    "9,9,1,16",
     "11,9,1,16",
     "13,9,1,16",
+    "15,9,1,16",
+    "17,9,1,16",
     "19,9,1,16",
     "21,9,1,16",
     "23,9,1,16",
-    "9,9,1,16",
     "26,9,1,3",
     "26,21,1,4",
-    "15,9,1,16",
-    "17,9,1,16",
-    "4,28,21,30",
-    "2,28,1,30",
     "28,22,1,4",
-    "7,9,1,16",
-    "5,3,1,22"
+    "2,28,1,40",
+    "4,28,23,40"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -979,4 +935,4 @@
       "Size": "474,565"
     }
   ]
-}//nAXKQrmB+kepTJdzZhvZi9l8BJIFeukXCnp8EA6CvJWEFASb40q7CUw0NcARtSZkImnrWhqvSqSzhVY5ZEFgc0lEBb1SQh0moagGpB9dZk/+PbARSVAXIWT2TtwF2KwGOGJev/fcAQGhLKkOZsfkObP33SOtKHcArNnmhbnTwDXpMQYGBlFifGsKvOeIhI8omD8JYXTtnUP8WBO98ZOZf0K7LlD2liMUNDtfIRgsiQCOQBzEwJ8igWzb6e2eUZMO1MAZgInDfJisJbV+pt9wWPHqDyAL3sUNcmuvZEb712atfwqOE/n1pH2/9JtYK72MpK4/epaXl24Xg3rOb4fMi6+E+md4kgbaWs8IcaGVBHy4nVTyNi0OXX+5go45uvAwW/gUpRSwhBJf2C8yhvnfMA7Mabqzb5rJFfkdtNVArYdV5IELqMvoQGQnPhC2qgUSVxA6ZpIgbbW84L24P1I4iX636T1+yC2rpZitc/hggqkVVWhS+KXS0YMhyIQHlG7F96sAbPv5sguhM6tp7IJGdTi0lUzRYw+JlCO/A4zakRu9R0kFzNAXpDiSTaO1r+9jR7bBtPDmgkmtl/mOSNJGRM8KyLLoHYlhX/DdD03wEZOpJzNgolbbhY6k92xDRfezMNvAo2UG1u2f6nFkaRM3oVy4MB1LO0F8f19YHsoStdfBrEn1zj82oaT4TdmpcjM3oE3ncZcCE7gmJq8V93Fuu+yX9EhGqgNwCy27fj0aLt0SqCFUz8tMHXEnn0UPUPQJRHISZnHxvzHfTOg2vZa9bHH98sgzP1RukbeX/uHMj95Q6Odz/U1427GmX3q092ZrZjn/rtEf7VEWfrg8UuMjVJ1DzK2AJCpeefJw5BfzRToIJ0GPnbvTzb4PUA+tJMdTaXvElAS/Z4REKkK9Vcn7DA==|920
+}//+SitZQ/aDKW4DTSGJSsE9GKSOS5PRCB5q7+V162UjG9Xmvq3vG6//t+kbApVgRY/uTNtbpQib7bnaaJaWrLC3rzmtPAh8+rhsVoZi6VgYxy4WPsZ3qmj2KHqtArUaxYtf9q9Ef9ueFbLz+VUOZ/0SE6XF0ncGrteaa6/sDyGqEoIueC4W5wOuOLFWuDT63998z4BITyR2K7ayMxu0urjyJPQqGjRgoJSeVIsmwLnMwAjmQT//KvAbiHU3XIYLlz0SgIJHiUtrgbE0vL1FseKz3Be0tGJatZ6+meThjp0nYLCa9VMpzMoVwqjEpkLqBa7U3Qck1vnDUV57filiqSICG95OkyVzaGb66k9pWMUWsc/fGXQMGkzWh+Bs95c+F/KT/RXjT7wF3gOyZfTpB/EnQGbB9GJhPekR2i1jVcZAwvIfJbpFi+9Lr9dHOX5pLxGnm/W2/K2ny3nBkYCCjbGGCys+PlDvcuH0fvJkdqTzBWxhxSLK5yJSeFfHNN9Za78O9H/L8guctTa7XJ8jCYgtZ06qt7WSVgWPokR8KjhfiCO/JTy6JlEAy5iQhDP+BoGh6cHy3qImfi8MI8lAcNV1SXAnm6q4HODW9mmX0+2Wg6r+DwcnD4BRMhA3bimnQZIk2pZu8OJ+0q4oZE7jypKpzKUJgpVyouGe4K6/BMQcKGjYBY8L2Bi9Yf6yEmzOS1UuZoih+oK2yCwgeu1gOaJozt+c9UTj+nJ1H3afO0HYh7uXLTXwOZyObYJu5lElMl8Eopb/EUPnyBoX+II+nnV4yAjaD0+hTu6qSuD88LkFrbROwrraOFFuMkN0lPcAe9sdfdEZFZesL9G+Tl9Rqs0u+pXssI5VeNFXXgleM5hAX5uB4L0XZ14zYT6/R7QGMhbjAltxnfSypA9TJqUnRP9Pg==|920

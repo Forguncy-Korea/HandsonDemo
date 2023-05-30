@@ -96,7 +96,7 @@
         }
       }
     },
-    "Count": 60
+    "Count": 70
   },
   "Values": {
     "2,2": "차량 예약 페이지",
@@ -645,10 +645,14 @@
       {
         "FontFamily": 2,
         "FontWeight": 3,
-        "Foreground": 6
+        "Foreground": 4
       },
       {
-        "HorizontalAlignment": 7
+        "HorizontalAlignment": 6
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 7
       },
       {
         "FontFamily": 2,
@@ -660,39 +664,34 @@
       },
       {
         "FontFamily": 2,
-        "Formatter": 10
-      },
-      {
-        "FontFamily": 2,
         "FontWeight": 3
       },
       {
-        "Background": 11,
+        "Background": 10,
         "FontFamily": 2,
         "FontWeight": 3
       },
       {
         "FontFamily": 2,
-        "Formatter": 12
+        "Formatter": 11
       },
       {
-        "Background": 11,
+        "Background": 10,
         "FontFamily": 2,
-        "Formatter": 9
+        "Formatter": 8
       },
       {
-        "Background": 11
+        "Background": 10
       }
     ],
     "Types": {
       "Strs": [
         "나눔스퀘어 네오 OTF ExtraBold",
-        "Accent 6 0",
+        "Background 1 -5",
         "Body",
         "Bold",
-        "Background 1 0",
-        "Center",
         "Text 1 0",
+        "Center",
         "Right",
         "yyyy/m/d",
         "h:mm:ss;@",
@@ -981,6 +980,16 @@
       "26,57": 2,
       "26,58": 2,
       "26,59": 2,
+      "26,60": 2,
+      "26,61": 2,
+      "26,62": 2,
+      "26,63": 2,
+      "26,64": 2,
+      "26,65": 2,
+      "26,66": 2,
+      "26,67": 2,
+      "26,68": 2,
+      "26,69": 2,
       "27,2": 10,
       "27,3": 2,
       "27,4": 2,
@@ -1096,14 +1105,14 @@
     "9,9,1,16",
     "11,9,1,16",
     "26,7,1,4",
-    "4,28,20,30",
-    "2,28,1,30",
     "13,9,1,16",
     "32,3,1,4",
     "31,11,5,11",
     "5,9,1,16",
     "33,2,5,5",
-    "31,3,1,4"
+    "31,3,1,4",
+    "2,28,1,40",
+    "4,28,21,40"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1222,4 +1231,4 @@
       "Size": "473,383"
     }
   ]
-}//i5phD4OdblrNnBrdG5cTosp/SQKJww0dBxjn/JxPWcIgV4qk4tUepSYHNdxr1dncpUlecIlmnHLV9x5l9ZgtRjMvgkEnrohtu9tyDuiFI3LAVnAX4sLmBXGJm+Em2eQCH+L18ADvlBBt7N2hnBhN2rv06iCuirKOgbKNzReD/ivK58zo6LDe2ianjLTr0bne8O8dJq92MLfWoNhKeOM6nMmGczlKelGpjS25Md3HmFjb1jiJSbbmUhBrgWiKfd/4ZDsCk6TLSspMusAc0nZUYMUcQAEo+M6Q8na3Yylhjp+iMiUuoSNLqnR2EMOjPhhE+tf1DkzIc15FpR3u3grKJELy3WtyLQOntS2C6/5e8ur8xHYyt7jfOJ8qvCmpR4oGCGw0SOfDoifUHJXJeyKatLc8cL7DkkR8iHj9UbxLVhrgJVqpua+6HtVwXVCA8qraL2BLrbyq/CC+nFiDt4DoXo7n/7p58jY0NX052WDJ3t2SQ69KVWfNh7gBzGct1eJcu46/sHWhHPaPpSpB0X4r+LLeJnt6EgFA2OoPe6KliHfnCT37ASHaULZMjULoI/TSZljfUsEYz5LeyR4IhuMNFYuA6lyBDkFeRkpiMf/hGUckfZ7W0fNVCxZzonOOWAyNpaorkOJPfV0B7972WHnlP2mX+gwFYCsYWEYOtLgj93ImNwP2lqBUBX1Pqyz7OLpo650rV/8mCTHqdoW377c1nvC4+liY+7plNPhbER4RPdV8c+x1SoqlFjqClT5bvz2xtzW/+RWJLgs8g1OjmjJ54Z2jUIxCDvwteuqEW8NTjsjbQlWIuSirdiJuP4u0TMYk2br1jowXm+WTuxlSgdozlqvLlRpmER2uGW9WIUfVo6m9t8K6L4FB/RwuN9eoDE+CvgY8Ueb9pSNMVY/1Oiw15Q==|920
+}//W0us2cRhY8bJLTWyS8V6tgutkx+Y1l1WvGj5UQ4CKbMuv4iXxxhInFcWTwLrch+CqofnoicW6qt2AS28+kYddmz53/RbdybkhVgDG2ExiKsoVVhWmFC1fQg15F6vp4DW6tqMzwoA0J56P49sU7DAkvewCEU7KM54LnQnp5nqzclvAtUL+cr1/Yx25spOgbL5tCtFtc0ujKoF1jMcTCdDehuyJX50Mc/y3w2P/QzZd4oD1lRwZWbU3pKUDMVKgy2h3rQHasp0rJpIMW9rOapsDuJRyKfJfQxtZ371K2CEwQgy3HGcPXWvBWTouT/I7DW2vpXv1AEgTvcBzuMB5lb/SdVAw4sBX6KkKdhxChqMYRDPCZlHD0nwOxu7nAo4TEdVJnpo7jEPbLJre3AzRiErOdEfsmwC4+m9YHab1ek0VD5D7o96b7k8YYLFWRvJwT2v7t9vvOv2NeMOAEP1P6gO3tcV79KVTSY6/GGT6J3z7ka8iti3uc4tlagOxszCv7FJyPBNKM46QwjSt6O5eVF88rvMwgklvMf5qn8qbHuRVUKbXcgTfBz0rBr2l3pckO08IP/+W7glWEqbbJPr7OxjwW4+uramWgIAU71yiMHo+v2VCjrxOoEWd+l8nWTibQ8Hy9900lj/Zth29qHfo9cwXUXPQfj7GuMSJBNyuHu920/BkBMHPbzGItBfyZGNuN+rzz55jvumL2rapN+aW7tzgMMoNux0VgSgE6mCEpLohLnfwtZ/yWH4vutLhuhKAUqlN/VN5G96+lPnGaK4bTFcPrgVLZOZTOYfI+0qN2VVSiUEn/juSJQ/567FR+kxgqtKSB4+WMJBtMBOgy80n378DYo4dZQ3+Hobw1bch3xJ1di0Mw+O9tmikLbf5ERDW2pBIN2F4n5hbs9BiexzY7+wxQ==|920
