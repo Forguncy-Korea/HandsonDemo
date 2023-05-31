@@ -77,7 +77,6 @@
       27,
       28,
       29,
-      30,
       31,
       32,
       33,
@@ -112,9 +111,7 @@
     "26,2": "예약여부확인",
     "27,2": "현재시간",
     "28,2": "오늘날짜",
-    "30,2": "*예약된 차량 리스트뷰",
-    "30,11": "*리스트뷰 모든 행 선택 항목",
-    "31,3": "예약된차량"
+    "30,2": "예약된차량"
   },
   "Formulas": {
     "26,7": "ODATA(\"차량예약/$count?$filter=차량_ID eq \"&IF(ISBLANK(J14),\"null\",J14)&\" and 예약날짜 eq \"&IF(ISBLANK(J8),\"null\",TEXT(J8,\"yyyy-MM-ddThh:mm:ssZ\"))&\" and ((예약시작시간 ge \"&IF(ISBLANK(J10),\"null\",TEXT(J10,\"hh:mm:ss\"))&\" or 예약종료시간 le \"&IF(ISBLANK(J12),\"null\",TEXT(J12,\"hh:mm:ss\"))&\") and (예약시작시간 le \"&IF(ISBLANK(J10),\"null\",TEXT(J10,\"hh:mm:ss\"))&\" and 예약종료시간 ge \"&IF(ISBLANK(J12),\"null\",TEXT(J12,\"hh:mm:ss\"))&\"))\")",
@@ -275,14 +272,8 @@
         "TemplateKey": "_RS_NewLittleRoundCorner",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
-            "ListviewName": "리스트뷰1",
-            "UpdateType": 2,
-            "UpdateRowType": 2
-          },
-          {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
-            "ParameterName": "예약차량",
+            "ParameterName": "querycarid",
             "TableValue": {
               "TableName": "차량예약",
               "BindingInfos": [
@@ -290,14 +281,9 @@
                   "BindingInfo": {
                     "TableName": "차량예약",
                     "ColumnName": "차량_ID",
-                    "GUID": "96d6166f-e717-4123-ac48-a388004e3fb7",
-                    "RelationBinding": {
-                      "RelatedTable": "차량정보",
-                      "RelatedColumn": "ID",
-                      "DisplayColumn": "차량번호"
-                    }
+                    "GUID": "69944ae1-be85-489d-9b7b-7f17c9366cf1"
                   },
-                  "ColumnName": "차량번호"
+                  "ColumnName": "차량_ID"
                 }
               ],
               "SqlCondition": {
@@ -305,7 +291,7 @@
                 "ColumnBindingInfo": {
                   "TableName": "차량예약",
                   "ColumnName": "예약날짜",
-                  "GUID": "aa4ad116-96eb-4759-bbd8-cbc8461955b8"
+                  "GUID": "cda8ecdc-891e-4957-970a-92ef73f535c7"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -313,7 +299,12 @@
                 }
               }
             },
-            "ID": "9ec1d5eded344d9c8cf89e602e12bd67"
+            "ID": "a040d163dc934d1e870bff02c61112dc"
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "idvalue",
+            "ID": "e0cfa5938a8e411ebe2b152af20cb150"
           },
           {
             "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
@@ -321,37 +312,36 @@
               "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
               "LoopCount": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=차량예약페이지!예약차량"
+                "SerializeProperty": "=차량예약페이지!querycarid"
               },
               "LoopItemParamName": "Item"
             },
             "CommandList": [
               {
-                "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
-                "ListviewName": "리스트뷰1",
-                "UpdateType": 1,
-                "UpdateValues": [
-                  {
-                    "Column": {
-                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=차량예약페이지!D33"
-                    },
-                    "Value": {
-                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=차량예약페이지!Item.차량번호"
-                    }
-                  }
-                ]
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "idvalue",
+                "ParameterValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=CONCATENATE(차량예약페이지!idvalue,\",\",차량예약페이지!Item.차량_ID)"
+                },
+                "ID": "ba74346cdf2240ea9cfc187eb4d39b8d"
               }
             ]
           },
           {
-            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
-            "ListviewName": "리스트뷰1",
-            "UpdateType": 6,
-            "UpdateListviewCommandRunTimeMethodSetting": {
-              "MethodName": "SelectAllRows"
-            }
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=차량예약페이지!H31"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=차량예약페이지!idvalue"
+                }
+              }
+            ]
           }
         ]
       },
@@ -412,12 +402,12 @@
           "CompareType": 9,
           "ColumnBindingInfo": {
             "TableName": "차량정보",
-            "ColumnName": "차량번호",
-            "GUID": "aa316854-7c69-4c1e-908c-02549f814c36"
+            "ColumnName": "ID",
+            "GUID": "e5c80a23-9a5a-4dea-abb9-a4c71f8dd14c"
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=차량예약페이지!L32"
+            "SerializeProperty": "=차량예약페이지!H31"
           }
         },
         "NullFormulaValueQueryPolicy": 1,
@@ -600,29 +590,6 @@
         "Text": "예약",
         "TemplateKey": "_RS_Main1"
       }
-    },
-    "31,2": {
-      "ListViewInfo": {
-        "Name": "리스트뷰1",
-        "RowIndex": 31,
-        "ColumnIndex": 2,
-        "RowCount": 7,
-        "ColumnCount": 5,
-        "TopCondition": null,
-        "ListViewStyleName": "_RS_NewFashionListStyle2",
-        "ShowColumnHeaderInDesigner": true,
-        "ShowEditStatusIcon": true,
-        "UseSimpleBar": true,
-        "ColumnOperation": 2
-      }
-    },
-    "31,11": {
-      "CellType": {
-        "$type": "SelectionPanel.SelectionPanel, SelectionPanel",
-        "ListViewName": "리스트뷰1",
-        "DisplayColumnIndex": 2,
-        "ValueColumnIndex": 2
-      }
     }
   },
   "StyleDatas": {
@@ -682,6 +649,10 @@
       },
       {
         "Background": 10
+      },
+      {
+        "Background": 10,
+        "FontFamily": 2
       }
     ],
     "Types": {
@@ -1001,11 +972,10 @@
       "27,10": 2,
       "27,11": 2,
       "28,7": 12,
-      "31,2": 2,
-      "31,3": 2,
-      "31,4": 2,
-      "31,5": 2,
-      "31,6": 2,
+      "30,7": 13,
+      "30,8": 2,
+      "30,9": 2,
+      "30,10": 2,
       "31,11": 2,
       "31,12": 2,
       "31,13": 2,
@@ -1017,11 +987,6 @@
       "31,19": 2,
       "31,20": 2,
       "31,21": 2,
-      "32,2": 2,
-      "32,3": 2,
-      "32,4": 2,
-      "32,5": 2,
-      "32,6": 2,
       "32,11": 2,
       "32,12": 2,
       "32,13": 2,
@@ -1033,11 +998,6 @@
       "32,19": 2,
       "32,20": 2,
       "32,21": 2,
-      "33,2": 2,
-      "33,3": 2,
-      "33,4": 2,
-      "33,5": 2,
-      "33,6": 2,
       "33,11": 2,
       "33,12": 2,
       "33,13": 2,
@@ -1049,11 +1009,6 @@
       "33,19": 2,
       "33,20": 2,
       "33,21": 2,
-      "34,2": 2,
-      "34,3": 2,
-      "34,4": 2,
-      "34,5": 2,
-      "34,6": 2,
       "34,11": 2,
       "34,12": 2,
       "34,13": 2,
@@ -1065,11 +1020,6 @@
       "34,19": 2,
       "34,20": 2,
       "34,21": 2,
-      "35,2": 2,
-      "35,3": 2,
-      "35,4": 2,
-      "35,5": 2,
-      "35,6": 2,
       "35,11": 2,
       "35,12": 2,
       "35,13": 2,
@@ -1080,17 +1030,7 @@
       "35,18": 2,
       "35,19": 2,
       "35,20": 2,
-      "35,21": 2,
-      "36,2": 2,
-      "36,3": 2,
-      "36,4": 2,
-      "36,5": 2,
-      "36,6": 2,
-      "37,2": 2,
-      "37,3": 2,
-      "37,4": 2,
-      "37,5": 2,
-      "37,6": 2
+      "35,21": 2
     },
     "SheetStyle": {
       "FontFamily": 2
@@ -1109,24 +1049,15 @@
     "5,9,1,16",
     "2,28,1,40",
     "4,28,21,40",
-    "31,11,5,11",
-    "32,3,1,4",
-    "33,2,5,5",
-    "31,3,1,4"
+    "30,7,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "마스터 페이지1",
     "PageLoadedCommandList": [
       {
-        "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
-        "ListviewName": "리스트뷰1",
-        "UpdateType": 2,
-        "UpdateRowType": 2
-      },
-      {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
-        "ParameterName": "예약차량",
+        "ParameterName": "querycarid",
         "TableValue": {
           "TableName": "차량예약",
           "BindingInfos": [
@@ -1134,14 +1065,9 @@
               "BindingInfo": {
                 "TableName": "차량예약",
                 "ColumnName": "차량_ID",
-                "GUID": "1f1254a2-92c8-4022-9a7d-28196df79cb2",
-                "RelationBinding": {
-                  "RelatedTable": "차량정보",
-                  "RelatedColumn": "ID",
-                  "DisplayColumn": "차량번호"
-                }
+                "GUID": "3de7fded-5085-4006-802d-2c9d9a63c32a"
               },
-              "ColumnName": "차량번호"
+              "ColumnName": "차량_ID"
             }
           ],
           "SqlCondition": {
@@ -1149,15 +1075,20 @@
             "ColumnBindingInfo": {
               "TableName": "차량예약",
               "ColumnName": "예약날짜",
-              "GUID": "d4ac7cf4-6941-4500-ab67-fa8da18793e4"
+              "GUID": "e09aa1ac-12ac-4e9d-ae2d-2e67219e4678"
             },
             "Value": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=차량예약페이지!J8"
+              "SerializeProperty": "=TODAY()"
             }
           }
         },
-        "ID": "42d6c2c16a104fdab6f32e80a73a80ab"
+        "ID": "dd9271e06afc452aa20e1d78ff8be5a1"
+      },
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "idvalue",
+        "ID": "effd6239bd8e400d9277e8130861debb"
       },
       {
         "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
@@ -1165,37 +1096,36 @@
           "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
           "LoopCount": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=차량예약페이지!예약차량"
+            "SerializeProperty": "=차량예약페이지!querycarid"
           },
           "LoopItemParamName": "Item"
         },
         "CommandList": [
           {
-            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
-            "ListviewName": "리스트뷰1",
-            "UpdateType": 1,
-            "UpdateValues": [
-              {
-                "Column": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=차량예약페이지!D33"
-                },
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=차량예약페이지!Item.차량번호"
-                }
-              }
-            ]
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "idvalue",
+            "ParameterValue": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=CONCATENATE(차량예약페이지!idvalue,\",\",차량예약페이지!Item.차량_ID)"
+            },
+            "ID": "d70053300bcb4f4eb6f61b50a3d012f8"
           }
         ]
       },
       {
-        "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
-        "ListviewName": "리스트뷰1",
-        "UpdateType": 6,
-        "UpdateListviewCommandRunTimeMethodSetting": {
-          "MethodName": "SelectAllRows"
-        }
+        "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+        "PropertyItemsList": [
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=차량예약페이지!H31"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=차량예약페이지!idvalue"
+            }
+          }
+        ]
       }
     ],
     "PermissionData": {
@@ -1233,4 +1163,4 @@
       "Size": "473,383"
     }
   ]
-}//px5IlFuQEyflRySkFXkbQrRg3dAWKN54fTXZw8ys5WUes4lVy0MXPSokTrtJ7fgdhbghHHUwKsGmGN0x80hY3tPN5uNhHPBGf7Z70vsLDBI70SRxglR8o2ZmoHqhU2vwDeRiWUxH+sOoC1vFB0ystB5vOGspLn5hWlJTJkjDamF7Xn1ADccTct9LF5w1oGZJuA7wD8HRrvWa8QqFcvATtPZ2wlH70LG6pTMsXqj75FUqz5u/Zf9NUuG9XAb6/ncnO9bp6QC/MSS8R4XnuijwD2reVUXqSdCo0FveVYs5xc8bcb/dM4QtV7nrQrRLKynpI2TExWcfQFwoPIlF2umLzz/LJUkOJ7GtANmPzxp9GfpFpQRezutOKMtsvekw4QPIL3ttFqSvy2lyHkIg+Cjk9EwF6CMT2iERF82AZJx71dLt3EpqMizwmd2AkJbIbpefhB6Htd46N++NVuRI0Bg25maeHALzeN6GA8pdiIdauBmoijhzQtYtKUMvsud8EF6ziqdxGEiMA5JSGrNT3E/7q6RFuH2wcznzeQsG3EFQ7ocqg4Lm/FKMvZ4Zj4YwaoHiAthWVKGpySVMeXW0LFcEWDsq6BfyrGAjaP0hJ8/eO+yTlc8WKv09QBOOkyRQsJ5SntBPotXzw74f8FPhXONIDV+RlW4pTrDVxyMChnINeRnwKHSqNZ/ABSLUC+H40z2+MbyZfYhxMY0uDWyP4MYH6z5GFwB/ADgrSuThggFcbfvy4T43+SH7Ur1k7taFKKda/VRJlcPufxMoI68Wo4kg08X6AKMSQf0b/1hrPyA2nWLvcGBI42jse2xYUSu7Bp7GL6f2dDs/Go0X6rQCzo6+Ir4GtohAY+OQATXvDXwd9OR1nCoxjq3kjl+BByOnYpGKD78RhqWqGBwkMsD1sBZmoA==|920
+}//U44oyMftrz6pdUuwln/SxRxvo+whl3k0bsMXcpPz9j1rOMPTjqi0u/uk2bh8KtGBZjlOJQmeY93bWgzkvkUYhO/VqLAH2jcFZFv0ThJDSARSddbUP55j65olq4tEyXuDE5KzNj9e5FSMP/yOBNSQOvh2qwP0p+gnjWFgXbzovAaXy3bGSt6QA9eRQ00L8p+fNHgmF2P7beBtvBmllvxjwehGnOv3cbcFeu6rJns1tGja9sIrD/UmqDjZ7zjRTNfYdls785oTdz3F9O4mcRsVXOUhq5nd3TjrlMSmheUr+xpFE3cSjMUvgCJy3aciSVs7fzgm1yGVfGrVGl5YCMv1xFzGumoyMaJYu9620t9RQQ5CZkqXmJUC/XTj8ACyvvGpbjQGUu138CbyzYe8ID8TuGyumSaMMvcByYh8jdk0eVzQTS3Pi2v8FvS64iaAqylkqb+DW9iQSXGF9an9YtDVXTwB1r611btRn/iSEZBEMK6MF31oAUXKOMEpJ7EaFBfN435OfKf5xqrWQdag4+qKuU33ijRhiSaeXLElxYNqe2fAlr1KrCyAO7JhPCqyv8EkeHpyFExE0NWkxCtKPkvDscMl+IJMQcNtvjmasuhKJqOIMkK80j7izfYSYWMWHVae5zxnDjRXU8bAhrOLazNgQaJe1ZPWjoPynwX9dThTawiJbsr+2Tzty8vTvvXaXXfajR9zxKZIZEaRqSKKUsE4a9I93nz+CfhG6jkPLxVIaL0DS+mLMw5R/cgMZz2FaoGmqNHdqg4GQ4/Z0aUY1Z+fQrFZ0tUP6Y1mnbHoxBZjTLwGkfpbY0k4yhPOmLKTwOxxuieTTXYmT8j1lNeYkgo0km1+aQy1lPlyOJ+PApFppd7LMo7Cc/Gu6yE2Y20l8rcUZruzNeoqpkSTCSQgzNih6Q==|920

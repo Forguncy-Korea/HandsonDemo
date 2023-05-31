@@ -1,32 +1,12 @@
 [
   {
     "ModuleName": "Table/차량정보",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-SFEU14D\\NamHee",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-31T15:56:40.6954542+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\차량정보.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/차량예약",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-SFEU14D\\NamHee",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-31T15:56:40.6954958+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\차량예약.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
@@ -135,16 +115,7 @@
   },
   {
     "ModuleName": "PCPage/차량예약페이지",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-SFEU14D\\NamHee",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-31T16:30:34.4651422+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\차량예약페이지.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/차량예약현황페이지",
@@ -160,16 +131,7 @@
   },
   {
     "ModuleName": "PCPage/차량반납페이지",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-SFEU14D\\NamHee",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-31T15:56:19.7816039+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\차량반납페이지.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/예약검색페이지",
@@ -237,34 +199,6 @@
   },
   {
     "ModuleName": "Upload",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-SFEU14D\\NamHee",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-31T15:56:40.698391+09:00",
-    "ModuleType": 26,
-    "ToRemoveFiles": [
-      "Upload\\090344c1-8def-46d0-9e81-70ae7dfce484_소나타.png",
-      "Upload\\29c33a84-35e5-4989-96a8-dd28b3e9f198_그랜저.png",
-      "Upload\\31264138-00e6-4686-a780-b205fee1e45e_K5_3세대.png",
-      "Upload\\4bd3f8aa-8da0-496c-8742-7a87f592942f_그랜저.png",
-      "Upload\\61fd6a3a-52c9-45b7-b438-a724b30fbd11_K3_2세대.png",
-      "Upload\\6c3899c9-8996-41ba-b0e3-05f8e2dba485_그랜저.png",
-      "Upload\\90a44d85-9961-4b24-abe3-48b6d1757f2a_KakaoTalk_20230113_141347801.jpg",
-      "Upload\\90a44d85-9961-4b24-abe3-48b6d1757f2a_KakaoTalk_20230113_141347801.medium.jpg",
-      "Upload\\90a44d85-9961-4b24-abe3-48b6d1757f2a_KakaoTalk_20230113_141347801.small.jpg",
-      "Upload\\939526d4-4d5f-48ce-8750-356a515ddad2_K5.png",
-      "Upload\\a0849040-5ffb-4054-b9d1-7c4a5551813c_투싼.png",
-      "Upload\\b67f4416-c847-4ccb-b2ab-1fcdfe126f76_K3.png",
-      "Upload\\c18863b3-d22a-4ace-a9d1-ae69a1cbf343_K3_2세대.png",
-      "Upload\\cef4e25f-0c35-4cb4-95b4-83f0299296a5_KakaoTalk_20220902_070423612.jpg",
-      "Upload\\cef4e25f-0c35-4cb4-95b4-83f0299296a5_KakaoTalk_20220902_070423612.small.jpg",
-      "Upload\\d208a9e9-a912-4f84-b2eb-a9b4348f9602_쏘나타.png",
-      "Upload\\d9b953db-4135-43cd-b1ec-0cd7dc02202d_투싼.png",
-      "Upload\\e74a482b-a0fc-4bc1-bec7-d479cd6631fe_쏘나타.png",
-      "Upload\\f0740393-dfea-4a97-99cc-ffbe88734f77_K5_3세대.png",
-      "Upload\\fbb1902e-612a-48b7-bcef-ec7bfdbcbdfe_소나타.png"
-    ]
+    "ModuleType": 26
   }
 ]
