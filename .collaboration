@@ -119,16 +119,7 @@
   },
   {
     "ModuleName": "PCPage/차량예약현황페이지",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-SFEU14D\\NamHee",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-31T13:31:13.4290401+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\차량예약현황페이지.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/대시보드",
