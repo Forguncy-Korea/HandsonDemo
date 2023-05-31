@@ -32,8 +32,7 @@
     "2,2": "관리자 대시보드",
     "5,3": "차량별 예약비율",
     "5,25": "차량별 운행거리",
-    "37,2": "차량별 예약횟수 리스트뷰",
-    "37,19": "사용자별 예약횟수 리스트뷰"
+    "37,2": "차량별 예약횟수 리스트뷰"
   },
   "AttachInfos": {
     "38,2": {
@@ -44,22 +43,6 @@
         "ColumnIndex": 2,
         "RowCount": 8,
         "ColumnCount": 14,
-        "TopCondition": null,
-        "ListViewStyleName": "_RS_NewFashionListStyle2",
-        "ShowColumnHeaderInDesigner": true,
-        "ShowEditStatusIcon": true,
-        "UseSimpleBar": true,
-        "ColumnOperation": 2
-      }
-    },
-    "38,19": {
-      "ListViewInfo": {
-        "Name": "리스트뷰2",
-        "TableName": "차량예약",
-        "RowIndex": 38,
-        "ColumnIndex": 19,
-        "RowCount": 8,
-        "ColumnCount": 13,
         "TopCondition": null,
         "ListViewStyleName": "_RS_NewFashionListStyle2",
         "ShowColumnHeaderInDesigner": true,
@@ -85,20 +68,6 @@
         "TableName": "차량예약",
         "ColumnName": "차량별집계",
         "GUID": "4994cd2a-aa21-4add-9533-412c8917a37a"
-      }
-    },
-    "39,19": {
-      "BindingInfo": {
-        "TableName": "차량예약",
-        "ColumnName": "사용자",
-        "GUID": "bdb4cf85-83be-42e0-b1a1-90f378c76ebf"
-      }
-    },
-    "39,24": {
-      "BindingInfo": {
-        "TableName": "차량예약",
-        "ColumnName": "차량별집계",
-        "GUID": "212b4417-be1a-4f80-af78-29390baafd37"
       }
     }
   },
@@ -140,8 +109,7 @@
       "5,23": 2,
       "5,24": 2,
       "5,25": 1,
-      "40,2": 3,
-      "40,19": 3
+      "40,2": 3
     },
     "SheetStyle": {
       "FontFamily": 5
@@ -150,16 +118,11 @@
   "Spans": [
     "39,2,1,6",
     "39,8,1,8",
-    "39,19,1,5",
-    "39,24,1,8",
     "40,2,6,14",
-    "40,19,6,13",
     "5,3,1,19",
     "5,25,1,25",
     "38,2,1,6",
-    "38,8,1,8",
-    "38,19,1,5",
-    "38,24,1,8"
+    "38,8,1,8"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -423,7 +386,7 @@
             "NaN",
             20.0,
             50.0,
-            40.0,
+            80.0,
             "NaN"
           ],
           "Name": "주행거리",
@@ -581,4 +544,4 @@
       "Size": "383,290"
     }
   ]
-}//pNl9FXAzmOmhynPHBW8ZWkpFw5KVWGhXc+RqyoDQGAnoyaOSdfvfzyFp3w9V0grJxmPJJU+NTdvjgFg4W5Y6VlTCKNxMRQm3CrFiICEzchSk4Bi201i9ty9FCB4cjplHtsHIaDDqcMeWKEwRMsvaVGgdyuP+aAgONWUob5bY/xIjU+KNmNWWmPS/lRaBVl6dRsqKNzTc43zkH5Q2xqcz3HcvhshNrIg49Lv2Rfzehd/EJj2KTPCnrmDuyfIUcQ+lFZDIAufXfqjJT2iHd0JXzRtYtrAL+FbNil1qGGmfS5eiKE9kmYG0H0KXNjGbcl066OEKYS7pW1b7pc7wBS0kOkm83jognFPu0N0XVuPhPlZYvwBLo14JEZ9Q5zbQ/nLTZ2pIckMS82qfSL3M6ijMfopm2nnAtSqhgvPsjhAq1SGC02thzOpHLyeTvoYidLjgsDThdgYWTptTp/ngnkA7++Cob37t8qeiMqUPQCb+LJx8dJk3z84X9dbcEJ0CeJXigB2bc4WOcoXbcZJcmwbCb1qI4ywG2owU5tjWbb8rfvYWy+e8ij/0zysUQxZ1wdzU1idvqJxbmMlmwlANsayIxYXSow0nLv58UCMtWvNKzDhXrLmWaMfuhAr1TQVTyKunMgJHS7ej7yhzRU5xGxJWlNKPz25vJTttS5iiIawwhYpLSUYTkD7G8FUAwJvD+eKBKcA1b47fMn046wbOKTW21NAwPzfSCTCn5U9Jt5WhPFJDntoSb5nVQUQ68vFT8iU1UcpMh6ebaGZ5/vgoOleUF9TicB6817mO//juV7mKB+f9ky2pu4s/7S/hhtLhTOtPH3cNhzjjBAc1wtPUFzJMdxn6YlUhZ3EIM8yz85zZI6cqJxh04RNvTx76iv2XEiUAH38ltBpqA4hSK7hf2WWEZA==|920
+}//1vpf3U2ehNZRPso1rB11DJiRAmcqnykt0zrb7KtgLPXLd/3dqg+2iR6wVU1UwPixSottI9fQg6yqyP46EcT9hm+k6fkH1Tp4i72mFN0mDkFBlTju8jwVJgY3+pxTkCW8UKnBpjkGUKWhEO3K39ERSdsFa9rsnLzjTfX1kkK992KbOQfdFH8ulYrgX0kreDXvwaZCP7lGx6pXm5vcyNjm3WqnbYBxnt5owE9N/s60guUGNa3CD57eCkhjuvFoBe6n93JxZW/aBuX8prlZzAbihJ+IG8ENIkJjEqYH5YDXuX5yAuziTLDMHC2S2e8XdViCzidSjOZKBjgVt/C92EYb9gZj15nyOJL99T7SG63MotWX/k1ujhhaSPQDKHspOD6AZ1qNIyoU6ykmr6e8znH8dafGxtUHswp9syWLd1L8PUCHnauNcUO/jeIi96eYybhjzYgeVIhDF7F+N/1MaWsDBZZBGtsRWO9f7WfyCW9YthClZ7JH7obrHNWWIDvsUlmfCoXgLW8KQ0zdmH2pqJsFBmuKZfFFDfhxJkdC+earHmkcQgZrXMPJHZrrJtW35oWkKDy7X2/hdwgnw+hGqJotB/8IuNmZWOJJFb1HBM0K+PANZivFqKbigOuSOwK/6Kk76o9Ly+rQqzfCMBRuID3KIx3g81xusyaPtQfh3782yolC+U67maW8SohkM/YuL5onRHjweiE8WKCGzcUrc9tSCqklSml3G/oFqDYvU+GMhGUS5ZT1+DOy3yYoccFGtEWen9B+X/tYStRkL6cY50de5TO/JEDSYKKyjkA3uIwzVRtHQ2eoQ6Zw0ESjldj9AABrheeN+IXblfjFf6r2ilyf7rEbQLLCG8WLnNB1xfNQixipWYVfTD7XhU+fMFaUpzdzim460sXzGj2tL2kkOyTW+w==|920

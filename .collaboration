@@ -115,42 +115,15 @@
   },
   {
     "ModuleName": "PCPage/차량예약페이지",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-SFEU14D\\NamHee",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-31T09:18:31.2015221+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\차량예약페이지.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/차량예약현황페이지",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-SFEU14D\\NamHee",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-31T08:52:48.8537769+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\차량예약현황페이지.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/대시보드",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-SFEU14D\\NamHee",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-31T10:58:21.3735095+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\대시보드.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/차량예약상세현황페이지",
