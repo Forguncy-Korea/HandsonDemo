@@ -119,16 +119,7 @@
   },
   {
     "ModuleName": "PCPage/차량예약현황페이지",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-SFEU14D\\NamHee",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-31T13:28:35.8081029+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\차량예약현황페이지.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/대시보드",
@@ -140,16 +131,7 @@
   },
   {
     "ModuleName": "PCPage/차량반납페이지",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-SFEU14D\\NamHee",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-31T13:05:46.7546756+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\차량반납페이지.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/예약검색페이지",
@@ -201,18 +183,7 @@
   },
   {
     "ModuleName": "UserService",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-SFEU14D\\NamHee",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-05-31T11:35:00.4494951+09:00",
-    "ModuleType": 11,
-    "ToRemoveFiles": [
-      "UserServiceDB.sqlite3",
-      "CloudStorageProvider\\data.json",
-      "SecurityProviderV2\\data.json"
-    ]
+    "ModuleType": 11
   },
   {
     "ModuleName": "CustomLibrary",

@@ -224,18 +224,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PageName": "예약검색페이지",
-            "PassValues": [
-              {
-                "Source": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=차량반납페이지!D6"
-                },
-                "TargetCell": {
-                  "SerializeProperty": "=예약검색페이지!H3"
-                }
-              }
-            ]
+            "PageName": "예약검색페이지"
           }
         ],
         "Text": "내 예약차량 조회",
@@ -409,7 +398,7 @@
                     "MessageFormula": "대여자 계정이 아니므로 반납이 불가능합니다."
                   }
                 ],
-                "ID": "995d5309-39b0-4e2d-a0d2-ea82422b47c2"
+                "ID": "436bd103-bca9-4f68-ac34-2e7435546801"
               },
               {
                 "CommandList": [
@@ -475,7 +464,7 @@
                     "MessageFormula": "차량을 성공적으로 반납하였습니다."
                   }
                 ],
-                "ID": "dbb0686c-da57-49fc-be71-2f1048964971"
+                "ID": "67d8b527-1473-4a17-a767-c3e213545ce0"
               }
             ]
           }
@@ -936,4 +925,4 @@
       "Size": "474,565"
     }
   ]
-}//IZZqbolvh/bgmCvDFWG4m5I9zBd2Cntxn1HQ0JRBCZ79xC5iJu7NnIylALBlJJezTCJDQDN4KQ5eKEaD3DYUKOus5K6VM2Wk1XX30ODPSWebSwP9ddqIaPyEv7Bptn21IwLNPYmFg0nHtxLaWBKV6bRSh2Rb0/CuPiIXf7L30sK+uzoS0DndDHdLbop49JJKvNbUsKDfOngR1v2B0DIA3U6+RJTVZEQyQMz/VNBPUhDSxOo0I8gws8ET+mXEctGzS88tf/M/5/AIyvk/2t5NwiUYZUGfZxMtKoTKkF4i5duKsTERhe8PRQgRx5PI7uqOWziizu7XGtuQtDSvyGr0vcE0HsFNuCm7tAJwuZqCOV+gRjZY1FMBVn09gOAqd1JDHO6I1TnSSpQ2O8zN+3EdQW/H3mTZ1OgpcIcPXSTB41KRGX/EOw9KsmXdnqXpX5YM0R6nzOX52all7Ck3GQ5uAaf2zX3AOhwnP7PRuy3fLCgEpunYDLu6Iord4f8G1lMCO5UxRM84UJuwnRn0JGAQz3Ex/GPK60lIeuBh+6Pwx4tPg6T4wQi19blcOq3To/mh5hPLWTNhbmxt8BhHBGt7tvapgGYJucJYy0Xtxj5/4hF4VgS/Y22G/nJ2GR86vzjwVj23P3zpwRuvgfzl6xUJmx+SeJAjVoG8K+yXHCSbFjRzvpdOWc1H8G3wfrzQnHm/3DnnWjjjvfCeAxePA5rwgLDfl1d3O8+a62vO+6qPxmRTw5uOCU6eNF3Imnxwg9OVcmQEc/ZRP7sYC+BmPIgJ1V21nECcqRfxpY0Lx6h0eWvaRRsniG2oM9k7A7FY/+xevJeQfiSMTNGQvwE+nMdlzOYchJftV0VDzgwdXaDqe/SgOWaivNz+I5IEDcKdW6UlYoD5CH2oarJfvwb7lH8pkA==|920
+}//BhncKJwTMmrXNHt6d3/4WmzF7KxCC+BRJ6AI+bpN6ApvgnCOIN3s770ahKyPrPSqaEiCGy2eJ++j5Y6bxcaTyw66brZSJdMYLdsMa7Rrty3JPbuZ0IgjshG4e7ZI6JIVzoNXGNpy/c1R0zBn+CAygt80/JYSuZSx5/88MikzeoByCSNKKVs60luPQd1KZZ0NmtMcVH/f+IRmz2QyJJ4/NzpBXFl/b4z9h7t/vw9vDP4Riaf8X+MksjJi8ipMDVsTOjS73K5RAc9Ysd9mUhSagTiSonXgMHH/ZX8p2dKNxTnodALLPEWAEi7glvks30rw+7ferr7a0GkMFR28n/hUPFpoKhUcQ/MbdKZlA2xkKO1obdYAnRWA3XykJnWmFo0XHbgob4jTQcseJpmWlC9TLh3OsUeBQMv8w36QZ5w3IsEJCtZeC9s7SqtMM1h95FHfHduXHcUScI2D35uCSPjqSpUn/sOqV/dLy+bu8UhGGdHnHDNZ4sa5cLPoJiwPCr7kaNyUGzMwAzCzHYxSp4bTk7+iiH3B7LSpSFw5G+tX32t36BhySblCy3FBcz8MAeiL8RD1CrFnCf2FfUg3QZqUC/DbJElLSehvP0f1vUWYQ0u9QqLXAIfres5JmWj+QoKKcxuoGHRD/S9Ms3i4olehIb9Vdh40BQaScxEkI5aF2gM9a1SKqDwm450jaVKT2dreXOVtRxWltNCCThAe0EKLnfGIdk4yp13FaV4+hnBkKhXYJcEcx3zFEXXmqHqFQdKaRTYln4X2G4VyIjQeJivDlpC38HJnne6k3CReAw9I/82//sBTPXvCx1t7nFwZuhELuwSl/+LRiULX2mTtk7MEVaflao375t96yUjVpU6t3lyiMu9JUgJJhS9Dww0GLGsAS4MkBHDuy7P8o5E9EJYpow==|920
