@@ -333,14 +333,6 @@
       "CellType": {
         "$type": "Forguncy.ImageCellType, ServerDesignerCommon"
       }
-    },
-    "28,53": {
-      "CellType": {
-        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
-        "DropDownButtonvisibility": 1,
-        "TemplateKey": "_RS_NewLittleRoundCorner",
-        "ReadOnly": true
-      }
     }
   },
   "StyleDatas": {
@@ -557,10 +549,16 @@
       },
       {
         "Background": 9,
-        "FontFamily": 1
+        "FontFamily": 1,
+        "Formatter": 0,
+        "HorizontalAlignment": 12
       },
       {
         "FontWeight": 2
+      },
+      {
+        "Background": 9,
+        "FontFamily": 1
       },
       {
         "FontFamily": 1,
@@ -807,7 +805,7 @@
       "30,50": 2,
       "30,51": 2,
       "30,52": 2,
-      "30,53": 35,
+      "30,53": 37,
       "30,54": 2,
       "30,55": 2,
       "30,56": 2,
@@ -822,19 +820,19 @@
       "30,65": 2,
       "30,66": 2,
       "31,49": 36,
-      "32,49": 37,
+      "32,49": 38,
       "32,50": 2,
       "32,51": 2,
       "32,52": 2,
-      "32,53": 38,
+      "32,53": 39,
       "32,54": 2,
       "32,55": 2,
       "32,56": 2,
       "32,57": 2,
       "32,58": 2,
-      "32,59": 39,
+      "32,59": 40,
       "32,60": 2,
-      "32,61": 38,
+      "32,61": 39,
       "32,62": 2,
       "32,63": 2,
       "32,64": 2,
@@ -862,7 +860,7 @@
       "34,50": 2,
       "34,51": 2,
       "34,52": 2,
-      "34,53": 35,
+      "34,53": 37,
       "34,54": 2,
       "34,55": 2,
       "34,56": 2,
@@ -894,14 +892,14 @@
       "35,64": 2,
       "35,65": 2,
       "35,66": 2,
-      "36,49": 37,
+      "36,49": 38,
       "36,50": 2,
       "36,51": 2,
       "36,52": 2,
-      "36,53": 35,
+      "36,53": 37,
       "37,49": 36,
       "38,49": 36,
-      "38,53": 35,
+      "38,53": 37,
       "40,50": 2,
       "40,51": 2,
       "40,52": 2
@@ -981,4 +979,4 @@
       "Size": "400,687"
     }
   ]
-}//iMqTAWaZhGMyuiaBzBGHEnFOEzEAMTVdKQpOjknkavvYMoBLQy8/ZUcoijcgby3gSD3GlweQolIQiqAlQ0ObbDBL/WXQqZWuYEhyDL75x0Ek2EOO858FWfdyyk4NLCiDwoeBVgS+HeHfdDhHJv8cdMLvYxIIBJNRMb1i83qQNSuC+15OeIT12cIqTPvNUV+E56ub3sH30iNIeNSyJik8VyBSUdliXwZ8n22DRLA5IX4IEzY97LBxwDGy5/J+9dCHDO3kIBkIyQDoJWfgVeOBErDNiyfYuibt4A0jltP/EIgV6S5bNJngpp+4dJUpk7FGBIgNyJHafKBV3J8fu0ZPTJrLo26GKkmCaAb6c36kVDdzLLPc4nlHFPYdJVg0xrGEgjf2mtOkjPEr1JiwwuWvU8jyCr9Lz/7FN+9uVgMQzNimPKwbjR+eEF5mXTd9hGlypi2ghkcsOj20jwfgdNWEVLGaCAzfKv4ULYHyFLellZvXGybHSdeftbsFJLecs8aaSyMgt3OGhm6wAXzhv/zZ6/KcAdZfCZ32NGHseYC361Y0b12ZmKpdYpFFdkBdAPmJoAEqi7MDt3H/0TEeAM/z2GNpSi3kLAwrzkbx986S09b7bKvYKHNeoKPQrM5FC9ET7+yMg2BHsoR3KdVS2b2p35uarwF7+kQcGUYNmsdCMhdsjZb7JJMz1ikOi/RoCHcFM4DNz6tgC4LDUDDTyymABgJjw7iofKNWu7DS0vHVXIE5RlOM4TVmYVlJKlcNm3tcwDT7Bjir44sSJ1Sew+xRfeC3bQgFADPNloB/UWR7SIk/ioHX3A6gIXLujuyJOdD121P1tEaCRzsDWpHbEk3rW5YPYgHajgdXquGtq5Qst1if0ZvfUvWLAYq410v0CwrQCnSNZPGThEyPpTfE7CqzJw==|920
+}//+v5ryMpdAEjUcDpOPCEgFnZy1f2qGLg+iKyWqzgUAxVIRFh4H4STZbrxAUoEMrmzJXl4ob0xnuxLbVc+zeEfi6W7H8QwkMUfU0Hq5sbGZyEius8blj+6+JxNNF0hFcf0WfSRMR3TXGHYxKXcCCeQa9AdBD1A1+1hI4wh8YpuNZjKLTYC6pWUYHw3Q1tSEgG+FqsWFzSwotcl8HY2uH63tBXHNnBjGK91o43EpxExU5l/tYSBctSenAY9QYQa/fsHY9+kuDrrxChdvdH4GjGe7tprVUzpxId9Lp4twP6IrgWaR1vYY0zEy/ysYPJJBiF8LuxWmERnx8WNl/sBivE4gHZxISGkgE8B7nixAn6UHOcDHLTo5sKl+n87WpWQngCIcGHoNwq5f8pBnc2KVG+nBpY34okLxvKvm2oASlFiUXkoZlo40SN4EocPWMxK2moD6te4qtgC05Bxz2E5y4yW9jqkIzh4ZorAJf8vHOw+v5/9L7PLWDelCBUzTiB5XCyqfWB7BHmXWImfKiR0PTikS8vcSciouyDJBhuLj4aoQdS40Ym3RzgXMZh+xeBC8HxEReGcmaW+HFV8v+t7VEnZGW2pXruPbxIwbBbFXL4ok1IT4bTRzjB6Bs+nmPowKniFIkgcPHFRSwi1rQkwi2b8Vk0Wve5j7ZuIzH8EDVw6teflYyMb2OxMXTqfhUZjvHY1v4Wu+Ml0tkEH5DJqQeE9a1n6aE8HZx5zK9rFrjsbB4jwcz9zE7W2SiX+iU0CJPDnq9+YFVjQeKEf02Pwxj8GRhpFUACOKrzLMo0fHM8haDA9b5e/s3xDQsdl6ZQIdp98BoMmVSRt9L4JdauH644dpHCbt1riLNc22ceER7sBnpeRbbkeA4yGCk7TZV2gY/ouFMXnQAGXsuSObXzR2E9KBg==|920
