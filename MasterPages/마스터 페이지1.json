@@ -16,7 +16,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "대시보드"
+            "PageName": "차량예약현황페이지"
           }
         ],
         "Text": "GrapeCity",
@@ -29,7 +29,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "대시보드"
+            "PageName": "차량예약현황페이지"
           }
         ],
         "Text": "법인차량 관리시스템",
@@ -285,4 +285,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//D/w5/YukqY/Yvjwz8TOcjBoBovcl4fzlPGPHr4/Mk6fc2bw72AQY7+EXuWcnZfFPjyRqsF3arIPpisSpMwEjlOgac75nTWX3/wbOaBlec4FbzofcklvoCo3tE0Douqo8ALQcWYEuArmIU8jTavHLjnkZbIA+uQrZnaUb0EkuFL+xSq4ANElEwgbKEBzUOzxj4+yEVSvhvyk5geoudIcpCNSOq7szwmthRsTHFJHJVOw87SFLw0qKe3jxFRQfSc4haZ+9kKh8EijZ7pSuZCrx/oWJseiLyH4Wf34scr8Eciw+xk3iPTXI+h+fo+7/TOxX5KVPUai7CnGVeTlZkyL6GnW01BaRdvq2TYDqIoVWTiJtY1p3lprt19tj3C6UesckrCJ/n1crVWFdkyMfw0Wf8khApd7QlxrxL72uEbSvzjbGQBWwMPQfW+26XLFEW/Kow190IIlQXvt87ejdKIX9pwy79y7uLXvAgv1nkSQb3E0UslLvhIh18Ddj3KiZtcSDB2Z8ZuDGkqjxUPHGtpTIKweLt7Y+obWQsKROegI56c44X0CEwkDeihnumULEJvkFEiqIf4oz+UfSUksYD00qVOyLdwCLa/h476oPJzuLC8h6FR7JJg+eJv+Rh/Huh4ltO/RcMkEEDPsUZG2qz6e+rcqbtuwP745XPZ6UHChSe0EVRjGWZlu0NqFKJRy+5eFMnxHERujPkKndic9uPSni+TI5B9fPYEJYpbWy/snypbLvDgZjsgrXoz0D6CVBNQZi7AUaqiB12vgS541zYl0K2CZpMlHYY6P8GL+3Mf3xkV2rtkuwLEOU6eDQNoAe7Ksca79feMQvpZ9bI7dxJ1kHDU9hnx7nO4ClsAUT0G8YzMfoicXq+VKiI/8FmeYvgZ9GbI0zX9ZhHkB3udvAeXpY3w==|920
+}//1VPQ0o2BVmR6J4cAf2i9q7wDmZ5fqvq3al2Keiu7bhQELGIvsIS2JXYcDFi7Z17sWSAdieVOEkhTNwvRxyU8LtmfHZYqEmPLXUV9EKgO0TpuqVXzYECUqMRL4TH6TElH4tenIdE1f4kPbshyl4TXRPYpiLKBubu7gUBl18Iu8XmqpxtomvxCfYd0HSS9wufVAEEkjKegFQO+XChRl5au4vu2J32S4UQ+gfrBZQJRbsy4atXkStBoMB6jiabZ629cq7Ls3iR8p42eu2aaB8/JyNHUlAanrjvUKgNicOJ2hstYI3fdca5EtddRTYfvhsKYeDTsoBv0kjIQeTdGTFmvlUy/ApDklHDP9yBSEHif0oJ/pNdA/nG27ah5MXMzjoaY+nenFAa9mVAfGlAL4Xm7sD3ZL7LIMymy77TyxOq9BBDNw1sgosUVgeiekW+lYNWsMf784/YeGShblfckxduDhonr8CCDVRA+s5ooFvh9QC//xkJrXN7KK8XadRAInyTygJa21Kt8lCyF/uWxFaxNfU5LwlCSNHYKoFciN+1RHcKYi+TMY/YGTb5pJJmXWMGRWu764SwNcBGNsL4McMl0hZopEZddZwalf9PZF42QanPEg/rsEoEGFCQgyO3u03Nfv7DuQlGBe6r80U/dxC/LklNcbR+nbcvQ8rvU5vqJRA6ZYgCyrzI7ighRAkz/1NRozqrH+uesXVekDVvEgAOd8zQU0q3fnMHc/6FomiaHMei/sKIC75CEeQp4J37qnSTcTqWYXuZAgw9joO68Kx6WtHDcw/Z3ysCGtHPJpcAYWqrsVi3Vieu37Yx1+qTOeWzQKoJPTbgp31bSEMKaLUhiOreg4ne82Z0pqfJMQze1w6pnCPk4Y9MZPJlETa3i3BEtFiWVFGIampCHsq9Ki2+k6Q==|920

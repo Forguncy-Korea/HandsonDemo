@@ -107,16 +107,7 @@
   },
   {
     "ModuleName": "PCPage/차량등록페이지",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-SFEU14D\\NamHee",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-06-01T18:31:22.2356006+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\차량등록페이지.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/차량현황정보페이지",
@@ -152,16 +143,7 @@
   },
   {
     "ModuleName": "MasterPCPage/마스터 페이지1",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "DESKTOP-SFEU14D\\NamHee",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2023-06-02T09:46:23.1707737+09:00",
-    "ModuleType": 3,
-    "ToRemoveFiles": [
-      "MasterPages\\마스터 페이지1.json"
-    ]
+    "ModuleType": 3
   },
   {
     "ModuleName": "ApplicationSetting",
